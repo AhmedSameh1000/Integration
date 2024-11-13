@@ -192,7 +192,7 @@
   {
     "ContainingType": "Integration.api.Controllers.SyncController",
     "Method": "SyncMySqlToSqlServer",
-    "RelativePath": "api/Sync/SyncMySqlToSqlServer",
+    "RelativePath": "api/Sync/Sync",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,

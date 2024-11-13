@@ -23,14 +23,21 @@ namespace Integration.api.Controllers
         }
 
 
-        [HttpGet("SyncMySqlToSqlServer")]
+        [HttpGet("Sync")]
         public async Task<IActionResult> SyncMySqlToSqlServer(int ModuleId)
         {
-            var Result = await _localService.SyncSqlToSql(ModuleId);
-            if (!Result.Success)
-                return BadRequest(Result);
+            try
+            {
+                var Result = await _localService.SyncSqlToSql(ModuleId);
+                if (!Result.Success)
+                    return BadRequest(Result);
 
-            return Ok(Result);
+                return Ok(Result);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(new { Message = ex.Message });
+            }
         }
 
 

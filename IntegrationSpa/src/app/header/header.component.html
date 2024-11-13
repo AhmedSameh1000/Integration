@@ -1,0 +1,63 @@
+<nav class="navbar navbar-expand-lg bg-light shadow-sm">
+  <div class="container-fluid">
+    <h1 class="navbar-brand text-primary" style="cursor: pointer" routerLink="">
+      Integration
+    </h1>
+
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarNav"
+      aria-controls="navbarNav"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse mb-2" id="navbarNav">
+      <div class="navbar-nav me-auto" *ngIf="AuthService.isLoggedIn()">
+        <button
+          type="button"
+          routerLink="fromdb"
+          routerLinkActive="active"
+          class="nav-link btn btn-outline-secondary ms-3 me-3"
+        >
+          <i class="fas fa-database"></i> FromDb
+        </button>
+        <button
+          routerLink="todb"
+          routerLinkActive="active"
+          type="button"
+          class="nav-link btn btn-outline-primary"
+        >
+          <i class="fas fa-arrow-right"></i> ToDb
+        </button>
+      </div>
+
+      <div
+        class="navbar-nav"
+        style="display: flex !important; justify-content: end; width: 100%"
+      >
+        <button
+          type="button"
+          class="nav-link btn btn-success"
+          routerLink="auth/login"
+          *ngIf="!AuthService.isLoggedIn()"
+          routerLinkActive="active"
+        >
+          <i class="fas fa-sign-in-alt"></i> Login
+        </button>
+        <button
+          type="button"
+          class="nav-link btn btn-danger"
+          *ngIf="AuthService.isLoggedIn()"
+          (click)="AuthService.logout()"
+        >
+          <i class="fas fa-sign-out-alt"></i> Logout
+        </button>
+      </div>
+    </div>
+  </div>
+</nav>

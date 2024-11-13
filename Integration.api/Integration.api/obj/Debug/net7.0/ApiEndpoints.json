@@ -1,0 +1,208 @@
+[
+  {
+    "ContainingType": "EcommerceWebsite.Controllers.AuthController",
+    "Method": "LogIn",
+    "RelativePath": "api/Auth/LogIn",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "logInDTo",
+        "Type": "AutoRepairPro.Business.DTO.AuthDTOs.LogInDTo",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DataBaseController",
+    "Method": "GetFromById",
+    "RelativePath": "api/DataBase/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DataBaseController",
+    "Method": "AddFromDataBase",
+    "RelativePath": "api/DataBase/add",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "fromDbToAddDTO",
+        "Type": "Integration.business.DTOs.FromDTOs.DbToAddDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DataBaseController",
+    "Method": "EditFromDataBase",
+    "RelativePath": "api/DataBase/edit",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "fromDbToEditDTO",
+        "Type": "Integration.business.DTOs.FromDTOs.DbToEditDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DataBaseController",
+    "Method": "GetFromList",
+    "RelativePath": "api/DataBase/list",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MySqlDatabaseMetadataController",
+    "Method": "CheckConnection",
+    "RelativePath": "api/MySqlDatabaseMetadata/check-connection",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "connectionString",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MySqlDatabaseMetadataController",
+    "Method": "GetAllColumns",
+    "RelativePath": "api/MySqlDatabaseMetadata/columns",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "connectionString",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "tableName",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MySqlDatabaseMetadataController",
+    "Method": "GetAllTables",
+    "RelativePath": "api/MySqlDatabaseMetadata/tables",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "connectionString",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SqlDatabaseMetadataController",
+    "Method": "CheckConnection",
+    "RelativePath": "api/SqlDatabaseMetadata/check-connection",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "connectionString",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SqlDatabaseMetadataController",
+    "Method": "GetAllColumns",
+    "RelativePath": "api/SqlDatabaseMetadata/columns",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "connectionString",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "tableName",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SqlDatabaseMetadataController",
+    "Method": "GetAllTables",
+    "RelativePath": "api/SqlDatabaseMetadata/tables",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "connectionString",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Integration.api.Controllers.SyncController",
+    "Method": "Data",
+    "RelativePath": "api/Sync/Getdata",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Integration.api.Controllers.SyncController",
+    "Method": "SyncMySqlToSqlServer",
+    "RelativePath": "api/Sync/SyncMySqlToSqlServer",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "ModuleId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

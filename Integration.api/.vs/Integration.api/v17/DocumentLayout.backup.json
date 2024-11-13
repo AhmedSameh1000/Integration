@@ -1,0 +1,221 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\ahmed\\Desktop\\Integration2\\Integration.api\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ahmed\\Desktop\\Integration2\\Integration.api\\Integration.data\\Migrations\\20241113135535_Init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Integration.data\\Migrations\\20241113135535_Init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7C378BB7-1F11-4AA0-BFA8-1203E6A64FE1}|Integration.business\\Integration.business.csproj|c:\\users\\ahmed\\desktop\\integration2\\integration.api\\integration.business\\services\\implementation\\localservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7C378BB7-1F11-4AA0-BFA8-1203E6A64FE1}|Integration.business\\Integration.business.csproj|solutionrelative:integration.business\\services\\implementation\\localservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7C378BB7-1F11-4AA0-BFA8-1203E6A64FE1}|Integration.business\\Integration.business.csproj|c:\\users\\ahmed\\desktop\\integration2\\integration.api\\integration.business\\services\\implementation\\syncmysqltosqlservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7C378BB7-1F11-4AA0-BFA8-1203E6A64FE1}|Integration.business\\Integration.business.csproj|solutionrelative:integration.business\\services\\implementation\\syncmysqltosqlservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F4853D13-6982-41D1-B52E-411CE21CF872}|Integration.data\\Integration.data.csproj|c:\\users\\ahmed\\desktop\\integration2\\integration.api\\integration.data\\models\\columnfrom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F4853D13-6982-41D1-B52E-411CE21CF872}|Integration.data\\Integration.data.csproj|solutionrelative:integration.data\\models\\columnfrom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F4853D13-6982-41D1-B52E-411CE21CF872}|Integration.data\\Integration.data.csproj|c:\\users\\ahmed\\desktop\\integration2\\integration.api\\integration.data\\models\\conditionto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F4853D13-6982-41D1-B52E-411CE21CF872}|Integration.data\\Integration.data.csproj|solutionrelative:integration.data\\models\\conditionto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F4853D13-6982-41D1-B52E-411CE21CF872}|Integration.data\\Integration.data.csproj|c:\\users\\ahmed\\desktop\\integration2\\integration.api\\integration.data\\models\\tablereference.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F4853D13-6982-41D1-B52E-411CE21CF872}|Integration.data\\Integration.data.csproj|solutionrelative:integration.data\\models\\tablereference.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F4853D13-6982-41D1-B52E-411CE21CF872}|Integration.data\\Integration.data.csproj|c:\\users\\ahmed\\desktop\\integration2\\integration.api\\integration.data\\models\\synctype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F4853D13-6982-41D1-B52E-411CE21CF872}|Integration.data\\Integration.data.csproj|solutionrelative:integration.data\\models\\synctype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F4853D13-6982-41D1-B52E-411CE21CF872}|Integration.data\\Integration.data.csproj|c:\\users\\ahmed\\desktop\\integration2\\integration.api\\integration.data\\models\\database.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F4853D13-6982-41D1-B52E-411CE21CF872}|Integration.data\\Integration.data.csproj|solutionrelative:integration.data\\models\\database.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F4853D13-6982-41D1-B52E-411CE21CF872}|Integration.data\\Integration.data.csproj|c:\\users\\ahmed\\desktop\\integration2\\integration.api\\integration.data\\models\\module.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F4853D13-6982-41D1-B52E-411CE21CF872}|Integration.data\\Integration.data.csproj|solutionrelative:integration.data\\models\\module.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F4853D13-6982-41D1-B52E-411CE21CF872}|Integration.data\\Integration.data.csproj|c:\\users\\ahmed\\desktop\\integration2\\integration.api\\integration.data\\models\\conditionfrom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F4853D13-6982-41D1-B52E-411CE21CF872}|Integration.data\\Integration.data.csproj|solutionrelative:integration.data\\models\\conditionfrom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{40504B65-F8AB-4656-92A4-19DE27FD3567}|Integration.api\\Integration.api.csproj|c:\\users\\ahmed\\desktop\\integration2\\integration.api\\integration.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{40504B65-F8AB-4656-92A4-19DE27FD3567}|Integration.api\\Integration.api.csproj|solutionrelative:integration.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ahmed\\Desktop\\Integration2\\Integration.api\\Integration.data\\Migrations\\20241113132952_Init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Integration.data\\Migrations\\20241113132952_Init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "20241113135535_Init.cs",
+              "DocumentMoniker": "C:\\Users\\ahmed\\Desktop\\Integration2\\Integration.api\\Integration.data\\Migrations\\20241113135535_Init.cs",
+              "RelativeDocumentMoniker": "Integration.data\\Migrations\\20241113135535_Init.cs",
+              "ToolTip": "C:\\Users\\ahmed\\Desktop\\Integration2\\Integration.api\\Integration.data\\Migrations\\20241113135535_Init.cs",
+              "RelativeToolTip": "Integration.data\\Migrations\\20241113135535_Init.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-13T13:55:35.653Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ColumnFrom.cs",
+              "DocumentMoniker": "C:\\Users\\ahmed\\Desktop\\Integration2\\Integration.api\\Integration.data\\Models\\ColumnFrom.cs",
+              "RelativeDocumentMoniker": "Integration.data\\Models\\ColumnFrom.cs",
+              "ToolTip": "C:\\Users\\ahmed\\Desktop\\Integration2\\Integration.api\\Integration.data\\Models\\ColumnFrom.cs",
+              "RelativeToolTip": "Integration.data\\Models\\ColumnFrom.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-13T13:50:49.772Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "SyncType.cs",
+              "DocumentMoniker": "C:\\Users\\ahmed\\Desktop\\Integration2\\Integration.api\\Integration.data\\Models\\SyncType.cs",
+              "RelativeDocumentMoniker": "Integration.data\\Models\\SyncType.cs",
+              "ToolTip": "C:\\Users\\ahmed\\Desktop\\Integration2\\Integration.api\\Integration.data\\Models\\SyncType.cs",
+              "RelativeToolTip": "Integration.data\\Models\\SyncType.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-13T13:50:38.259Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ConditionTo.cs",
+              "DocumentMoniker": "C:\\Users\\ahmed\\Desktop\\Integration2\\Integration.api\\Integration.data\\Models\\ConditionTo.cs",
+              "RelativeDocumentMoniker": "Integration.data\\Models\\ConditionTo.cs",
+              "ToolTip": "C:\\Users\\ahmed\\Desktop\\Integration2\\Integration.api\\Integration.data\\Models\\ConditionTo.cs",
+              "RelativeToolTip": "Integration.data\\Models\\ConditionTo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-13T13:40:10.499Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Module.cs",
+              "DocumentMoniker": "C:\\Users\\ahmed\\Desktop\\Integration2\\Integration.api\\Integration.data\\Models\\Module.cs",
+              "RelativeDocumentMoniker": "Integration.data\\Models\\Module.cs",
+              "ToolTip": "C:\\Users\\ahmed\\Desktop\\Integration2\\Integration.api\\Integration.data\\Models\\Module.cs",
+              "RelativeToolTip": "Integration.data\\Models\\Module.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAxwAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-13T13:39:50.87Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "DataBase.cs",
+              "DocumentMoniker": "C:\\Users\\ahmed\\Desktop\\Integration2\\Integration.api\\Integration.data\\Models\\DataBase.cs",
+              "RelativeDocumentMoniker": "Integration.data\\Models\\DataBase.cs",
+              "ToolTip": "C:\\Users\\ahmed\\Desktop\\Integration2\\Integration.api\\Integration.data\\Models\\DataBase.cs",
+              "RelativeToolTip": "Integration.data\\Models\\DataBase.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-13T13:40:09.666Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "TableReference.cs",
+              "DocumentMoniker": "C:\\Users\\ahmed\\Desktop\\Integration2\\Integration.api\\Integration.data\\Models\\TableReference.cs",
+              "RelativeDocumentMoniker": "Integration.data\\Models\\TableReference.cs",
+              "ToolTip": "C:\\Users\\ahmed\\Desktop\\Integration2\\Integration.api\\Integration.data\\Models\\TableReference.cs",
+              "RelativeToolTip": "Integration.data\\Models\\TableReference.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-13T13:40:13.405Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "20241113132952_Init.cs",
+              "DocumentMoniker": "C:\\Users\\ahmed\\Desktop\\Integration2\\Integration.api\\Integration.data\\Migrations\\20241113132952_Init.cs",
+              "RelativeDocumentMoniker": "Integration.data\\Migrations\\20241113132952_Init.cs",
+              "ToolTip": "C:\\Users\\ahmed\\Desktop\\Integration2\\Integration.api\\Integration.data\\Migrations\\20241113132952_Init.cs",
+              "RelativeToolTip": "Integration.data\\Migrations\\20241113132952_Init.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-13T13:29:52.933Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "LocalService.cs",
+              "DocumentMoniker": "C:\\Users\\ahmed\\Desktop\\Integration2\\Integration.api\\Integration.business\\Services\\Implementation\\LocalService.cs",
+              "RelativeDocumentMoniker": "Integration.business\\Services\\Implementation\\LocalService.cs",
+              "ToolTip": "C:\\Users\\ahmed\\Desktop\\Integration2\\Integration.api\\Integration.business\\Services\\Implementation\\LocalService.cs",
+              "RelativeToolTip": "Integration.business\\Services\\Implementation\\LocalService.cs",
+              "ViewState": "AgIAAAsDAAAAAAAAAAAhwCMDAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-13T13:28:14.298Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "SyncMySqlToSqlService.cs",
+              "DocumentMoniker": "C:\\Users\\ahmed\\Desktop\\Integration2\\Integration.api\\Integration.business\\Services\\Implementation\\SyncMySqlToSqlService.cs",
+              "RelativeDocumentMoniker": "Integration.business\\Services\\Implementation\\SyncMySqlToSqlService.cs",
+              "ToolTip": "C:\\Users\\ahmed\\Desktop\\Integration2\\Integration.api\\Integration.business\\Services\\Implementation\\SyncMySqlToSqlService.cs",
+              "RelativeToolTip": "Integration.business\\Services\\Implementation\\SyncMySqlToSqlService.cs",
+              "ViewState": "AgIAAE0AAAAAAAAAAAAhwGIAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-13T13:27:20.775Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\ahmed\\Desktop\\Integration2\\Integration.api\\Integration.api\\appsettings.json",
+              "RelativeDocumentMoniker": "Integration.api\\appsettings.json",
+              "ToolTip": "C:\\Users\\ahmed\\Desktop\\Integration2\\Integration.api\\Integration.api\\appsettings.json",
+              "RelativeToolTip": "Integration.api\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-11-13T13:32:14.062Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ConditionFrom.cs",
+              "DocumentMoniker": "C:\\Users\\ahmed\\Desktop\\Integration2\\Integration.api\\Integration.data\\Models\\ConditionFrom.cs",
+              "RelativeDocumentMoniker": "Integration.data\\Models\\ConditionFrom.cs",
+              "ToolTip": "C:\\Users\\ahmed\\Desktop\\Integration2\\Integration.api\\Integration.data\\Models\\ConditionFrom.cs",
+              "RelativeToolTip": "Integration.data\\Models\\ConditionFrom.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-13T13:40:11.801Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

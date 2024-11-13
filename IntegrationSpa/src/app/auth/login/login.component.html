@@ -1,0 +1,101 @@
+<form [formGroup]="LogInForm">
+  <div class="container py-5 h-100">
+    <div class="row d-flex justify-content-center align-items-center h-100">
+      <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+        <div class="card shadow-2-strong" style="border-radius: 1rem">
+          <div class="card-body p-5 text-center">
+            <h1 class="mb-5" style="font-weight: bold">
+              {{ "Sign in" }}
+            </h1>
+
+            <div data-mdb-input-init class="form-outline mb-4">
+              <div class="d-flex justify-content-start">
+                <label class="form-label ms-1" for="typeEmailX-2">{{
+                  "Email or Mobile"
+                }}</label>
+              </div>
+              <input
+                formControlName="Email"
+                type="email"
+                id="typeEmailX-2"
+                class="form-control form-control-lg"
+              />
+              <span
+                class="ms-1 text-danger d-flex justify-content-start"
+                *ngIf="
+                  LogInForm.get('Email').invalid &&
+                  LogInForm.get('Email').touched
+                "
+              >
+                <span *ngIf="LogInForm.get('Email').errors?.['required']"
+                  >{{ "Email is required" }}.</span
+                >
+                <span *ngIf="LogInForm.get('Email').errors?.['email']"
+                  >{{ "Enter a valid email" }}.</span
+                >
+              </span>
+            </div>
+
+            <div data-mdb-input-init class="form-outline mb-4">
+              <div class="d-flex justify-content-start">
+                <label class="form-label ms-1" for="typePasswordX-2">{{
+                  "Password"
+                }}</label>
+              </div>
+              <input
+                formControlName="Password"
+                type="password"
+                id="typePasswordX-2"
+                class="form-control form-control-lg"
+              />
+              <span
+                class="ms-1 text-danger d-flex justify-content-start"
+                *ngIf="
+                  LogInForm.get('Password').invalid &&
+                  LogInForm.get('Password').touched
+                "
+              >
+                <span *ngIf="LogInForm.get('Password').errors?.['required']"
+                  >{{ "Password is required" }}.</span
+                >
+              </span>
+            </div>
+
+            <strong *ngIf="PasswordOrEmailisWront">
+              {{ PasswordOrEmailisWront }}
+            </strong>
+            <!-- Checkbox -->
+            <div class="form-check d-flex justify-content-start mb-4">
+              <input
+                class="form-check-input ms-1"
+                type="checkbox"
+                value=""
+                id="form1Example3"
+                formControlName="RememberMe"
+              />
+              <label
+                style="white-space: nowrap"
+                class="form-check-label ms-1"
+                for="form1Example3"
+              >
+                {{ "Remember me" }}
+              </label>
+            </div>
+
+            <button
+              data-mdb-button-init
+              data-mdb-ripple-init
+              class="btn btn-primary btn-lg btn-block"
+              type="submit"
+              (click)="LogIn()"
+            >
+              {{ "Login" }}
+            </button>
+
+            <hr class="my-4" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</form>

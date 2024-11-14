@@ -17,20 +17,21 @@
         </mat-card-content>
         <mat-card-actions>
           <button
-            mat-raised-button
-            color="primary"
+            class="d-flex btn btn-outline-primary"
             (click)="syncModule(module.id, module.syncType)"
             [disabled]="module.isLoading"
           >
-            Sync
+            <div class="d-flex align-items-center gap-3">
+              <div>Sync</div>
+              <div *ngIf="module.isLoading">
+                <mat-spinner
+                  diameter="20"
+                  [strokeWidth]="5"
+                  style="stroke: white !important"
+                ></mat-spinner>
+              </div>
+            </div>
           </button>
-
-          <!-- Loader أثناء عملية الـ Sync للعنصر المحدد فقط -->
-          <mat-spinner
-            *ngIf="module.isLoading"
-            diameter="30"
-            [strokeWidth]="5"
-          ></mat-spinner>
         </mat-card-actions>
       </mat-card>
     </div>

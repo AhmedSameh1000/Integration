@@ -46,7 +46,7 @@ namespace Integration.data.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("dataBases");
+                    b.ToTable("dataBases", (string)null);
                 });
 
             modelBuilder.Entity("Integration.data.Models.AppUser", b =>
@@ -147,7 +147,7 @@ namespace Integration.data.Migrations
 
                     b.HasIndex("ModuleId");
 
-                    b.ToTable("columnFroms");
+                    b.ToTable("columnFroms", (string)null);
                 });
 
             modelBuilder.Entity("Integration.data.Models.ConditionFrom", b =>
@@ -169,7 +169,7 @@ namespace Integration.data.Migrations
 
                     b.HasIndex("ModuleId");
 
-                    b.ToTable("conditionFroms");
+                    b.ToTable("conditionFroms", (string)null);
                 });
 
             modelBuilder.Entity("Integration.data.Models.ConditionTo", b =>
@@ -191,7 +191,7 @@ namespace Integration.data.Migrations
 
                     b.HasIndex("ModuleId");
 
-                    b.ToTable("ConditionTos");
+                    b.ToTable("ConditionTos", (string)null);
                 });
 
             modelBuilder.Entity("Integration.data.Models.Module", b =>
@@ -255,7 +255,7 @@ namespace Integration.data.Migrations
 
                     b.HasIndex("ToDbId");
 
-                    b.ToTable("modules");
+                    b.ToTable("modules", (string)null);
                 });
 
             modelBuilder.Entity("Integration.data.Models.TableReference", b =>
@@ -286,7 +286,7 @@ namespace Integration.data.Migrations
 
                     b.HasIndex("ModuleId");
 
-                    b.ToTable("References");
+                    b.ToTable("References", (string)null);
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>

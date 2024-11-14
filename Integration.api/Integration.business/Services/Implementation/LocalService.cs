@@ -196,7 +196,7 @@ namespace Integration.business.Services.Implementation
 
             if (updateQueries.Length <= 0)
             {
-                return new ApiResponse<int>(false, "No Rows To Do Sync", 0);
+                return new ApiResponse<int>(false, "No Rows To Sync", 0);
             }
 
             var RowsEfected = await UpdateRowsAsyncSqlToMySql(updateQueries, module);
@@ -515,7 +515,7 @@ namespace Integration.business.Services.Implementation
 
             if (updateQueries.Length <= 0)
             {
-                return new ApiResponse<int>(false, "No Rows To Do Sync");
+                return new ApiResponse<int>(false, "No Rows To Sync");
             }
             var RowsEfected = await UpdateRowsAsyncMySqlToSql(updateQueries, module);
 
@@ -824,7 +824,7 @@ namespace Integration.business.Services.Implementation
 
             if (updateQueries.Length <= 0)
             {
-                return new ApiResponse<int>(false, "No Rows To Do Sync");
+                return new ApiResponse<int>(false, "No Rows To Sync");
             }
             var RowsEfected = await UpdateRowsAsyncMySqlToMySql(updateQueries, module);
 
@@ -1136,7 +1136,7 @@ namespace Integration.business.Services.Implementation
           
             if (updateQueries.Length <=0)
             {
-                return new ApiResponse<int>(false, "No Rows To Do Sync");
+                return new ApiResponse<int>(false, "No Rows To Sync");
             }
 
 

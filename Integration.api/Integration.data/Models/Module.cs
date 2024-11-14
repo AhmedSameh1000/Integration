@@ -25,9 +25,6 @@ namespace Integration.data.Models
         public string? FromInsertFlagName { get; set; }
         public string? FromUpdateFlagName { get; set; }
 
-
-
-
     }
 
 

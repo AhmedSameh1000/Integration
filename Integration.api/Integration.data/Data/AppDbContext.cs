@@ -42,6 +42,7 @@ namespace Integration.data.Data
                 .WithMany()
                 .HasForeignKey(tr => tr.ModuleId)
                 .OnDelete(DeleteBehavior.Restrict);
+
         }
 
 

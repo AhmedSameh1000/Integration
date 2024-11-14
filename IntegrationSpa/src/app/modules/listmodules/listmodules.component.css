@@ -12,3 +12,6 @@
   background-color: rgb(178, 161, 161) !important;
   transition: 0.3s;
 }
+::ng-deep .mat-spinner circle {
+  stroke: white !important;
+}

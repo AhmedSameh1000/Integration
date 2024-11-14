@@ -2,11 +2,12 @@
 {
     public enum SyncType 
     {
-        PublicToLocal_SqlToSql,
-        PublicToLocal_SqlToMySql,
-        PublicToLocal_MySqlToSql,
-        PublicToLocal_MySqlToMySql,
+        LocalSqlToSql,
+        LocalSqlToMySql,
+        LocalMySqlToSql,
+        LocalMySqlToMySql,
     }
+
 
 
 

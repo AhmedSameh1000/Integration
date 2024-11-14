@@ -12,18 +12,9 @@ const routes: Routes = [
     loadChildren: () => import('./auth/auth.module').then((m) => m.AuthModule),
   },
   {
-    path: 'fromdb',
+    path: '',
     loadChildren: () =>
-      import('./from-data-base/from-data-base.module').then(
-        (m) => m.FromDataBaseModule
-      ),
-  },
-  {
-    path: 'todb',
-    loadChildren: () =>
-      import('./to-data-base/to-data-base.module').then(
-        (m) => m.ToDataBaseModule
-      ),
+      import('./DataBase/database.module').then((m) => m.DatabaseModule),
   },
 ];
 

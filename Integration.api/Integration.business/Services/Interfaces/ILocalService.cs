@@ -12,5 +12,5 @@ namespace Integration.business.Services.Interfaces
         Task<ApiResponse<int>> SyncMySqlToSql(int moduleId);
         Task<ApiResponse<int>> SyncSqlToSql(int moduleId);
         Task<ApiResponse<int>> SyncMySqlToMySql(int moduleId);
-    }   
+    }
 }

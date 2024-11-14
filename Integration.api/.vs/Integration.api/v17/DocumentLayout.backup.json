@@ -3,8 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\ahmed\\Desktop\\Integration2\\Integration.api\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{40504B65-F8AB-4656-92A4-19DE27FD3567}|Integration.api\\Integration.api.csproj|c:\\users\\ahmed\\desktop\\integration2\\integration.api\\integration.api\\controllers\\synccontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{40504B65-F8AB-4656-92A4-19DE27FD3567}|Integration.api\\Integration.api.csproj|solutionrelative:integration.api\\controllers\\synccontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{40504B65-F8AB-4656-92A4-19DE27FD3567}|Integration.api\\Integration.api.csproj|c:\\users\\ahmed\\desktop\\integration2\\integration.api\\integration.api\\controllers\\modulecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{40504B65-F8AB-4656-92A4-19DE27FD3567}|Integration.api\\Integration.api.csproj|solutionrelative:integration.api\\controllers\\modulecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{40504B65-F8AB-4656-92A4-19DE27FD3567}|Integration.api\\Integration.api.csproj|c:\\users\\ahmed\\desktop\\integration2\\integration.api\\integration.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{40504B65-F8AB-4656-92A4-19DE27FD3567}|Integration.api\\Integration.api.csproj|solutionrelative:integration.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7C378BB7-1F11-4AA0-BFA8-1203E6A64FE1}|Integration.business\\Integration.business.csproj|c:\\users\\ahmed\\desktop\\integration2\\integration.api\\integration.business\\services\\interfaces\\imoduleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7C378BB7-1F11-4AA0-BFA8-1203E6A64FE1}|Integration.business\\Integration.business.csproj|solutionrelative:integration.business\\services\\interfaces\\imoduleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7C378BB7-1F11-4AA0-BFA8-1203E6A64FE1}|Integration.business\\Integration.business.csproj|c:\\users\\ahmed\\desktop\\integration2\\integration.api\\integration.business\\dtos\\moduledtos\\moduleforreturndto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7C378BB7-1F11-4AA0-BFA8-1203E6A64FE1}|Integration.business\\Integration.business.csproj|solutionrelative:integration.business\\dtos\\moduledtos\\moduleforreturndto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,19 +26,58 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "SyncController.cs",
-              "DocumentMoniker": "C:\\Users\\ahmed\\Desktop\\Integration2\\Integration.api\\Integration.api\\Controllers\\SyncController.cs",
-              "RelativeDocumentMoniker": "Integration.api\\Controllers\\SyncController.cs",
-              "ToolTip": "C:\\Users\\ahmed\\Desktop\\Integration2\\Integration.api\\Integration.api\\Controllers\\SyncController.cs",
-              "RelativeToolTip": "Integration.api\\Controllers\\SyncController.cs",
-              "ViewState": "AgIAABUAAAAAAAAAAAAuwB4AAAAQAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\ahmed\\Desktop\\Integration2\\Integration.api\\Integration.api\\Program.cs",
+              "RelativeDocumentMoniker": "Integration.api\\Program.cs",
+              "ToolTip": "C:\\Users\\ahmed\\Desktop\\Integration2\\Integration.api\\Integration.api\\Program.cs",
+              "RelativeToolTip": "Integration.api\\Program.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAACEAAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-13T15:52:30.635Z",
+              "WhenOpened": "2024-11-14T11:54:30.996Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ModuleController.cs",
+              "DocumentMoniker": "C:\\Users\\ahmed\\Desktop\\Integration2\\Integration.api\\Integration.api\\Controllers\\ModuleController.cs",
+              "RelativeDocumentMoniker": "Integration.api\\Controllers\\ModuleController.cs",
+              "ToolTip": "C:\\Users\\ahmed\\Desktop\\Integration2\\Integration.api\\Integration.api\\Controllers\\ModuleController.cs",
+              "RelativeToolTip": "Integration.api\\Controllers\\ModuleController.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAQwBkAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-14T11:53:17.703Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ModuleForReturnDTO.cs",
+              "DocumentMoniker": "C:\\Users\\ahmed\\Desktop\\Integration2\\Integration.api\\Integration.business\\DTOs\\ModuleDTOs\\ModuleForReturnDTO.cs",
+              "RelativeDocumentMoniker": "Integration.business\\DTOs\\ModuleDTOs\\ModuleForReturnDTO.cs",
+              "ToolTip": "C:\\Users\\ahmed\\Desktop\\Integration2\\Integration.api\\Integration.business\\DTOs\\ModuleDTOs\\ModuleForReturnDTO.cs",
+              "RelativeToolTip": "Integration.business\\DTOs\\ModuleDTOs\\ModuleForReturnDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAQAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-14T11:42:42.318Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "IModuleService.cs",
+              "DocumentMoniker": "C:\\Users\\ahmed\\Desktop\\Integration2\\Integration.api\\Integration.business\\Services\\Interfaces\\IModuleService.cs",
+              "RelativeDocumentMoniker": "Integration.business\\Services\\Interfaces\\IModuleService.cs",
+              "ToolTip": "C:\\Users\\ahmed\\Desktop\\Integration2\\Integration.api\\Integration.business\\Services\\Interfaces\\IModuleService.cs",
+              "RelativeToolTip": "Integration.business\\Services\\Interfaces\\IModuleService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-14T11:39:33.969Z",
               "EditorCaption": ""
             }
           ]

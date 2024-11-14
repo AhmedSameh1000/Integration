@@ -1,4 +1,5 @@
 ﻿using Integration.business.Services.Interfaces;
+using Integration.data.Models;
 using Microsoft.AspNetCore.Mvc;
 
 [Route("api/[controller]")]
@@ -6,17 +7,28 @@ using Microsoft.AspNetCore.Mvc;
 public class SqlDatabaseMetadataController : ControllerBase
 {
     private readonly IDatabaseSqlService _databaseSqlMetadataService;
+    private readonly IDatabaseMySqlService _databaseMySqlService;
 
-    public SqlDatabaseMetadataController(IDatabaseSqlService databaseSqlMetadataService)
+    public SqlDatabaseMetadataController(IDatabaseSqlService databaseSqlMetadataService,IDatabaseMySqlService databaseMySqlService)
     {
         _databaseSqlMetadataService = databaseSqlMetadataService;
+        _databaseMySqlService = databaseMySqlService;
     }
 
     // Check if connected to the database
     [HttpGet("check-connection")]
-    public async Task<IActionResult> CheckConnection([FromQuery] string connectionString)
+    public async Task<IActionResult> CheckConnection([FromQuery] string connectionString,[FromQuery]DataBaseType dataBaseType)
     {
-        bool canConnect = await _databaseSqlMetadataService.CanConnectAsync(connectionString);
+
+        bool canConnect = false;
+        if (dataBaseType == DataBaseType.SqlServer)
+        {
+             canConnect = await _databaseSqlMetadataService.CanConnectAsync(connectionString);
+        }
+        else
+        {
+            canConnect = await _databaseMySqlService.CanConnectAsync(connectionString);
+        }
 
         if (canConnect)
         {

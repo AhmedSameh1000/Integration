@@ -31,7 +31,7 @@ export class LoginComponent {
         } else {
           sessionStorage.setItem('token', res.token);
         }
-        this.Router.navigate(['/']);
+        this.Router.navigate(['/databases']);
       },
       error: (err) => {
         this.PasswordOrEmailisWront = err.error.message;

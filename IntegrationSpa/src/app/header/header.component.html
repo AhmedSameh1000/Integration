@@ -1,8 +1,12 @@
 <nav class="navbar navbar-expand-lg bg-light shadow-sm">
   <div class="container-fluid">
-    <h1 class="navbar-brand text-primary" style="cursor: pointer" routerLink="">
-      Integration
-    </h1>
+    <a
+      class="navbar-brand fw-bold text-primary"
+      style="cursor: pointer"
+      routerLink="/databases"
+    >
+      <i class="fas fa-cogs me-2"></i>Integration
+    </a>
 
     <button
       class="navbar-toggler"
@@ -16,46 +20,44 @@
       <span class="navbar-toggler-icon"></span>
     </button>
 
-    <div class="collapse navbar-collapse mb-2" id="navbarNav">
+    <div class="collapse navbar-collapse" id="navbarNav">
       <div class="navbar-nav me-auto" *ngIf="AuthService.isLoggedIn()">
         <button
-          type="button"
-          routerLink="fromdb"
+          routerLink="databases"
           routerLinkActive="active"
-          class="nav-link btn btn-outline-secondary ms-3 me-3"
+          style="font-weight: 600"
+          class="d-block nav-link btn btn-outline-primary ms-3 me-3 text-nowrap d-flex align-items-center Update"
         >
-          <i class="fas fa-database"></i> FromDb
+          <i class="fas fa-database me-2"></i> Databases
         </button>
+
         <button
-          routerLink="todb"
+          routerLink="modules"
           routerLinkActive="active"
-          type="button"
-          class="nav-link btn btn-outline-primary"
+          style="font-weight: 600"
+          class="d-block nav-link btn btn-outline-primary ms-3 me-3 text-nowrap d-flex align-items-center Update"
         >
-          <i class="fas fa-arrow-right"></i> ToDb
+          <i class="fas fa-cubes me-2"></i> Modules
         </button>
       </div>
 
-      <div
-        class="navbar-nav"
-        style="display: flex !important; justify-content: end; width: 100%"
-      >
+      <div class="navbar-nav ms-auto d-flex align-items-center lgout">
         <button
-          type="button"
-          class="nav-link btn btn-success"
-          routerLink="auth/login"
           *ngIf="!AuthService.isLoggedIn()"
+          type="button"
+          class="btn btn-outline-success me-3 d-flex align-items-center"
+          routerLink="auth/login"
           routerLinkActive="active"
         >
-          <i class="fas fa-sign-in-alt"></i> Login
+          <i class="fas fa-sign-in-alt me-2"></i> Login
         </button>
         <button
-          type="button"
-          class="nav-link btn btn-danger"
           *ngIf="AuthService.isLoggedIn()"
-          (click)="AuthService.logout()"
+          type="button"
+          class="btn btn-outline-danger d-flex align-items-center"
+          (click)="LogOut()"
         >
-          <i class="fas fa-sign-out-alt"></i> Logout
+          <i class="fas fa-sign-out-alt me-2"></i> Logout
         </button>
       </div>
     </div>

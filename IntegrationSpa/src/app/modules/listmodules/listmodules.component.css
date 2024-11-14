@@ -1,0 +1,14 @@
+.mycontainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 10px;
+  align-items: stretch; /* Ensures all cards have the same height */
+  margin-top: 40px;
+  justify-content: center;
+}
+
+.MyCard mat-card:hover {
+  cursor: pointer;
+  background-color: rgb(178, 161, 161) !important;
+  transition: 0.3s;
+}

@@ -1,11 +1,11 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { ListdbfromComponent } from './listdbfrom/listdbfrom.component';
+import { ListdatabasesComponent } from './listdatabases/listdatabases.component';
 
 const routes: Routes = [
   {
-    path: '',
-    component: ListdbfromComponent,
+    path: 'databases',
+    component: ListdatabasesComponent,
   },
 ];
 
@@ -13,4 +13,4 @@ const routes: Routes = [
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule],
 })
-export class FromDataBaseRoutingModule {}
+export class DatabaseRoutingModule {}

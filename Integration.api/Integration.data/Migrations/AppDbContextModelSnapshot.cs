@@ -41,6 +41,9 @@ namespace Integration.data.Migrations
                     b.Property<bool>("IsLocal")
                         .HasColumnType("bit");
 
+                    b.Property<int>("dataBaseType")
+                        .HasColumnType("int");
+
                     b.HasKey("Id");
 
                     b.ToTable("dataBases");

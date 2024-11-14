@@ -20,7 +20,8 @@ namespace Integration.business.Services.Implementation
             var FromDB = new DataBase()
             {
                 DbName = fromDbToAddDTO.Name,
-                ConnectionString = fromDbToAddDTO.Connection
+                ConnectionString = fromDbToAddDTO.Connection,
+                dataBaseType = fromDbToAddDTO.DataBaseType,
             };
             await _fromDataBase.Add(FromDB);
             return await _fromDataBase.SaveChanges();
@@ -35,6 +36,7 @@ namespace Integration.business.Services.Implementation
 
             FromDb.DbName = fromDbToEditDTO.Name;
             FromDb.ConnectionString = fromDbToEditDTO.Connection;
+            FromDb.dataBaseType= fromDbToEditDTO.DataBaseType;
             _fromDataBase.Update(FromDb);
             return await _fromDataBase.SaveChanges();
         }
@@ -51,6 +53,7 @@ namespace Integration.business.Services.Implementation
                 Id = DbId,
                 Connection = FromDb.ConnectionString,
                 Name = FromDb.DbName,
+                DataBaseType=FromDb.dataBaseType.ToString(),
             };
 
             return Result;
@@ -65,6 +68,7 @@ namespace Integration.business.Services.Implementation
                 Connection = c.ConnectionString,
                 Id = c.Id,
                 Name = c.DbName,
+                DataBaseType = c.dataBaseType.ToString(),
             }).ToList();
         }
     }

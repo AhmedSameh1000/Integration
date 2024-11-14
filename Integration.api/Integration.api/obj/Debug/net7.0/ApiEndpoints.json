@@ -74,6 +74,37 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "Integration.api.Controllers.ModuleController",
+    "Method": "GetModules",
+    "RelativePath": "api/Module/Modules",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Integration.api.Controllers.ModuleController",
+    "Method": "Sync",
+    "RelativePath": "api/Module/Sync",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "ModuleId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "syncType",
+        "Type": "Integration.data.Models.SyncType",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "MySqlDatabaseMetadataController",
     "Method": "CheckConnection",
     "RelativePath": "api/MySqlDatabaseMetadata/check-connection",
@@ -138,6 +169,11 @@
         "Name": "connectionString",
         "Type": "System.String",
         "IsRequired": false
+      },
+      {
+        "Name": "dataBaseType",
+        "Type": "Integration.data.Models.DataBaseType",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": []
@@ -174,32 +210,6 @@
       {
         "Name": "connectionString",
         "Type": "System.String",
-        "IsRequired": false
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "Integration.api.Controllers.SyncController",
-    "Method": "Data",
-    "RelativePath": "api/Sync/Getdata",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "Integration.api.Controllers.SyncController",
-    "Method": "SyncMySqlToSqlServer",
-    "RelativePath": "api/Sync/Sync",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "ModuleId",
-        "Type": "System.Int32",
         "IsRequired": false
       }
     ],

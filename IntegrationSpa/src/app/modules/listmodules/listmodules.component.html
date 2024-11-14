@@ -1,1 +1,38 @@
-<p>listmodules works!</p>
+<div class="container mt-4">
+  <div class="d-flex justify-content-end">
+    <button mat-raised-button color="primary">Create Module</button>
+  </div>
+  <div class="mycontainer">
+    <div *ngFor="let module of Modules" class="MyCard">
+      <mat-card>
+        <mat-card-header>
+          <mat-card-title>{{ module.name }}</mat-card-title>
+          <mat-card-subtitle
+            >Sync Type: {{ module.syncType }}</mat-card-subtitle
+          >
+        </mat-card-header>
+        <mat-card-content>
+          <p><strong>From:</strong> {{ module.tableFromName }}</p>
+          <p><strong>To:</strong> {{ module.tableToName }}</p>
+        </mat-card-content>
+        <mat-card-actions>
+          <button
+            mat-raised-button
+            color="primary"
+            (click)="syncModule(module.id, module.syncType)"
+            [disabled]="module.isLoading"
+          >
+            Sync
+          </button>
+
+          <!-- Loader أثناء عملية الـ Sync للعنصر المحدد فقط -->
+          <mat-spinner
+            *ngIf="module.isLoading"
+            diameter="30"
+            [strokeWidth]="5"
+          ></mat-spinner>
+        </mat-card-actions>
+      </mat-card>
+    </div>
+  </div>
+</div>

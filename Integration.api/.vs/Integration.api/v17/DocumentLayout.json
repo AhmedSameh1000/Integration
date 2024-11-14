@@ -1,37 +1,12 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\ahmed\\Desktop\\Integration2\\Integration.api\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{40504B65-F8AB-4656-92A4-19DE27FD3567}|Integration.api\\Integration.api.csproj|c:\\users\\ahmed\\desktop\\integration2\\integration.api\\integration.api\\controllers\\synccontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{40504B65-F8AB-4656-92A4-19DE27FD3567}|Integration.api\\Integration.api.csproj|solutionrelative:integration.api\\controllers\\synccontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": [
-        {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 0,
-          "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "SyncController.cs",
-              "DocumentMoniker": "C:\\Users\\ahmed\\Desktop\\Integration2\\Integration.api\\Integration.api\\Controllers\\SyncController.cs",
-              "RelativeDocumentMoniker": "Integration.api\\Controllers\\SyncController.cs",
-              "ToolTip": "C:\\Users\\ahmed\\Desktop\\Integration2\\Integration.api\\Integration.api\\Controllers\\SyncController.cs",
-              "RelativeToolTip": "Integration.api\\Controllers\\SyncController.cs",
-              "ViewState": "AgIAABUAAAAAAAAAAAAuwBsAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-13T15:52:30.635Z",
-              "EditorCaption": ""
-            }
-          ]
-        }
-      ]
+      "DocumentGroups": []
     }
   ]
 }

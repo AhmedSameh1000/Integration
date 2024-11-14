@@ -4,7 +4,7 @@ import { ListmodulesComponent } from './listmodules/listmodules.component';
 
 const routes: Routes = [
   {
-    path: '',
+    path: 'modules',
     component: ListmodulesComponent,
   },
 ];

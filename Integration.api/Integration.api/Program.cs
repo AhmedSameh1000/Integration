@@ -31,16 +31,15 @@ builder.Services.AddScoped<IDataBaseService, DataBaseService>();
 builder.Services.AddScoped<IAuthServices, AuthServices>();
 builder.Services.AddScoped<ISyncMySqlToSqlService, SyncMySqlToSqlService>();
 builder.Services.AddScoped<ILocalService, LocalService>();
+builder.Services.AddScoped<IModuleService, ModuleService>();
+
+
 
 
 
 
 builder.Services.AddScoped<IDatabaseMySqlService, MySqlService>();
 builder.Services.AddScoped<IDatabaseSqlService, SqlServerService>();
-
-
-
-
 
 
 

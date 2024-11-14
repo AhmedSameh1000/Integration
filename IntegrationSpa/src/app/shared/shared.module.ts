@@ -24,6 +24,8 @@ import { MatGridListModule } from '@angular/material/grid-list';
 import { MatTabsModule } from '@angular/material/tabs';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
+
 import { CommonModule, NgIf } from '@angular/common';
 
 let materialmodule = [
@@ -55,6 +57,7 @@ let materialmodule = [
   FormsModule,
   ReactiveFormsModule,
   CommonModule,
+  MatProgressSpinnerModule,
   NgIf,
 ];
 @NgModule({

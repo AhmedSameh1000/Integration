@@ -1,0 +1,26 @@
+.mat-elevation-z8 {
+  margin: 20px;
+}
+.mat-table-wrapper {
+  display: flex;
+  justify-content: center;
+}
+.mat-message-card {
+  text-align: center;
+  padding: 20px;
+  margin-top: 20px;
+}
+.mycontainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 10px;
+  align-items: stretch; /* Ensures all cards have the same height */
+  margin-top: 40px;
+  justify-content: center;
+}
+
+.MyCard mat-card:hover {
+  cursor: pointer;
+  background-color: rgb(178, 161, 161) !important;
+  transition: 0.3s;
+}

@@ -1,0 +1,439 @@
+D:\TrueTech\Integration\Integration.api\Integration.api\bin\Release\net7.0\appsettings.Development.json
+D:\TrueTech\Integration\Integration.api\Integration.api\bin\Release\net7.0\appsettings.json
+D:\TrueTech\Integration\Integration.api\Integration.api\bin\Release\net7.0\Integration.api.staticwebassets.endpoints.json
+D:\TrueTech\Integration\Integration.api\Integration.api\bin\Release\net7.0\Integration.api.exe
+D:\TrueTech\Integration\Integration.api\Integration.api\bin\Release\net7.0\Integration.api.deps.json
+D:\TrueTech\Integration\Integration.api\Integration.api\bin\Release\net7.0\Integration.api.runtimeconfig.json
+D:\TrueTech\Integration\Integration.api\Integration.api\bin\Release\net7.0\Integration.api.dll
+D:\TrueTech\Integration\Integration.api\Integration.api\bin\Release\net7.0\Integration.api.pdb
+D:\TrueTech\Integration\Integration.api\Integration.api\bin\Release\net7.0\Azure.Core.dll
+D:\TrueTech\Integration\Integration.api\Integration.api\bin\Release\net7.0\Azure.Identity.dll
+D:\TrueTech\Integration\Integration.api\Integration.api\bin\Release\net7.0\BouncyCastle.Cryptography.dll
+D:\TrueTech\Integration\Integration.api\Integration.api\bin\Release\net7.0\Google.Protobuf.dll
+D:\TrueTech\Integration\Integration.api\Integration.api\bin\Release\net7.0\Humanizer.dll
+D:\TrueTech\Integration\Integration.api\Integration.api\bin\Release\net7.0\K4os.Compression.LZ4.dll
+D:\TrueTech\Integration\Integration.api\Integration.api\bin\Release\net7.0\K4os.Compression.LZ4.Streams.dll
+D:\TrueTech\Integration\Integration.api\Integration.api\bin\Release\net7.0\K4os.Hash.xxHash.dll
+D:\TrueTech\Integration\Integration.api\Integration.api\bin\Release\net7.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+D:\TrueTech\Integration\Integration.api\Integration.api\bin\Release\net7.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+D:\TrueTech\Integration\Integration.api\Integration.api\bin\Release\net7.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+D:\TrueTech\Integration\Integration.api\Integration.api\bin\Release\net7.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+D:\TrueTech\Integration\Integration.api\Integration.api\bin\Release\net7.0\Microsoft.AspNetCore.OpenApi.dll
+D:\TrueTech\Integration\Integration.api\Integration.api\bin\Release\net7.0\Microsoft.Bcl.AsyncInterfaces.dll
+D:\TrueTech\Integration\Integration.api\Integration.api\bin\Release\net7.0\Microsoft.Data.SqlClient.dll
+D:\TrueTech\Integration\Integration.api\Integration.api\bin\Release\net7.0\Microsoft.EntityFrameworkCore.dll
+D:\TrueTech\Integration\Integration.api\Integration.api\bin\Release\net7.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\TrueTech\Integration\Integration.api\Integration.api\bin\Release\net7.0\Microsoft.EntityFrameworkCore.Design.dll
+D:\TrueTech\Integration\Integration.api\Integration.api\bin\Release\net7.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\TrueTech\Integration\Integration.api\Integration.api\bin\Release\net7.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+D:\TrueTech\Integration\Integration.api\Integration.api\bin\Release\net7.0\Microsoft.Extensions.DependencyModel.dll
+D:\TrueTech\Integration\Integration.api\Integration.api\bin\Release\net7.0\Microsoft.Extensions.Identity.Core.dll
+D:\TrueTech\Integration\Integration.api\Integration.api\bin\Release\net7.0\Microsoft.Extensions.Identity.Stores.dll
+D:\TrueTech\Integration\Integration.api\Integration.api\bin\Release\net7.0\Microsoft.Extensions.Options.dll
+D:\TrueTech\Integration\Integration.api\Integration.api\bin\Release\net7.0\Microsoft.Identity.Client.dll
+D:\TrueTech\Integration\Integration.api\Integration.api\bin\Release\net7.0\Microsoft.Identity.Client.Extensions.Msal.dll
+D:\TrueTech\Integration\Integration.api\Integration.api\bin\Release\net7.0\Microsoft.IdentityModel.Abstractions.dll
+D:\TrueTech\Integration\Integration.api\Integration.api\bin\Release\net7.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\TrueTech\Integration\Integration.api\Integration.api\bin\Release\net7.0\Microsoft.IdentityModel.Logging.dll
+D:\TrueTech\Integration\Integration.api\Integration.api\bin\Release\net7.0\Microsoft.IdentityModel.Protocols.dll
+D:\TrueTech\Integration\Integration.api\Integration.api\bin\Release\net7.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\TrueTech\Integration\Integration.api\Integration.api\bin\Release\net7.0\Microsoft.IdentityModel.Tokens.dll
+D:\TrueTech\Integration\Integration.api\Integration.api\bin\Release\net7.0\Microsoft.OpenApi.dll
+D:\TrueTech\Integration\Integration.api\Integration.api\bin\Release\net7.0\Microsoft.SqlServer.Server.dll
+D:\TrueTech\Integration\Integration.api\Integration.api\bin\Release\net7.0\Microsoft.Win32.SystemEvents.dll
+D:\TrueTech\Integration\Integration.api\Integration.api\bin\Release\net7.0\Mono.TextTemplating.dll
+D:\TrueTech\Integration\Integration.api\Integration.api\bin\Release\net7.0\MySql.Data.dll
+D:\TrueTech\Integration\Integration.api\Integration.api\bin\Release\net7.0\MySql.EntityFrameworkCore.dll
+D:\TrueTech\Integration\Integration.api\Integration.api\bin\Release\net7.0\Swashbuckle.AspNetCore.Swagger.dll
+D:\TrueTech\Integration\Integration.api\Integration.api\bin\Release\net7.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\TrueTech\Integration\Integration.api\Integration.api\bin\Release\net7.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\TrueTech\Integration\Integration.api\Integration.api\bin\Release\net7.0\System.CodeDom.dll
+D:\TrueTech\Integration\Integration.api\Integration.api\bin\Release\net7.0\System.Configuration.ConfigurationManager.dll
+D:\TrueTech\Integration\Integration.api\Integration.api\bin\Release\net7.0\System.Drawing.Common.dll
+D:\TrueTech\Integration\Integration.api\Integration.api\bin\Release\net7.0\System.IdentityModel.Tokens.Jwt.dll
+D:\TrueTech\Integration\Integration.api\Integration.api\bin\Release\net7.0\System.Memory.Data.dll
+D:\TrueTech\Integration\Integration.api\Integration.api\bin\Release\net7.0\System.Runtime.Caching.dll
+D:\TrueTech\Integration\Integration.api\Integration.api\bin\Release\net7.0\System.Security.Cryptography.ProtectedData.dll
+D:\TrueTech\Integration\Integration.api\Integration.api\bin\Release\net7.0\System.Security.Permissions.dll
+D:\TrueTech\Integration\Integration.api\Integration.api\bin\Release\net7.0\System.Windows.Extensions.dll
+D:\TrueTech\Integration\Integration.api\Integration.api\bin\Release\net7.0\ZstdSharp.dll
+D:\TrueTech\Integration\Integration.api\Integration.api\bin\Release\net7.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+D:\TrueTech\Integration\Integration.api\Integration.api\bin\Release\net7.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+D:\TrueTech\Integration\Integration.api\Integration.api\bin\Release\net7.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+D:\TrueTech\Integration\Integration.api\Integration.api\bin\Release\net7.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\TrueTech\Integration\Integration.api\Integration.api\bin\Release\net7.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\TrueTech\Integration\Integration.api\Integration.api\bin\Release\net7.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+D:\TrueTech\Integration\Integration.api\Integration.api\bin\Release\net7.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+D:\TrueTech\Integration\Integration.api\Integration.api\bin\Release\net7.0\runtimes\win-x64\native\comerr64.dll
+D:\TrueTech\Integration\Integration.api\Integration.api\bin\Release\net7.0\runtimes\win-x64\native\gssapi64.dll
+D:\TrueTech\Integration\Integration.api\Integration.api\bin\Release\net7.0\runtimes\win-x64\native\k5sprt64.dll
+D:\TrueTech\Integration\Integration.api\Integration.api\bin\Release\net7.0\runtimes\win-x64\native\krb5_64.dll
+D:\TrueTech\Integration\Integration.api\Integration.api\bin\Release\net7.0\runtimes\win-x64\native\krbcc64.dll
+D:\TrueTech\Integration\Integration.api\Integration.api\bin\Release\net7.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+D:\TrueTech\Integration\Integration.api\Integration.api\bin\Release\net7.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+D:\TrueTech\Integration\Integration.api\Integration.api\bin\Release\net7.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+D:\TrueTech\Integration\Integration.api\Integration.api\bin\Release\net7.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+D:\TrueTech\Integration\Integration.api\Integration.api\bin\Release\net7.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+D:\TrueTech\Integration\Integration.api\Integration.api\bin\Release\net7.0\Integration.business.dll
+D:\TrueTech\Integration\Integration.api\Integration.api\bin\Release\net7.0\Integration.data.dll
+D:\TrueTech\Integration\Integration.api\Integration.api\bin\Release\net7.0\Integration.business.pdb
+D:\TrueTech\Integration\Integration.api\Integration.api\bin\Release\net7.0\Integration.data.pdb
+D:\TrueTech\Integration\Integration.api\Integration.api\obj\Release\net7.0\Integration.api.csproj.AssemblyReference.cache
+D:\TrueTech\Integration\Integration.api\Integration.api\obj\Release\net7.0\Integration.api.GeneratedMSBuildEditorConfig.editorconfig
+D:\TrueTech\Integration\Integration.api\Integration.api\obj\Release\net7.0\Integration.api.AssemblyInfoInputs.cache
+D:\TrueTech\Integration\Integration.api\Integration.api\obj\Release\net7.0\Integration.api.AssemblyInfo.cs
+D:\TrueTech\Integration\Integration.api\Integration.api\obj\Release\net7.0\Integration.api.csproj.CoreCompileInputs.cache
+D:\TrueTech\Integration\Integration.api\Integration.api\obj\Release\net7.0\Integration.api.MvcApplicationPartsAssemblyInfo.cs
+D:\TrueTech\Integration\Integration.api\Integration.api\obj\Release\net7.0\Integration.api.MvcApplicationPartsAssemblyInfo.cache
+D:\TrueTech\Integration\Integration.api\Integration.api\obj\Release\net7.0\Integration.api.sourcelink.json
+D:\TrueTech\Integration\Integration.api\Integration.api\obj\Release\net7.0\scopedcss\bundle\Integration.api.styles.css
+D:\TrueTech\Integration\Integration.api\Integration.api\obj\Release\net7.0\staticwebassets.build.json
+D:\TrueTech\Integration\Integration.api\Integration.api\obj\Release\net7.0\staticwebassets.development.json
+D:\TrueTech\Integration\Integration.api\Integration.api\obj\Release\net7.0\staticwebassets.build.endpoints.json
+D:\TrueTech\Integration\Integration.api\Integration.api\obj\Release\net7.0\staticwebassets\msbuild.Integration.api.Microsoft.AspNetCore.StaticWebAssets.props
+D:\TrueTech\Integration\Integration.api\Integration.api\obj\Release\net7.0\staticwebassets\msbuild.Integration.api.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+D:\TrueTech\Integration\Integration.api\Integration.api\obj\Release\net7.0\staticwebassets\msbuild.build.Integration.api.props
+D:\TrueTech\Integration\Integration.api\Integration.api\obj\Release\net7.0\staticwebassets\msbuild.buildMultiTargeting.Integration.api.props
+D:\TrueTech\Integration\Integration.api\Integration.api\obj\Release\net7.0\staticwebassets\msbuild.buildTransitive.Integration.api.props
+D:\TrueTech\Integration\Integration.api\Integration.api\obj\Release\net7.0\staticwebassets.pack.json
+D:\TrueTech\Integration\Integration.api\Integration.api\obj\Release\net7.0\staticwebassets.upToDateCheck.txt
+D:\TrueTech\Integration\Integration.api\Integration.api\obj\Release\net7.0\Integrat.031CA4F9.Up2Date
+D:\TrueTech\Integration\Integration.api\Integration.api\obj\Release\net7.0\Integration.api.dll
+D:\TrueTech\Integration\Integration.api\Integration.api\obj\Release\net7.0\refint\Integration.api.dll
+D:\TrueTech\Integration\Integration.api\Integration.api\obj\Release\net7.0\Integration.api.pdb
+D:\TrueTech\Integration\Integration.api\Integration.api\obj\Release\net7.0\Integration.api.genruntimeconfig.cache
+D:\TrueTech\Integration\Integration.api\Integration.api\obj\Release\net7.0\ref\Integration.api.dll
+C:\Users\Ahmed Sameh\Desktop\NewIntegration\Integreation2\Integration.api\Integration.api\bin\Release\net7.0\appsettings.Development.json
+C:\Users\Ahmed Sameh\Desktop\NewIntegration\Integreation2\Integration.api\Integration.api\bin\Release\net7.0\appsettings.json
+C:\Users\Ahmed Sameh\Desktop\NewIntegration\Integreation2\Integration.api\Integration.api\bin\Release\net7.0\Integration.api.staticwebassets.endpoints.json
+C:\Users\Ahmed Sameh\Desktop\NewIntegration\Integreation2\Integration.api\Integration.api\bin\Release\net7.0\Integration.api.exe
+C:\Users\Ahmed Sameh\Desktop\NewIntegration\Integreation2\Integration.api\Integration.api\bin\Release\net7.0\Integration.api.deps.json
+C:\Users\Ahmed Sameh\Desktop\NewIntegration\Integreation2\Integration.api\Integration.api\bin\Release\net7.0\Integration.api.runtimeconfig.json
+C:\Users\Ahmed Sameh\Desktop\NewIntegration\Integreation2\Integration.api\Integration.api\bin\Release\net7.0\Integration.api.dll
+C:\Users\Ahmed Sameh\Desktop\NewIntegration\Integreation2\Integration.api\Integration.api\bin\Release\net7.0\Integration.api.pdb
+C:\Users\Ahmed Sameh\Desktop\NewIntegration\Integreation2\Integration.api\Integration.api\bin\Release\net7.0\Azure.Core.dll
+C:\Users\Ahmed Sameh\Desktop\NewIntegration\Integreation2\Integration.api\Integration.api\bin\Release\net7.0\Azure.Identity.dll
+C:\Users\Ahmed Sameh\Desktop\NewIntegration\Integreation2\Integration.api\Integration.api\bin\Release\net7.0\BouncyCastle.Cryptography.dll
+C:\Users\Ahmed Sameh\Desktop\NewIntegration\Integreation2\Integration.api\Integration.api\bin\Release\net7.0\Google.Protobuf.dll
+C:\Users\Ahmed Sameh\Desktop\NewIntegration\Integreation2\Integration.api\Integration.api\bin\Release\net7.0\Humanizer.dll
+C:\Users\Ahmed Sameh\Desktop\NewIntegration\Integreation2\Integration.api\Integration.api\bin\Release\net7.0\K4os.Compression.LZ4.dll
+C:\Users\Ahmed Sameh\Desktop\NewIntegration\Integreation2\Integration.api\Integration.api\bin\Release\net7.0\K4os.Compression.LZ4.Streams.dll
+C:\Users\Ahmed Sameh\Desktop\NewIntegration\Integreation2\Integration.api\Integration.api\bin\Release\net7.0\K4os.Hash.xxHash.dll
+C:\Users\Ahmed Sameh\Desktop\NewIntegration\Integreation2\Integration.api\Integration.api\bin\Release\net7.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\Ahmed Sameh\Desktop\NewIntegration\Integreation2\Integration.api\Integration.api\bin\Release\net7.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\Ahmed Sameh\Desktop\NewIntegration\Integreation2\Integration.api\Integration.api\bin\Release\net7.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\Ahmed Sameh\Desktop\NewIntegration\Integreation2\Integration.api\Integration.api\bin\Release\net7.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\Ahmed Sameh\Desktop\NewIntegration\Integreation2\Integration.api\Integration.api\bin\Release\net7.0\Microsoft.AspNetCore.OpenApi.dll
+C:\Users\Ahmed Sameh\Desktop\NewIntegration\Integreation2\Integration.api\Integration.api\bin\Release\net7.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\Ahmed Sameh\Desktop\NewIntegration\Integreation2\Integration.api\Integration.api\bin\Release\net7.0\Microsoft.Data.SqlClient.dll
+C:\Users\Ahmed Sameh\Desktop\NewIntegration\Integreation2\Integration.api\Integration.api\bin\Release\net7.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\Ahmed Sameh\Desktop\NewIntegration\Integreation2\Integration.api\Integration.api\bin\Release\net7.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\Ahmed Sameh\Desktop\NewIntegration\Integreation2\Integration.api\Integration.api\bin\Release\net7.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\Ahmed Sameh\Desktop\NewIntegration\Integreation2\Integration.api\Integration.api\bin\Release\net7.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\Ahmed Sameh\Desktop\NewIntegration\Integreation2\Integration.api\Integration.api\bin\Release\net7.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\Ahmed Sameh\Desktop\NewIntegration\Integreation2\Integration.api\Integration.api\bin\Release\net7.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\Ahmed Sameh\Desktop\NewIntegration\Integreation2\Integration.api\Integration.api\bin\Release\net7.0\Microsoft.Extensions.Identity.Core.dll
+C:\Users\Ahmed Sameh\Desktop\NewIntegration\Integreation2\Integration.api\Integration.api\bin\Release\net7.0\Microsoft.Extensions.Identity.Stores.dll
+C:\Users\Ahmed Sameh\Desktop\NewIntegration\Integreation2\Integration.api\Integration.api\bin\Release\net7.0\Microsoft.Extensions.Options.dll
+C:\Users\Ahmed Sameh\Desktop\NewIntegration\Integreation2\Integration.api\Integration.api\bin\Release\net7.0\Microsoft.Identity.Client.dll
+C:\Users\Ahmed Sameh\Desktop\NewIntegration\Integreation2\Integration.api\Integration.api\bin\Release\net7.0\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\Users\Ahmed Sameh\Desktop\NewIntegration\Integreation2\Integration.api\Integration.api\bin\Release\net7.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\Ahmed Sameh\Desktop\NewIntegration\Integreation2\Integration.api\Integration.api\bin\Release\net7.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\Ahmed Sameh\Desktop\NewIntegration\Integreation2\Integration.api\Integration.api\bin\Release\net7.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\Ahmed Sameh\Desktop\NewIntegration\Integreation2\Integration.api\Integration.api\bin\Release\net7.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\Ahmed Sameh\Desktop\NewIntegration\Integreation2\Integration.api\Integration.api\bin\Release\net7.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\Ahmed Sameh\Desktop\NewIntegration\Integreation2\Integration.api\Integration.api\bin\Release\net7.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\Ahmed Sameh\Desktop\NewIntegration\Integreation2\Integration.api\Integration.api\bin\Release\net7.0\Microsoft.OpenApi.dll
+C:\Users\Ahmed Sameh\Desktop\NewIntegration\Integreation2\Integration.api\Integration.api\bin\Release\net7.0\Microsoft.SqlServer.Server.dll
+C:\Users\Ahmed Sameh\Desktop\NewIntegration\Integreation2\Integration.api\Integration.api\bin\Release\net7.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\Ahmed Sameh\Desktop\NewIntegration\Integreation2\Integration.api\Integration.api\bin\Release\net7.0\Mono.TextTemplating.dll
+C:\Users\Ahmed Sameh\Desktop\NewIntegration\Integreation2\Integration.api\Integration.api\bin\Release\net7.0\MySql.Data.dll
+C:\Users\Ahmed Sameh\Desktop\NewIntegration\Integreation2\Integration.api\Integration.api\bin\Release\net7.0\MySql.EntityFrameworkCore.dll
+C:\Users\Ahmed Sameh\Desktop\NewIntegration\Integreation2\Integration.api\Integration.api\bin\Release\net7.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\Ahmed Sameh\Desktop\NewIntegration\Integreation2\Integration.api\Integration.api\bin\Release\net7.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\Ahmed Sameh\Desktop\NewIntegration\Integreation2\Integration.api\Integration.api\bin\Release\net7.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\Ahmed Sameh\Desktop\NewIntegration\Integreation2\Integration.api\Integration.api\bin\Release\net7.0\System.CodeDom.dll
+C:\Users\Ahmed Sameh\Desktop\NewIntegration\Integreation2\Integration.api\Integration.api\bin\Release\net7.0\System.Configuration.ConfigurationManager.dll
+C:\Users\Ahmed Sameh\Desktop\NewIntegration\Integreation2\Integration.api\Integration.api\bin\Release\net7.0\System.Drawing.Common.dll
+C:\Users\Ahmed Sameh\Desktop\NewIntegration\Integreation2\Integration.api\Integration.api\bin\Release\net7.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\Ahmed Sameh\Desktop\NewIntegration\Integreation2\Integration.api\Integration.api\bin\Release\net7.0\System.Memory.Data.dll
+C:\Users\Ahmed Sameh\Desktop\NewIntegration\Integreation2\Integration.api\Integration.api\bin\Release\net7.0\System.Runtime.Caching.dll
+C:\Users\Ahmed Sameh\Desktop\NewIntegration\Integreation2\Integration.api\Integration.api\bin\Release\net7.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Ahmed Sameh\Desktop\NewIntegration\Integreation2\Integration.api\Integration.api\bin\Release\net7.0\System.Security.Permissions.dll
+C:\Users\Ahmed Sameh\Desktop\NewIntegration\Integreation2\Integration.api\Integration.api\bin\Release\net7.0\System.Windows.Extensions.dll
+C:\Users\Ahmed Sameh\Desktop\NewIntegration\Integreation2\Integration.api\Integration.api\bin\Release\net7.0\ZstdSharp.dll
+C:\Users\Ahmed Sameh\Desktop\NewIntegration\Integreation2\Integration.api\Integration.api\bin\Release\net7.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\Ahmed Sameh\Desktop\NewIntegration\Integreation2\Integration.api\Integration.api\bin\Release\net7.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\Ahmed Sameh\Desktop\NewIntegration\Integreation2\Integration.api\Integration.api\bin\Release\net7.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Ahmed Sameh\Desktop\NewIntegration\Integreation2\Integration.api\Integration.api\bin\Release\net7.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Ahmed Sameh\Desktop\NewIntegration\Integreation2\Integration.api\Integration.api\bin\Release\net7.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Ahmed Sameh\Desktop\NewIntegration\Integreation2\Integration.api\Integration.api\bin\Release\net7.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Ahmed Sameh\Desktop\NewIntegration\Integreation2\Integration.api\Integration.api\bin\Release\net7.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\Ahmed Sameh\Desktop\NewIntegration\Integreation2\Integration.api\Integration.api\bin\Release\net7.0\runtimes\win-x64\native\comerr64.dll
+C:\Users\Ahmed Sameh\Desktop\NewIntegration\Integreation2\Integration.api\Integration.api\bin\Release\net7.0\runtimes\win-x64\native\gssapi64.dll
+C:\Users\Ahmed Sameh\Desktop\NewIntegration\Integreation2\Integration.api\Integration.api\bin\Release\net7.0\runtimes\win-x64\native\k5sprt64.dll
+C:\Users\Ahmed Sameh\Desktop\NewIntegration\Integreation2\Integration.api\Integration.api\bin\Release\net7.0\runtimes\win-x64\native\krb5_64.dll
+C:\Users\Ahmed Sameh\Desktop\NewIntegration\Integreation2\Integration.api\Integration.api\bin\Release\net7.0\runtimes\win-x64\native\krbcc64.dll
+C:\Users\Ahmed Sameh\Desktop\NewIntegration\Integreation2\Integration.api\Integration.api\bin\Release\net7.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+C:\Users\Ahmed Sameh\Desktop\NewIntegration\Integreation2\Integration.api\Integration.api\bin\Release\net7.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+C:\Users\Ahmed Sameh\Desktop\NewIntegration\Integreation2\Integration.api\Integration.api\bin\Release\net7.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+C:\Users\Ahmed Sameh\Desktop\NewIntegration\Integreation2\Integration.api\Integration.api\bin\Release\net7.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Ahmed Sameh\Desktop\NewIntegration\Integreation2\Integration.api\Integration.api\bin\Release\net7.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+C:\Users\Ahmed Sameh\Desktop\NewIntegration\Integreation2\Integration.api\Integration.api\bin\Release\net7.0\Integration.business.dll
+C:\Users\Ahmed Sameh\Desktop\NewIntegration\Integreation2\Integration.api\Integration.api\bin\Release\net7.0\Integration.data.dll
+C:\Users\Ahmed Sameh\Desktop\NewIntegration\Integreation2\Integration.api\Integration.api\bin\Release\net7.0\Integration.business.pdb
+C:\Users\Ahmed Sameh\Desktop\NewIntegration\Integreation2\Integration.api\Integration.api\bin\Release\net7.0\Integration.data.pdb
+C:\Users\Ahmed Sameh\Desktop\NewIntegration\Integreation2\Integration.api\Integration.api\obj\Release\net7.0\Integration.api.csproj.AssemblyReference.cache
+C:\Users\Ahmed Sameh\Desktop\NewIntegration\Integreation2\Integration.api\Integration.api\obj\Release\net7.0\Integration.api.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Ahmed Sameh\Desktop\NewIntegration\Integreation2\Integration.api\Integration.api\obj\Release\net7.0\Integration.api.AssemblyInfoInputs.cache
+C:\Users\Ahmed Sameh\Desktop\NewIntegration\Integreation2\Integration.api\Integration.api\obj\Release\net7.0\Integration.api.AssemblyInfo.cs
+C:\Users\Ahmed Sameh\Desktop\NewIntegration\Integreation2\Integration.api\Integration.api\obj\Release\net7.0\Integration.api.csproj.CoreCompileInputs.cache
+C:\Users\Ahmed Sameh\Desktop\NewIntegration\Integreation2\Integration.api\Integration.api\obj\Release\net7.0\Integration.api.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Ahmed Sameh\Desktop\NewIntegration\Integreation2\Integration.api\Integration.api\obj\Release\net7.0\Integration.api.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Ahmed Sameh\Desktop\NewIntegration\Integreation2\Integration.api\Integration.api\obj\Release\net7.0\Integration.api.sourcelink.json
+C:\Users\Ahmed Sameh\Desktop\NewIntegration\Integreation2\Integration.api\Integration.api\obj\Release\net7.0\scopedcss\bundle\Integration.api.styles.css
+C:\Users\Ahmed Sameh\Desktop\NewIntegration\Integreation2\Integration.api\Integration.api\obj\Release\net7.0\staticwebassets.build.json
+C:\Users\Ahmed Sameh\Desktop\NewIntegration\Integreation2\Integration.api\Integration.api\obj\Release\net7.0\staticwebassets.development.json
+C:\Users\Ahmed Sameh\Desktop\NewIntegration\Integreation2\Integration.api\Integration.api\obj\Release\net7.0\staticwebassets.build.endpoints.json
+C:\Users\Ahmed Sameh\Desktop\NewIntegration\Integreation2\Integration.api\Integration.api\obj\Release\net7.0\staticwebassets\msbuild.Integration.api.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\Ahmed Sameh\Desktop\NewIntegration\Integreation2\Integration.api\Integration.api\obj\Release\net7.0\staticwebassets\msbuild.Integration.api.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+C:\Users\Ahmed Sameh\Desktop\NewIntegration\Integreation2\Integration.api\Integration.api\obj\Release\net7.0\staticwebassets\msbuild.build.Integration.api.props
+C:\Users\Ahmed Sameh\Desktop\NewIntegration\Integreation2\Integration.api\Integration.api\obj\Release\net7.0\staticwebassets\msbuild.buildMultiTargeting.Integration.api.props
+C:\Users\Ahmed Sameh\Desktop\NewIntegration\Integreation2\Integration.api\Integration.api\obj\Release\net7.0\staticwebassets\msbuild.buildTransitive.Integration.api.props
+C:\Users\Ahmed Sameh\Desktop\NewIntegration\Integreation2\Integration.api\Integration.api\obj\Release\net7.0\staticwebassets.pack.json
+C:\Users\Ahmed Sameh\Desktop\NewIntegration\Integreation2\Integration.api\Integration.api\obj\Release\net7.0\staticwebassets.upToDateCheck.txt
+C:\Users\Ahmed Sameh\Desktop\NewIntegration\Integreation2\Integration.api\Integration.api\obj\Release\net7.0\Integrat.031CA4F9.Up2Date
+C:\Users\Ahmed Sameh\Desktop\NewIntegration\Integreation2\Integration.api\Integration.api\obj\Release\net7.0\Integration.api.dll
+C:\Users\Ahmed Sameh\Desktop\NewIntegration\Integreation2\Integration.api\Integration.api\obj\Release\net7.0\refint\Integration.api.dll
+C:\Users\Ahmed Sameh\Desktop\NewIntegration\Integreation2\Integration.api\Integration.api\obj\Release\net7.0\Integration.api.pdb
+C:\Users\Ahmed Sameh\Desktop\NewIntegration\Integreation2\Integration.api\Integration.api\obj\Release\net7.0\Integration.api.genruntimeconfig.cache
+C:\Users\Ahmed Sameh\Desktop\NewIntegration\Integreation2\Integration.api\Integration.api\obj\Release\net7.0\ref\Integration.api.dll
+C:\Users\Ahmed Sameh\Desktop\V1\Integration.api\Integration.api\bin\Release\net7.0\appsettings.Development.json
+C:\Users\Ahmed Sameh\Desktop\V1\Integration.api\Integration.api\bin\Release\net7.0\appsettings.json
+C:\Users\Ahmed Sameh\Desktop\V1\Integration.api\Integration.api\bin\Release\net7.0\Integration.api.staticwebassets.endpoints.json
+C:\Users\Ahmed Sameh\Desktop\V1\Integration.api\Integration.api\bin\Release\net7.0\Integration.api.exe
+C:\Users\Ahmed Sameh\Desktop\V1\Integration.api\Integration.api\bin\Release\net7.0\Integration.api.deps.json
+C:\Users\Ahmed Sameh\Desktop\V1\Integration.api\Integration.api\bin\Release\net7.0\Integration.api.runtimeconfig.json
+C:\Users\Ahmed Sameh\Desktop\V1\Integration.api\Integration.api\bin\Release\net7.0\Integration.api.dll
+C:\Users\Ahmed Sameh\Desktop\V1\Integration.api\Integration.api\bin\Release\net7.0\Integration.api.pdb
+C:\Users\Ahmed Sameh\Desktop\V1\Integration.api\Integration.api\bin\Release\net7.0\Azure.Core.dll
+C:\Users\Ahmed Sameh\Desktop\V1\Integration.api\Integration.api\bin\Release\net7.0\Azure.Identity.dll
+C:\Users\Ahmed Sameh\Desktop\V1\Integration.api\Integration.api\bin\Release\net7.0\BouncyCastle.Cryptography.dll
+C:\Users\Ahmed Sameh\Desktop\V1\Integration.api\Integration.api\bin\Release\net7.0\Google.Protobuf.dll
+C:\Users\Ahmed Sameh\Desktop\V1\Integration.api\Integration.api\bin\Release\net7.0\Humanizer.dll
+C:\Users\Ahmed Sameh\Desktop\V1\Integration.api\Integration.api\bin\Release\net7.0\K4os.Compression.LZ4.dll
+C:\Users\Ahmed Sameh\Desktop\V1\Integration.api\Integration.api\bin\Release\net7.0\K4os.Compression.LZ4.Streams.dll
+C:\Users\Ahmed Sameh\Desktop\V1\Integration.api\Integration.api\bin\Release\net7.0\K4os.Hash.xxHash.dll
+C:\Users\Ahmed Sameh\Desktop\V1\Integration.api\Integration.api\bin\Release\net7.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\Ahmed Sameh\Desktop\V1\Integration.api\Integration.api\bin\Release\net7.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\Ahmed Sameh\Desktop\V1\Integration.api\Integration.api\bin\Release\net7.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\Ahmed Sameh\Desktop\V1\Integration.api\Integration.api\bin\Release\net7.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\Ahmed Sameh\Desktop\V1\Integration.api\Integration.api\bin\Release\net7.0\Microsoft.AspNetCore.OpenApi.dll
+C:\Users\Ahmed Sameh\Desktop\V1\Integration.api\Integration.api\bin\Release\net7.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\Ahmed Sameh\Desktop\V1\Integration.api\Integration.api\bin\Release\net7.0\Microsoft.Data.SqlClient.dll
+C:\Users\Ahmed Sameh\Desktop\V1\Integration.api\Integration.api\bin\Release\net7.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\Ahmed Sameh\Desktop\V1\Integration.api\Integration.api\bin\Release\net7.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\Ahmed Sameh\Desktop\V1\Integration.api\Integration.api\bin\Release\net7.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\Ahmed Sameh\Desktop\V1\Integration.api\Integration.api\bin\Release\net7.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\Ahmed Sameh\Desktop\V1\Integration.api\Integration.api\bin\Release\net7.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\Ahmed Sameh\Desktop\V1\Integration.api\Integration.api\bin\Release\net7.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\Ahmed Sameh\Desktop\V1\Integration.api\Integration.api\bin\Release\net7.0\Microsoft.Extensions.Identity.Core.dll
+C:\Users\Ahmed Sameh\Desktop\V1\Integration.api\Integration.api\bin\Release\net7.0\Microsoft.Extensions.Identity.Stores.dll
+C:\Users\Ahmed Sameh\Desktop\V1\Integration.api\Integration.api\bin\Release\net7.0\Microsoft.Extensions.Options.dll
+C:\Users\Ahmed Sameh\Desktop\V1\Integration.api\Integration.api\bin\Release\net7.0\Microsoft.Identity.Client.dll
+C:\Users\Ahmed Sameh\Desktop\V1\Integration.api\Integration.api\bin\Release\net7.0\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\Users\Ahmed Sameh\Desktop\V1\Integration.api\Integration.api\bin\Release\net7.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\Ahmed Sameh\Desktop\V1\Integration.api\Integration.api\bin\Release\net7.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\Ahmed Sameh\Desktop\V1\Integration.api\Integration.api\bin\Release\net7.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\Ahmed Sameh\Desktop\V1\Integration.api\Integration.api\bin\Release\net7.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\Ahmed Sameh\Desktop\V1\Integration.api\Integration.api\bin\Release\net7.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\Ahmed Sameh\Desktop\V1\Integration.api\Integration.api\bin\Release\net7.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\Ahmed Sameh\Desktop\V1\Integration.api\Integration.api\bin\Release\net7.0\Microsoft.OpenApi.dll
+C:\Users\Ahmed Sameh\Desktop\V1\Integration.api\Integration.api\bin\Release\net7.0\Microsoft.SqlServer.Server.dll
+C:\Users\Ahmed Sameh\Desktop\V1\Integration.api\Integration.api\bin\Release\net7.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\Ahmed Sameh\Desktop\V1\Integration.api\Integration.api\bin\Release\net7.0\Mono.TextTemplating.dll
+C:\Users\Ahmed Sameh\Desktop\V1\Integration.api\Integration.api\bin\Release\net7.0\MySql.Data.dll
+C:\Users\Ahmed Sameh\Desktop\V1\Integration.api\Integration.api\bin\Release\net7.0\MySql.EntityFrameworkCore.dll
+C:\Users\Ahmed Sameh\Desktop\V1\Integration.api\Integration.api\bin\Release\net7.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\Ahmed Sameh\Desktop\V1\Integration.api\Integration.api\bin\Release\net7.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\Ahmed Sameh\Desktop\V1\Integration.api\Integration.api\bin\Release\net7.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\Ahmed Sameh\Desktop\V1\Integration.api\Integration.api\bin\Release\net7.0\System.CodeDom.dll
+C:\Users\Ahmed Sameh\Desktop\V1\Integration.api\Integration.api\bin\Release\net7.0\System.Configuration.ConfigurationManager.dll
+C:\Users\Ahmed Sameh\Desktop\V1\Integration.api\Integration.api\bin\Release\net7.0\System.Drawing.Common.dll
+C:\Users\Ahmed Sameh\Desktop\V1\Integration.api\Integration.api\bin\Release\net7.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\Ahmed Sameh\Desktop\V1\Integration.api\Integration.api\bin\Release\net7.0\System.Memory.Data.dll
+C:\Users\Ahmed Sameh\Desktop\V1\Integration.api\Integration.api\bin\Release\net7.0\System.Runtime.Caching.dll
+C:\Users\Ahmed Sameh\Desktop\V1\Integration.api\Integration.api\bin\Release\net7.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Ahmed Sameh\Desktop\V1\Integration.api\Integration.api\bin\Release\net7.0\System.Security.Permissions.dll
+C:\Users\Ahmed Sameh\Desktop\V1\Integration.api\Integration.api\bin\Release\net7.0\System.Windows.Extensions.dll
+C:\Users\Ahmed Sameh\Desktop\V1\Integration.api\Integration.api\bin\Release\net7.0\ZstdSharp.dll
+C:\Users\Ahmed Sameh\Desktop\V1\Integration.api\Integration.api\bin\Release\net7.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\Ahmed Sameh\Desktop\V1\Integration.api\Integration.api\bin\Release\net7.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\Ahmed Sameh\Desktop\V1\Integration.api\Integration.api\bin\Release\net7.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Ahmed Sameh\Desktop\V1\Integration.api\Integration.api\bin\Release\net7.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Ahmed Sameh\Desktop\V1\Integration.api\Integration.api\bin\Release\net7.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Ahmed Sameh\Desktop\V1\Integration.api\Integration.api\bin\Release\net7.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Ahmed Sameh\Desktop\V1\Integration.api\Integration.api\bin\Release\net7.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\Ahmed Sameh\Desktop\V1\Integration.api\Integration.api\bin\Release\net7.0\runtimes\win-x64\native\comerr64.dll
+C:\Users\Ahmed Sameh\Desktop\V1\Integration.api\Integration.api\bin\Release\net7.0\runtimes\win-x64\native\gssapi64.dll
+C:\Users\Ahmed Sameh\Desktop\V1\Integration.api\Integration.api\bin\Release\net7.0\runtimes\win-x64\native\k5sprt64.dll
+C:\Users\Ahmed Sameh\Desktop\V1\Integration.api\Integration.api\bin\Release\net7.0\runtimes\win-x64\native\krb5_64.dll
+C:\Users\Ahmed Sameh\Desktop\V1\Integration.api\Integration.api\bin\Release\net7.0\runtimes\win-x64\native\krbcc64.dll
+C:\Users\Ahmed Sameh\Desktop\V1\Integration.api\Integration.api\bin\Release\net7.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+C:\Users\Ahmed Sameh\Desktop\V1\Integration.api\Integration.api\bin\Release\net7.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+C:\Users\Ahmed Sameh\Desktop\V1\Integration.api\Integration.api\bin\Release\net7.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+C:\Users\Ahmed Sameh\Desktop\V1\Integration.api\Integration.api\bin\Release\net7.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Ahmed Sameh\Desktop\V1\Integration.api\Integration.api\bin\Release\net7.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+C:\Users\Ahmed Sameh\Desktop\V1\Integration.api\Integration.api\bin\Release\net7.0\Integration.business.dll
+C:\Users\Ahmed Sameh\Desktop\V1\Integration.api\Integration.api\bin\Release\net7.0\Integration.data.dll
+C:\Users\Ahmed Sameh\Desktop\V1\Integration.api\Integration.api\bin\Release\net7.0\Integration.business.pdb
+C:\Users\Ahmed Sameh\Desktop\V1\Integration.api\Integration.api\bin\Release\net7.0\Integration.data.pdb
+C:\Users\Ahmed Sameh\Desktop\V1\Integration.api\Integration.api\obj\Release\net7.0\Integration.api.csproj.AssemblyReference.cache
+C:\Users\Ahmed Sameh\Desktop\V1\Integration.api\Integration.api\obj\Release\net7.0\Integration.api.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Ahmed Sameh\Desktop\V1\Integration.api\Integration.api\obj\Release\net7.0\Integration.api.AssemblyInfoInputs.cache
+C:\Users\Ahmed Sameh\Desktop\V1\Integration.api\Integration.api\obj\Release\net7.0\Integration.api.AssemblyInfo.cs
+C:\Users\Ahmed Sameh\Desktop\V1\Integration.api\Integration.api\obj\Release\net7.0\Integration.api.csproj.CoreCompileInputs.cache
+C:\Users\Ahmed Sameh\Desktop\V1\Integration.api\Integration.api\obj\Release\net7.0\Integration.api.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Ahmed Sameh\Desktop\V1\Integration.api\Integration.api\obj\Release\net7.0\Integration.api.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Ahmed Sameh\Desktop\V1\Integration.api\Integration.api\obj\Release\net7.0\scopedcss\bundle\Integration.api.styles.css
+C:\Users\Ahmed Sameh\Desktop\V1\Integration.api\Integration.api\obj\Release\net7.0\staticwebassets.build.json
+C:\Users\Ahmed Sameh\Desktop\V1\Integration.api\Integration.api\obj\Release\net7.0\staticwebassets.development.json
+C:\Users\Ahmed Sameh\Desktop\V1\Integration.api\Integration.api\obj\Release\net7.0\staticwebassets.build.endpoints.json
+C:\Users\Ahmed Sameh\Desktop\V1\Integration.api\Integration.api\obj\Release\net7.0\staticwebassets\msbuild.Integration.api.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\Ahmed Sameh\Desktop\V1\Integration.api\Integration.api\obj\Release\net7.0\staticwebassets\msbuild.Integration.api.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+C:\Users\Ahmed Sameh\Desktop\V1\Integration.api\Integration.api\obj\Release\net7.0\staticwebassets\msbuild.build.Integration.api.props
+C:\Users\Ahmed Sameh\Desktop\V1\Integration.api\Integration.api\obj\Release\net7.0\staticwebassets\msbuild.buildMultiTargeting.Integration.api.props
+C:\Users\Ahmed Sameh\Desktop\V1\Integration.api\Integration.api\obj\Release\net7.0\staticwebassets\msbuild.buildTransitive.Integration.api.props
+C:\Users\Ahmed Sameh\Desktop\V1\Integration.api\Integration.api\obj\Release\net7.0\staticwebassets.pack.json
+C:\Users\Ahmed Sameh\Desktop\V1\Integration.api\Integration.api\obj\Release\net7.0\staticwebassets.upToDateCheck.txt
+C:\Users\Ahmed Sameh\Desktop\V1\Integration.api\Integration.api\obj\Release\net7.0\Integrat.031CA4F9.Up2Date
+C:\Users\Ahmed Sameh\Desktop\V1\Integration.api\Integration.api\obj\Release\net7.0\Integration.api.dll
+C:\Users\Ahmed Sameh\Desktop\V1\Integration.api\Integration.api\obj\Release\net7.0\refint\Integration.api.dll
+C:\Users\Ahmed Sameh\Desktop\V1\Integration.api\Integration.api\obj\Release\net7.0\Integration.api.pdb
+C:\Users\Ahmed Sameh\Desktop\V1\Integration.api\Integration.api\obj\Release\net7.0\Integration.api.genruntimeconfig.cache
+C:\Users\Ahmed Sameh\Desktop\V1\Integration.api\Integration.api\obj\Release\net7.0\ref\Integration.api.dll
+D:\TrueTech\V1\Integration.api\Integration.api\bin\Release\net7.0\appsettings.Development.json
+D:\TrueTech\V1\Integration.api\Integration.api\bin\Release\net7.0\appsettings.json
+D:\TrueTech\V1\Integration.api\Integration.api\bin\Release\net7.0\Integration.api.staticwebassets.endpoints.json
+D:\TrueTech\V1\Integration.api\Integration.api\bin\Release\net7.0\Integration.api.exe
+D:\TrueTech\V1\Integration.api\Integration.api\bin\Release\net7.0\Integration.api.deps.json
+D:\TrueTech\V1\Integration.api\Integration.api\bin\Release\net7.0\Integration.api.runtimeconfig.json
+D:\TrueTech\V1\Integration.api\Integration.api\bin\Release\net7.0\Integration.api.dll
+D:\TrueTech\V1\Integration.api\Integration.api\bin\Release\net7.0\Integration.api.pdb
+D:\TrueTech\V1\Integration.api\Integration.api\bin\Release\net7.0\Azure.Core.dll
+D:\TrueTech\V1\Integration.api\Integration.api\bin\Release\net7.0\Azure.Identity.dll
+D:\TrueTech\V1\Integration.api\Integration.api\bin\Release\net7.0\BouncyCastle.Cryptography.dll
+D:\TrueTech\V1\Integration.api\Integration.api\bin\Release\net7.0\Google.Protobuf.dll
+D:\TrueTech\V1\Integration.api\Integration.api\bin\Release\net7.0\Humanizer.dll
+D:\TrueTech\V1\Integration.api\Integration.api\bin\Release\net7.0\K4os.Compression.LZ4.dll
+D:\TrueTech\V1\Integration.api\Integration.api\bin\Release\net7.0\K4os.Compression.LZ4.Streams.dll
+D:\TrueTech\V1\Integration.api\Integration.api\bin\Release\net7.0\K4os.Hash.xxHash.dll
+D:\TrueTech\V1\Integration.api\Integration.api\bin\Release\net7.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+D:\TrueTech\V1\Integration.api\Integration.api\bin\Release\net7.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+D:\TrueTech\V1\Integration.api\Integration.api\bin\Release\net7.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+D:\TrueTech\V1\Integration.api\Integration.api\bin\Release\net7.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+D:\TrueTech\V1\Integration.api\Integration.api\bin\Release\net7.0\Microsoft.AspNetCore.OpenApi.dll
+D:\TrueTech\V1\Integration.api\Integration.api\bin\Release\net7.0\Microsoft.Bcl.AsyncInterfaces.dll
+D:\TrueTech\V1\Integration.api\Integration.api\bin\Release\net7.0\Microsoft.Data.SqlClient.dll
+D:\TrueTech\V1\Integration.api\Integration.api\bin\Release\net7.0\Microsoft.EntityFrameworkCore.dll
+D:\TrueTech\V1\Integration.api\Integration.api\bin\Release\net7.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\TrueTech\V1\Integration.api\Integration.api\bin\Release\net7.0\Microsoft.EntityFrameworkCore.Design.dll
+D:\TrueTech\V1\Integration.api\Integration.api\bin\Release\net7.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\TrueTech\V1\Integration.api\Integration.api\bin\Release\net7.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+D:\TrueTech\V1\Integration.api\Integration.api\bin\Release\net7.0\Microsoft.Extensions.DependencyModel.dll
+D:\TrueTech\V1\Integration.api\Integration.api\bin\Release\net7.0\Microsoft.Extensions.Identity.Core.dll
+D:\TrueTech\V1\Integration.api\Integration.api\bin\Release\net7.0\Microsoft.Extensions.Identity.Stores.dll
+D:\TrueTech\V1\Integration.api\Integration.api\bin\Release\net7.0\Microsoft.Extensions.Options.dll
+D:\TrueTech\V1\Integration.api\Integration.api\bin\Release\net7.0\Microsoft.Identity.Client.dll
+D:\TrueTech\V1\Integration.api\Integration.api\bin\Release\net7.0\Microsoft.Identity.Client.Extensions.Msal.dll
+D:\TrueTech\V1\Integration.api\Integration.api\bin\Release\net7.0\Microsoft.IdentityModel.Abstractions.dll
+D:\TrueTech\V1\Integration.api\Integration.api\bin\Release\net7.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\TrueTech\V1\Integration.api\Integration.api\bin\Release\net7.0\Microsoft.IdentityModel.Logging.dll
+D:\TrueTech\V1\Integration.api\Integration.api\bin\Release\net7.0\Microsoft.IdentityModel.Protocols.dll
+D:\TrueTech\V1\Integration.api\Integration.api\bin\Release\net7.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\TrueTech\V1\Integration.api\Integration.api\bin\Release\net7.0\Microsoft.IdentityModel.Tokens.dll
+D:\TrueTech\V1\Integration.api\Integration.api\bin\Release\net7.0\Microsoft.OpenApi.dll
+D:\TrueTech\V1\Integration.api\Integration.api\bin\Release\net7.0\Microsoft.SqlServer.Server.dll
+D:\TrueTech\V1\Integration.api\Integration.api\bin\Release\net7.0\Microsoft.Win32.SystemEvents.dll
+D:\TrueTech\V1\Integration.api\Integration.api\bin\Release\net7.0\Mono.TextTemplating.dll
+D:\TrueTech\V1\Integration.api\Integration.api\bin\Release\net7.0\MySql.Data.dll
+D:\TrueTech\V1\Integration.api\Integration.api\bin\Release\net7.0\MySql.EntityFrameworkCore.dll
+D:\TrueTech\V1\Integration.api\Integration.api\bin\Release\net7.0\Swashbuckle.AspNetCore.Swagger.dll
+D:\TrueTech\V1\Integration.api\Integration.api\bin\Release\net7.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\TrueTech\V1\Integration.api\Integration.api\bin\Release\net7.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\TrueTech\V1\Integration.api\Integration.api\bin\Release\net7.0\System.CodeDom.dll
+D:\TrueTech\V1\Integration.api\Integration.api\bin\Release\net7.0\System.Configuration.ConfigurationManager.dll
+D:\TrueTech\V1\Integration.api\Integration.api\bin\Release\net7.0\System.Drawing.Common.dll
+D:\TrueTech\V1\Integration.api\Integration.api\bin\Release\net7.0\System.IdentityModel.Tokens.Jwt.dll
+D:\TrueTech\V1\Integration.api\Integration.api\bin\Release\net7.0\System.Memory.Data.dll
+D:\TrueTech\V1\Integration.api\Integration.api\bin\Release\net7.0\System.Runtime.Caching.dll
+D:\TrueTech\V1\Integration.api\Integration.api\bin\Release\net7.0\System.Security.Cryptography.ProtectedData.dll
+D:\TrueTech\V1\Integration.api\Integration.api\bin\Release\net7.0\System.Security.Permissions.dll
+D:\TrueTech\V1\Integration.api\Integration.api\bin\Release\net7.0\System.Windows.Extensions.dll
+D:\TrueTech\V1\Integration.api\Integration.api\bin\Release\net7.0\ZstdSharp.dll
+D:\TrueTech\V1\Integration.api\Integration.api\bin\Release\net7.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+D:\TrueTech\V1\Integration.api\Integration.api\bin\Release\net7.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+D:\TrueTech\V1\Integration.api\Integration.api\bin\Release\net7.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+D:\TrueTech\V1\Integration.api\Integration.api\bin\Release\net7.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\TrueTech\V1\Integration.api\Integration.api\bin\Release\net7.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\TrueTech\V1\Integration.api\Integration.api\bin\Release\net7.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+D:\TrueTech\V1\Integration.api\Integration.api\bin\Release\net7.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+D:\TrueTech\V1\Integration.api\Integration.api\bin\Release\net7.0\runtimes\win-x64\native\comerr64.dll
+D:\TrueTech\V1\Integration.api\Integration.api\bin\Release\net7.0\runtimes\win-x64\native\gssapi64.dll
+D:\TrueTech\V1\Integration.api\Integration.api\bin\Release\net7.0\runtimes\win-x64\native\k5sprt64.dll
+D:\TrueTech\V1\Integration.api\Integration.api\bin\Release\net7.0\runtimes\win-x64\native\krb5_64.dll
+D:\TrueTech\V1\Integration.api\Integration.api\bin\Release\net7.0\runtimes\win-x64\native\krbcc64.dll
+D:\TrueTech\V1\Integration.api\Integration.api\bin\Release\net7.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+D:\TrueTech\V1\Integration.api\Integration.api\bin\Release\net7.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+D:\TrueTech\V1\Integration.api\Integration.api\bin\Release\net7.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+D:\TrueTech\V1\Integration.api\Integration.api\bin\Release\net7.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+D:\TrueTech\V1\Integration.api\Integration.api\bin\Release\net7.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+D:\TrueTech\V1\Integration.api\Integration.api\bin\Release\net7.0\Integration.business.dll
+D:\TrueTech\V1\Integration.api\Integration.api\bin\Release\net7.0\Integration.data.dll
+D:\TrueTech\V1\Integration.api\Integration.api\bin\Release\net7.0\Integration.business.pdb
+D:\TrueTech\V1\Integration.api\Integration.api\bin\Release\net7.0\Integration.data.pdb
+D:\TrueTech\V1\Integration.api\Integration.api\obj\Release\net7.0\Integration.api.csproj.AssemblyReference.cache
+D:\TrueTech\V1\Integration.api\Integration.api\obj\Release\net7.0\Integration.api.GeneratedMSBuildEditorConfig.editorconfig
+D:\TrueTech\V1\Integration.api\Integration.api\obj\Release\net7.0\Integration.api.AssemblyInfoInputs.cache
+D:\TrueTech\V1\Integration.api\Integration.api\obj\Release\net7.0\Integration.api.AssemblyInfo.cs
+D:\TrueTech\V1\Integration.api\Integration.api\obj\Release\net7.0\Integration.api.csproj.CoreCompileInputs.cache
+D:\TrueTech\V1\Integration.api\Integration.api\obj\Release\net7.0\Integration.api.MvcApplicationPartsAssemblyInfo.cs
+D:\TrueTech\V1\Integration.api\Integration.api\obj\Release\net7.0\Integration.api.MvcApplicationPartsAssemblyInfo.cache
+D:\TrueTech\V1\Integration.api\Integration.api\obj\Release\net7.0\scopedcss\bundle\Integration.api.styles.css
+D:\TrueTech\V1\Integration.api\Integration.api\obj\Release\net7.0\staticwebassets.build.json
+D:\TrueTech\V1\Integration.api\Integration.api\obj\Release\net7.0\staticwebassets.development.json
+D:\TrueTech\V1\Integration.api\Integration.api\obj\Release\net7.0\staticwebassets.build.endpoints.json
+D:\TrueTech\V1\Integration.api\Integration.api\obj\Release\net7.0\staticwebassets\msbuild.Integration.api.Microsoft.AspNetCore.StaticWebAssets.props
+D:\TrueTech\V1\Integration.api\Integration.api\obj\Release\net7.0\staticwebassets\msbuild.Integration.api.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+D:\TrueTech\V1\Integration.api\Integration.api\obj\Release\net7.0\staticwebassets\msbuild.build.Integration.api.props
+D:\TrueTech\V1\Integration.api\Integration.api\obj\Release\net7.0\staticwebassets\msbuild.buildMultiTargeting.Integration.api.props
+D:\TrueTech\V1\Integration.api\Integration.api\obj\Release\net7.0\staticwebassets\msbuild.buildTransitive.Integration.api.props
+D:\TrueTech\V1\Integration.api\Integration.api\obj\Release\net7.0\staticwebassets.pack.json
+D:\TrueTech\V1\Integration.api\Integration.api\obj\Release\net7.0\staticwebassets.upToDateCheck.txt
+D:\TrueTech\V1\Integration.api\Integration.api\obj\Release\net7.0\Integrat.031CA4F9.Up2Date
+D:\TrueTech\V1\Integration.api\Integration.api\obj\Release\net7.0\Integration.api.dll
+D:\TrueTech\V1\Integration.api\Integration.api\obj\Release\net7.0\refint\Integration.api.dll
+D:\TrueTech\V1\Integration.api\Integration.api\obj\Release\net7.0\Integration.api.pdb
+D:\TrueTech\V1\Integration.api\Integration.api\obj\Release\net7.0\Integration.api.genruntimeconfig.cache
+D:\TrueTech\V1\Integration.api\Integration.api\obj\Release\net7.0\ref\Integration.api.dll
+D:\TrueTech\V1\Integration.api\Integration.api\obj\Release\net7.0\Integration.api.sourcelink.json
+D:\TrueTech\V1\Integration.api\Integration.api\bin\Release\net7.0\Integration.api.staticwebassets.runtime.json
+D:\TrueTech\V1\Integration.api\Integration.api\bin\Release\net7.0\Hangfire.AspNetCore.dll
+D:\TrueTech\V1\Integration.api\Integration.api\bin\Release\net7.0\Hangfire.Core.dll
+D:\TrueTech\V1\Integration.api\Integration.api\bin\Release\net7.0\Hangfire.NetCore.dll
+D:\TrueTech\V1\Integration.api\Integration.api\bin\Release\net7.0\Hangfire.SqlServer.dll
+D:\TrueTech\V1\Integration.api\Integration.api\bin\Release\net7.0\Newtonsoft.Json.dll
+D:\TrueTech\V1\Integration.api\Integration.api\bin\Release\net7.0\ca\Hangfire.Core.resources.dll
+D:\TrueTech\V1\Integration.api\Integration.api\bin\Release\net7.0\de\Hangfire.Core.resources.dll
+D:\TrueTech\V1\Integration.api\Integration.api\bin\Release\net7.0\es\Hangfire.Core.resources.dll
+D:\TrueTech\V1\Integration.api\Integration.api\bin\Release\net7.0\fa\Hangfire.Core.resources.dll
+D:\TrueTech\V1\Integration.api\Integration.api\bin\Release\net7.0\fr\Hangfire.Core.resources.dll
+D:\TrueTech\V1\Integration.api\Integration.api\bin\Release\net7.0\nb\Hangfire.Core.resources.dll
+D:\TrueTech\V1\Integration.api\Integration.api\bin\Release\net7.0\nl\Hangfire.Core.resources.dll
+D:\TrueTech\V1\Integration.api\Integration.api\bin\Release\net7.0\pt-BR\Hangfire.Core.resources.dll
+D:\TrueTech\V1\Integration.api\Integration.api\bin\Release\net7.0\pt-PT\Hangfire.Core.resources.dll
+D:\TrueTech\V1\Integration.api\Integration.api\bin\Release\net7.0\pt\Hangfire.Core.resources.dll
+D:\TrueTech\V1\Integration.api\Integration.api\bin\Release\net7.0\sv\Hangfire.Core.resources.dll
+D:\TrueTech\V1\Integration.api\Integration.api\bin\Release\net7.0\tr-TR\Hangfire.Core.resources.dll
+D:\TrueTech\V1\Integration.api\Integration.api\bin\Release\net7.0\zh-TW\Hangfire.Core.resources.dll
+D:\TrueTech\V1\Integration.api\Integration.api\bin\Release\net7.0\zh\Hangfire.Core.resources.dll

@@ -1,0 +1,350 @@
+[
+  {
+    "ContainingType": "EcommerceWebsite.Controllers.AuthController",
+    "Method": "LogIn",
+    "RelativePath": "api/Auth/LogIn",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "logInDTo",
+        "Type": "AutoRepairPro.Business.DTO.AuthDTOs.LogInDTo",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DataBaseController",
+    "Method": "AddColumn",
+    "RelativePath": "api/DataBase/AddColumn",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "columnToAdd",
+        "Type": "Integration.business.DTOs.FromDTOs.ColumnToAdd",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DataBaseController",
+    "Method": "addDataBase",
+    "RelativePath": "api/DataBase/addDataBase",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "DbToAddDTO",
+        "Type": "Integration.business.DTOs.FromDTOs.DbToAddDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DataBaseController",
+    "Method": "GetDataBases",
+    "RelativePath": "api/DataBase/DataBases",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DataBaseController",
+    "Method": "GetSyncTypes",
+    "RelativePath": "api/DataBase/DeleteDataBase/{dbId}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dbId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DataBaseController",
+    "Method": "editDataBase",
+    "RelativePath": "api/DataBase/editDataBase",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "DbToEditDTO",
+        "Type": "Integration.business.DTOs.FromDTOs.DbToEditDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DataBaseController",
+    "Method": "GetDataBase",
+    "RelativePath": "api/DataBase/GetDataBase/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DataBaseController",
+    "Method": "GetSyncTypes",
+    "RelativePath": "api/DataBase/GetDataBaseTypes",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Integration.api.Controllers.DataBaseMetaDataController",
+    "Method": "CheckConnection",
+    "RelativePath": "api/DataBaseMetaData/check-connection",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "DataBaseId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Integration.api.Controllers.DataBaseMetaDataController",
+    "Method": "GetAllColumns",
+    "RelativePath": "api/DataBaseMetaData/columns",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "DataBaseId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "tableName",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Integration.api.Controllers.DataBaseMetaDataController",
+    "Method": "GetAllStandards",
+    "RelativePath": "api/DataBaseMetaData/GetStatics",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Integration.api.Controllers.DataBaseMetaDataController",
+    "Method": "GetAllTables",
+    "RelativePath": "api/DataBaseMetaData/tables",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "DataBaseId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Integration.api.Controllers.ModuleController",
+    "Method": "AutoSync",
+    "RelativePath": "api/Module/AutoSync",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "value",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Integration.api.Controllers.ModuleController",
+    "Method": "CreateModule",
+    "RelativePath": "api/Module/CreateModule",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "moduleForCreateDTO",
+        "Type": "Integration.business.DTOs.ModuleDTOs.ModuleForCreateDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Integration.api.Controllers.ModuleController",
+    "Method": "DeleteModule",
+    "RelativePath": "api/Module/DeleteModule/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Integration.api.Controllers.ModuleController",
+    "Method": "DisableModule",
+    "RelativePath": "api/Module/DisableModule",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Integration.api.Controllers.ModuleController",
+    "Method": "EditModule",
+    "RelativePath": "api/Module/EditModule",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "moduleForEditDTO",
+        "Type": "Integration.business.DTOs.ModuleDTOs.ModuleForEditDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Integration.api.Controllers.ModuleController",
+    "Method": "EnableModule",
+    "RelativePath": "api/Module/EnableModule",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Integration.api.Controllers.ModuleController",
+    "Method": "GetAutoValue",
+    "RelativePath": "api/Module/GetAutoValue",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Integration.api.Controllers.ModuleController",
+    "Method": "GetModule",
+    "RelativePath": "api/Module/GetModule/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Integration.api.Controllers.ModuleController",
+    "Method": "GetModules",
+    "RelativePath": "api/Module/Modules",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Integration.api.Controllers.ModuleController",
+    "Method": "Sync",
+    "RelativePath": "api/Module/Sync",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "ModuleId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "syncType",
+        "Type": "Integration.data.Models.SyncType",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Integration.api.Controllers.ReferenceController",
+    "Method": "AddReference",
+    "RelativePath": "api/Reference/AddReference",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "referenceForCreateDTO",
+        "Type": "Integration.business.DTOs.ReferenceDTos.ReferenceForCreateDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

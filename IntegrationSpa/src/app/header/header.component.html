@@ -1,0 +1,68 @@
+<nav class="navbar navbar-expand-lg bg-light shadow-sm">
+  <div class="container-fluid">
+    <a
+      class="navbar-brand fw-bold text-primary"
+      style="cursor: pointer"
+      routerLink="/databases"
+    >
+      <i class="fa-solid fa-right-left me-2"></i>
+      Integration
+    </a>
+
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarNav"
+      aria-controls="navbarNav"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <div class="navbar-nav me-auto" *ngIf="AuthService.isLoggedIn()">
+        <button
+          routerLink="/databases"
+          routerLinkActive="active"
+          [routerLinkActiveOptions]="{ exact: true }"
+          style="font-weight: 600"
+          class="d-block nav-link btn btn-outline-primary ms-3 me-3 text-nowrap d-flex align-items-center Update"
+        >
+          <i class="fas fa-database me-2"></i> Databases
+        </button>
+
+        <button
+          routerLink="/"
+          routerLinkActive="active"
+          [routerLinkActiveOptions]="{ exact: true }"
+          style="font-weight: 600"
+          class="d-block nav-link btn btn-outline-primary ms-3 me-3 text-nowrap d-flex align-items-center Update"
+        >
+          <i class="fas fa-cubes me-2"></i> Modules
+        </button>
+      </div>
+
+      <div class="navbar-nav ms-auto d-flex align-items-center lgout">
+        <button
+          *ngIf="!AuthService.isLoggedIn()"
+          type="button"
+          class="btn btn-outline-success me-3 d-flex align-items-center"
+          routerLink="auth/login"
+          routerLinkActive="active"
+        >
+          <i class="fas fa-sign-in-alt me-2"></i> Login
+        </button>
+        <button
+          *ngIf="AuthService.isLoggedIn()"
+          type="button"
+          class="btn btn-outline-danger d-flex align-items-center"
+          (click)="LogOut()"
+        >
+          <i class="fas fa-sign-out-alt me-2"></i> Logout
+        </button>
+      </div>
+    </div>
+  </div>
+</nav>

@@ -1,0 +1,1030 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "Integration.api",
+    "version": "1.0"
+  },
+  "paths": {
+    "/api/Auth/LogIn": {
+      "post": {
+        "tags": [
+          "Auth"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/LogInDTo"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/LogInDTo"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/LogInDTo"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/DataBase/addDataBase": {
+      "post": {
+        "tags": [
+          "DataBase"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DbToAddDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DbToAddDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/DbToAddDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/DataBase/editDataBase": {
+      "put": {
+        "tags": [
+          "DataBase"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DbToEditDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DbToEditDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/DbToEditDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/DataBase/GetDataBase/{id}": {
+      "get": {
+        "tags": [
+          "DataBase"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "style": "simple",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/DataBase/DataBases": {
+      "get": {
+        "tags": [
+          "DataBase"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/DataBase/GetDataBaseTypes": {
+      "get": {
+        "tags": [
+          "DataBase"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/DataBase/DeleteDataBase/{dbId}": {
+      "delete": {
+        "tags": [
+          "DataBase"
+        ],
+        "parameters": [
+          {
+            "name": "dbId",
+            "in": "path",
+            "required": true,
+            "style": "simple",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/DataBase/AddColumn": {
+      "post": {
+        "tags": [
+          "DataBase"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ColumnToAdd"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ColumnToAdd"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/ColumnToAdd"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/DataBaseMetaData/check-connection": {
+      "get": {
+        "tags": [
+          "DataBaseMetaData"
+        ],
+        "parameters": [
+          {
+            "name": "DataBaseId",
+            "in": "query",
+            "style": "form",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/DataBaseMetaData/tables": {
+      "get": {
+        "tags": [
+          "DataBaseMetaData"
+        ],
+        "parameters": [
+          {
+            "name": "DataBaseId",
+            "in": "query",
+            "style": "form",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/DataBaseMetaData/columns": {
+      "get": {
+        "tags": [
+          "DataBaseMetaData"
+        ],
+        "parameters": [
+          {
+            "name": "DataBaseId",
+            "in": "query",
+            "style": "form",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "tableName",
+            "in": "query",
+            "style": "form",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/DataBaseMetaData/GetStatics": {
+      "get": {
+        "tags": [
+          "DataBaseMetaData"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Module/CreateModule": {
+      "post": {
+        "tags": [
+          "Module"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ModuleForCreateDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ModuleForCreateDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/ModuleForCreateDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Module/Sync": {
+      "get": {
+        "tags": [
+          "Module"
+        ],
+        "parameters": [
+          {
+            "name": "ModuleId",
+            "in": "query",
+            "style": "form",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "syncType",
+            "in": "query",
+            "style": "form",
+            "schema": {
+              "$ref": "#/components/schemas/SyncType"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Module/EditModule": {
+      "post": {
+        "tags": [
+          "Module"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ModuleForEditDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ModuleForEditDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/ModuleForEditDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Module/Modules": {
+      "get": {
+        "tags": [
+          "Module"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Module/GetModule/{id}": {
+      "get": {
+        "tags": [
+          "Module"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "style": "simple",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Module/DeleteModule/{id}": {
+      "delete": {
+        "tags": [
+          "Module"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "style": "simple",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Module/DisableModule": {
+      "get": {
+        "tags": [
+          "Module"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "style": "form",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Module/EnableModule": {
+      "get": {
+        "tags": [
+          "Module"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "style": "form",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Module/AutoSync": {
+      "get": {
+        "tags": [
+          "Module"
+        ],
+        "parameters": [
+          {
+            "name": "value",
+            "in": "query",
+            "style": "form",
+            "schema": {
+              "type": "boolean"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Module/GetAutoValue": {
+      "get": {
+        "tags": [
+          "Module"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Reference/AddReference": {
+      "post": {
+        "tags": [
+          "Reference"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ReferenceForCreateDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ReferenceForCreateDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/ReferenceForCreateDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "ColumnMapping": {
+        "type": "object",
+        "properties": {
+          "columnTo": {
+            "type": "string",
+            "nullable": true
+          },
+          "columnFrom": {
+            "type": "string",
+            "nullable": true
+          },
+          "key": {
+            "type": "string",
+            "nullable": true
+          },
+          "isReference": {
+            "type": "boolean"
+          }
+        },
+        "additionalProperties": false
+      },
+      "ColumnToAdd": {
+        "type": "object",
+        "properties": {
+          "dbId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "query": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "DbToAddDTO": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "nullable": true
+          },
+          "connection": {
+            "type": "string",
+            "nullable": true
+          },
+          "dataBaseType": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "DbToEditDTO": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "name": {
+            "type": "string",
+            "nullable": true
+          },
+          "connection": {
+            "type": "string",
+            "nullable": true
+          },
+          "dataBaseType": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "LogInDTo": {
+        "type": "object",
+        "properties": {
+          "email": {
+            "type": "string",
+            "nullable": true
+          },
+          "password": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "ModuleForCreateDTO": {
+        "type": "object",
+        "properties": {
+          "moduleName": {
+            "type": "string",
+            "nullable": true
+          },
+          "priority": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "tableFromName": {
+            "type": "string",
+            "nullable": true
+          },
+          "tableToName": {
+            "type": "string",
+            "nullable": true
+          },
+          "localIdName": {
+            "type": "string",
+            "nullable": true
+          },
+          "toPrimaryKeyName": {
+            "type": "string",
+            "nullable": true
+          },
+          "fromPrimaryKeyName": {
+            "type": "string",
+            "nullable": true
+          },
+          "cloudIdName": {
+            "type": "string",
+            "nullable": true
+          },
+          "toDbId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "fromDbId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "toInsertFlagName": {
+            "type": "string",
+            "nullable": true
+          },
+          "toUpdateFlagName": {
+            "type": "string",
+            "nullable": true
+          },
+          "fromInsertFlagName": {
+            "type": "string",
+            "nullable": true
+          },
+          "fromUpdateFlagName": {
+            "type": "string",
+            "nullable": true
+          },
+          "syncType": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "columns": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ColumnMapping"
+            },
+            "nullable": true
+          },
+          "references": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Reference"
+            },
+            "nullable": true
+          },
+          "toDeleteFlagName": {
+            "type": "string",
+            "nullable": true
+          },
+          "fromDeleteFlagName": {
+            "type": "string",
+            "nullable": true
+          },
+          "condition": {
+            "type": "string",
+            "nullable": true
+          },
+          "operations": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/OperationDto"
+            },
+            "nullable": true
+          },
+          "switchedModule": {
+            "type": "boolean"
+          }
+        },
+        "additionalProperties": false
+      },
+      "ModuleForEditDTO": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "moduleName": {
+            "type": "string",
+            "nullable": true
+          },
+          "priority": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "tableFromName": {
+            "type": "string",
+            "nullable": true
+          },
+          "tableToName": {
+            "type": "string",
+            "nullable": true
+          },
+          "toPrimaryKeyName": {
+            "type": "string",
+            "nullable": true
+          },
+          "fromPrimaryKeyName": {
+            "type": "string",
+            "nullable": true
+          },
+          "localIdName": {
+            "type": "string",
+            "nullable": true
+          },
+          "cloudIdName": {
+            "type": "string",
+            "nullable": true
+          },
+          "toDbId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "fromDbId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "toInsertFlagName": {
+            "type": "string",
+            "nullable": true
+          },
+          "toUpdateFlagName": {
+            "type": "string",
+            "nullable": true
+          },
+          "fromInsertFlagName": {
+            "type": "string",
+            "nullable": true
+          },
+          "fromUpdateFlagName": {
+            "type": "string",
+            "nullable": true
+          },
+          "columns": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ColumnMapping"
+            },
+            "nullable": true
+          },
+          "references": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Reference"
+            },
+            "nullable": true
+          },
+          "operations": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/OperationDto"
+            },
+            "nullable": true
+          },
+          "toDeleteFlagName": {
+            "type": "string",
+            "nullable": true
+          },
+          "fromDeleteFlagName": {
+            "type": "string",
+            "nullable": true
+          },
+          "condition": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "OperationDto": {
+        "type": "object",
+        "properties": {
+          "opTableFromName": {
+            "type": "string",
+            "nullable": true
+          },
+          "opTableToName": {
+            "type": "string",
+            "nullable": true
+          },
+          "opToInsertFlag": {
+            "type": "string",
+            "nullable": true
+          },
+          "opToUpdateFlag": {
+            "type": "string",
+            "nullable": true
+          },
+          "opToDeleteFlag": {
+            "type": "string",
+            "nullable": true
+          },
+          "opFromInsertFlag": {
+            "type": "string",
+            "nullable": true
+          },
+          "opFromUpdateFlag": {
+            "type": "string",
+            "nullable": true
+          },
+          "opFromDeleteFlag": {
+            "type": "string",
+            "nullable": true
+          },
+          "opFromInsertDate": {
+            "type": "string",
+            "nullable": true
+          },
+          "opFromItemIdName": {
+            "type": "string",
+            "nullable": true
+          },
+          "opToItemLocalIdName": {
+            "type": "string",
+            "nullable": true
+          },
+          "opFromItemPrice": {
+            "type": "string",
+            "nullable": true
+          },
+          "opToItemPrice": {
+            "type": "string",
+            "nullable": true
+          },
+          "opCondition": {
+            "type": "string",
+            "nullable": true
+          },
+          "cloudIdName": {
+            "type": "string",
+            "nullable": true
+          },
+          "customerIdName": {
+            "type": "string",
+            "nullable": true
+          },
+          "storeIdName": {
+            "type": "string",
+            "nullable": true
+          },
+          "opToPrimary": {
+            "type": "string",
+            "nullable": true
+          },
+          "opCustomerReference": {
+            "type": "string",
+            "nullable": true
+          },
+          "opProductReference": {
+            "type": "string",
+            "nullable": true
+          },
+          "opToCustomerId": {
+            "type": "string",
+            "nullable": true
+          },
+          "opToProductId": {
+            "type": "string",
+            "nullable": true
+          },
+          "opFromPrimary": {
+            "type": "string",
+            "nullable": true
+          },
+          "itemParent": {
+            "type": "string",
+            "nullable": true
+          },
+          "opInsertDate": {
+            "type": "string",
+            "nullable": true
+          },
+          "opUpdateDate": {
+            "type": "string",
+            "nullable": true
+          },
+          "opDeleteDate": {
+            "type": "string",
+            "nullable": true
+          },
+          "type": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "Reference": {
+        "type": "object",
+        "properties": {
+          "tableFromName": {
+            "type": "string",
+            "nullable": true
+          },
+          "localName": {
+            "type": "string",
+            "nullable": true
+          },
+          "primaryName": {
+            "type": "string",
+            "nullable": true
+          },
+          "alter": {
+            "type": "string",
+            "nullable": true
+          },
+          "key": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "ReferenceForCreateDTO": {
+        "type": "object",
+        "properties": {
+          "moduleId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "tableFromName": {
+            "type": "string",
+            "nullable": true
+          },
+          "localName": {
+            "type": "string",
+            "nullable": true
+          },
+          "primaryName": {
+            "type": "string",
+            "nullable": true
+          },
+          "alter": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "SyncType": {
+        "enum": [
+          0,
+          1
+        ],
+        "type": "integer",
+        "format": "int32"
+      }
+    }
+  }
+}

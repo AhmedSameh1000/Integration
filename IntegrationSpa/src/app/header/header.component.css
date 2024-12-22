@@ -1,0 +1,13 @@
+.nav-link.active {
+  color: white; /* Light color for active link */
+}
+
+@media (max-width: 991px) {
+  .Update {
+    width: auto !important; /* تأكد أن العرض يكون طبيعي */
+    padding-left: 10px !important;
+    margin-bottom: 10px;
+    max-width: max-content;
+    padding: 14px;
+  }
+}

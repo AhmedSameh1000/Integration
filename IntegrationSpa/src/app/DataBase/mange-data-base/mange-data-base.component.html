@@ -1,0 +1,98 @@
+<div class="container mt-5">
+  <div class="card shadow">
+    <div class="card-header bg-primary text-white">
+      <h4 class="mb-0">Add Database Configuration</h4>
+    </div>
+    <div class="card-body">
+      <!-- Bind the form to the Reactive Form -->
+      <form [formGroup]="DataBaseModule">
+        <div class="mb-3">
+          <label for="dbType" class="form-label">Database Type</label>
+          <select
+            class="form-select"
+            id="dbType"
+            formControlName="DataBaseType"
+          >
+            <option [value]="null" disabled>Select database type</option>
+            <option
+              [value]="type"
+              *ngFor="let type of DataBaseTypes; let i = index"
+            >
+              {{ type }}
+            </option>
+          </select>
+          <div
+            *ngIf="
+              DataBaseModule.get('databaseType')?.invalid &&
+              DataBaseModule.get('databaseType')?.touched
+            "
+            class="text-danger"
+          >
+            Database type is required.
+          </div>
+        </div>
+        <div class="mb-3">
+          <label for="dbName" class="form-label">Database Name</label>
+          <input
+            type="text"
+            class="form-control"
+            id="dbName"
+            formControlName="Name"
+            placeholder="Enter database name"
+          />
+          <div
+            *ngIf="
+              DataBaseModule.get('Name')?.invalid &&
+              DataBaseModule.get('Name')?.touched
+            "
+            class="text-danger"
+          >
+            Database name is required.
+          </div>
+        </div>
+        <div class="mb-3">
+          <label for="connectionString" class="form-label">
+            Connection String
+          </label>
+          <textarea
+            class="form-control"
+            id="connectionString"
+            formControlName="Connection"
+            rows="3"
+            placeholder="Enter connection string"
+          ></textarea>
+          <div
+            *ngIf="
+              DataBaseModule.get('ConnectionString')?.invalid &&
+              DataBaseModule.get('ConnectionString')?.touched
+            "
+            class="text-danger"
+          >
+            Connection string is required.
+          </div>
+        </div>
+
+        <div class="d-flex justify-content-end">
+          <button
+            *ngIf="!data"
+            type="button"
+            class="btn btn-primary"
+            [disabled]="DataBaseModule.invalid"
+            (click)="AddDatabase()"
+          >
+            Add
+          </button>
+          <button
+            *ngIf="data"
+            type="button"
+            class="btn btn-primary"
+            [disabled]="DataBaseModule.invalid"
+            (click)="SaveDataBase()"
+          >
+            Save
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

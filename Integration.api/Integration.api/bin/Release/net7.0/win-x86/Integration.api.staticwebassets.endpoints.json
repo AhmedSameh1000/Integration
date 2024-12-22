@@ -1,0 +1,88 @@
+{
+  "Version": 1,
+  "ManifestType": "Build",
+  "Endpoints": [
+    {
+      "Route": "Auto.json",
+      "AssetFile": "Auto.json",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "21"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/json"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"9M8AP8TMOUcgty0RokRWIA1cXbFpklwmVJhPHTL0aBY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 17 Dec 2024 10:44:04 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-9M8AP8TMOUcgty0RokRWIA1cXbFpklwmVJhPHTL0aBY="
+        }
+      ]
+    },
+    {
+      "Route": "Auto.or9qo1i568.json",
+      "AssetFile": "Auto.json",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "21"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/json"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"9M8AP8TMOUcgty0RokRWIA1cXbFpklwmVJhPHTL0aBY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 17 Dec 2024 10:44:04 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "or9qo1i568"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-9M8AP8TMOUcgty0RokRWIA1cXbFpklwmVJhPHTL0aBY="
+        },
+        {
+          "Name": "label",
+          "Value": "Auto.json"
+        }
+      ]
+    }
+  ]
+}

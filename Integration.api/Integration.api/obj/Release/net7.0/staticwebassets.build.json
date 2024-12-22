@@ -1,0 +1,125 @@
+{
+  "Version": 1,
+  "Hash": "2DlPbNnVPFc/mDQYz1sGdgay79NNT4Up1a+B7LxP1ws=",
+  "Source": "Integration.api",
+  "BasePath": "_content/Integration.api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "Integration.api\\wwwroot",
+      "Source": "Integration.api",
+      "ContentRoot": "D:\\TrueTech\\V1\\Integration.api\\Integration.api\\wwwroot\\",
+      "BasePath": "_content/Integration.api",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "D:\\TrueTech\\V1\\Integration.api\\Integration.api\\wwwroot\\Auto.json",
+      "SourceId": "Integration.api",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\TrueTech\\V1\\Integration.api\\Integration.api\\wwwroot\\",
+      "BasePath": "_content/Integration.api",
+      "RelativePath": "Auto#[.{fingerprint}]?.json",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "or9qo1i568",
+      "Integrity": "9M8AP8TMOUcgty0RokRWIA1cXbFpklwmVJhPHTL0aBY=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Auto.json"
+    }
+  ],
+  "Endpoints": [
+    {
+      "Route": "Auto.json",
+      "AssetFile": "D:\\TrueTech\\V1\\Integration.api\\Integration.api\\wwwroot\\Auto.json",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "21"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/json"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"9M8AP8TMOUcgty0RokRWIA1cXbFpklwmVJhPHTL0aBY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 17 Dec 2024 10:44:04 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-9M8AP8TMOUcgty0RokRWIA1cXbFpklwmVJhPHTL0aBY="
+        }
+      ]
+    },
+    {
+      "Route": "Auto.or9qo1i568.json",
+      "AssetFile": "D:\\TrueTech\\V1\\Integration.api\\Integration.api\\wwwroot\\Auto.json",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "21"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/json"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"9M8AP8TMOUcgty0RokRWIA1cXbFpklwmVJhPHTL0aBY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 17 Dec 2024 10:44:04 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "or9qo1i568"
+        },
+        {
+          "Name": "label",
+          "Value": "Auto.json"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-9M8AP8TMOUcgty0RokRWIA1cXbFpklwmVJhPHTL0aBY="
+        }
+      ]
+    }
+  ]
+}

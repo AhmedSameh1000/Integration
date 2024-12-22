@@ -1,0 +1,137 @@
+<form [formGroup]="FormGroup">
+  <div class="container mt-5 mb-5">
+    <div class="card">
+      <div class="card-header">
+        <h2 class="mb-0">Table Configuration</h2>
+      </div>
+      <div class="card-body">
+        <!-- Table Selection Section -->
+        <div class="mb-4 table-select">
+          <label for="tableSelect" class="form-label">Select Table</label>
+          <select class="form-select" id="tableSelect" formControlName="Table">
+            <option [value]="null" selected disabled>Choose Table</option>
+            <option value="{{ table }}" *ngFor="let table of Tables">
+              {{ table }}
+            </option>
+          </select>
+          <!-- Validation Message for Table -->
+          <div
+            *ngIf="
+              FormGroup.get('Table').invalid &&
+              (FormGroup.get('Table').dirty || FormGroup.get('Table').touched)
+            "
+            class="text-danger"
+          >
+            <small *ngIf="FormGroup.get('Table').hasError('required')"
+              >Table selection is required.</small
+            >
+          </div>
+        </div>
+
+        <!-- Column Configurations -->
+        <div id="columnsList">
+          <div class="column-entry card mb-3">
+            <div class="card-body">
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <label class="form-label">Column Name</label>
+                  <input
+                    type="text"
+                    class="form-control column-name"
+                    placeholder="Enter column name"
+                    formControlName="column"
+                  />
+                  <!-- Validation Message for Column Name -->
+                  <div
+                    *ngIf="
+                      FormGroup.get('column').invalid &&
+                      (FormGroup.get('column').dirty ||
+                        FormGroup.get('column').touched)
+                    "
+                    class="text-danger"
+                  >
+                    <small *ngIf="FormGroup.get('column').hasError('required')"
+                      >Column name is required.</small
+                    >
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label">Data Type</label>
+                  <select
+                    class="form-select column-type"
+                    formControlName="type"
+                  >
+                    <option [value]="null" disabled selected>
+                      Choose DataType
+                    </option>
+                    <option
+                      [value]="Datatype.value"
+                      *ngFor="let Datatype of DataTypes"
+                    >
+                      {{ Datatype.name }}
+                    </option>
+                  </select>
+                  <!-- Validation Message for Data Type -->
+                  <div
+                    *ngIf="
+                      FormGroup.get('type').invalid &&
+                      (FormGroup.get('type').dirty ||
+                        FormGroup.get('type').touched)
+                    "
+                    class="text-danger"
+                  >
+                    <small *ngIf="FormGroup.get('type').hasError('required')"
+                      >Data type is required.</small
+                    >
+                  </div>
+                </div>
+                <div>
+                  <div class="col-md-3">
+                    <label class="form-label">Options</label>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input column-nullable"
+                        type="checkbox"
+                        id="nullableCheck1"
+                        formControlName="AllowNULL"
+                      />
+                      <label class="form-check-label" for="nullableCheck1">
+                        Allow Null
+                      </label>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <label class="form-label">Options</label>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input column-nullable"
+                        type="checkbox"
+                        id="nullableCheck1"
+                        formControlName="primary"
+                      />
+                      <label class="form-check-label" for="nullableCheck1">
+                        Primary Key
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Action Buttons -->
+        <div class="mt-4 d-flex justify-content-end gap-2">
+          <button
+            type="button"
+            class="btn btn-primary"
+            (click)="saveConfiguration()"
+            [disabled]="FormGroup.invalid"
+          >
+            Save Configuration
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</form>

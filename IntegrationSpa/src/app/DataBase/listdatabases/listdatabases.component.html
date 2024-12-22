@@ -1,0 +1,53 @@
+<div class="container mt-4">
+  <div class="d-flex justify-content-end mt-3">
+    <button
+      mat-raised-button
+      color="primary"
+      (click)="OpenModuleForCreateDataBase()"
+    >
+      Add DataBase
+    </button>
+  </div>
+
+  <div class="mycontainer">
+    <div *ngFor="let db of DataBases" class="MyCard">
+      <mat-card>
+        <mat-card-header>
+          <mat-card-title>{{ db.name }}</mat-card-title>
+          <mat-card-subtitle>Type: {{ db.dataBaseType }}</mat-card-subtitle>
+        </mat-card-header>
+        <mat-card-content>
+          <p><strong>Database Type:</strong> {{ db.dataBaseType }}</p>
+        </mat-card-content>
+        <mat-card-actions class="d-flex gap-2">
+          <button
+            mat-raised-button
+            #btn
+            color="primary"
+            (click)="checkConnection(db, Icon, btn)"
+          >
+            <i class="fa-solid fa-link" #Icon></i>
+          </button>
+
+          <button mat-raised-button color="primary" (click)="Edit(db)">
+            <i class="fa-solid fa-pen-to-square"></i>
+          </button>
+          <button
+            mat-raised-button
+            color="primary"
+            (click)="MangeDataBase(db.id, db.dataBaseType)"
+          >
+            <i class="fa-solid fa-database"></i>
+          </button>
+          <button mat-raised-button color="warn" (click)="Delete(db.id)">
+            <i class="fa-solid fa-trash"></i>
+          </button>
+        </mat-card-actions>
+      </mat-card>
+    </div>
+  </div>
+
+  <div *ngIf="!DataBases?.length" class="mat-table-wrapper">
+    <mat-card class="mat-message-card"> No databases available. </mat-card>
+  </div>
+</div>

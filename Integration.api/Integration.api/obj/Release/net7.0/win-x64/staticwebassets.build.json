@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "MPv2D/tP/yYyvpvoTWlNdmrjtAlTBS4qDtRnyNdzN1A=",
+  "Source": "Integration.api",
+  "BasePath": "_content/Integration.api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

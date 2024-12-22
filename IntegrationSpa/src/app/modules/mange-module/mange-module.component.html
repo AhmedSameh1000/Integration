@@ -1,0 +1,1196 @@
+<form
+  [formGroup]="moduleForm"
+  (ngSubmit)="onSubmit()"
+  class="position-relative"
+>
+  <!-- Module Name Input -->
+
+  <div class="position-absolute" style="right: 10px; top: 5px">
+    <i class="fa-solid fa-x" style="cursor: pointer" matDialogClose=""></i>
+  </div>
+  <mat-tab-group class="p-3" [(selectedIndex)]="selectedTabIndex">
+    <mat-tab label="Basic">
+      <div class="d-flex justify-content-between mt-2 align-items-center">
+        <div style="width: 30%">
+          <label for="moduleName" class="form-label">Module Name</label>
+          <input
+            type="text"
+            class="form-control"
+            id="moduleName"
+            formControlName="moduleName"
+            required
+          />
+          <div
+            *ngIf="
+              moduleForm.get('moduleName')?.invalid &&
+              moduleForm.get('moduleName')?.touched
+            "
+            class="text-danger"
+          >
+            Name is required.
+          </div>
+        </div>
+
+        <div [ngClass]="{ 'd-none': data.Id != null }" style="width: 30%">
+          <label for="Type" class="form-label">Type</label>
+          <select
+            (change)="OnModuleTypeChange($event)"
+            class="form-control"
+            id="SyncType"
+            formControlName="SyncType"
+            required
+          >
+            <option *ngFor="let type of Types" [value]="type.type">
+              {{ type.name }}
+            </option>
+          </select>
+        </div>
+
+        <div style="width: 30%">
+          <label for="moduleName" class="form-label">Priority</label>
+          <input
+            type="text"
+            class="form-control"
+            id="priority"
+            formControlName="priority"
+            required
+          />
+          <div
+            *ngIf="
+              moduleForm.get('priority')?.invalid &&
+              moduleForm.get('priority')?.touched
+            "
+            class="text-danger"
+          >
+            priority is required.
+          </div>
+        </div>
+      </div>
+
+      <div class="d-flex justify-content-between">
+        <div class="mb-3" style="flex: 1">
+          <label for="fromDbId" class="form-label">From Db Id</label>
+          <select
+            (change)="OnDbFromChange($event)"
+            class="form-control"
+            id="fromDbId"
+            formControlName="fromDbId"
+            required
+          >
+            <option value="" disabled selected>Select Database</option>
+            <option *ngFor="let db of DataBases" [value]="db.id">
+              {{ db.name }}
+            </option>
+          </select>
+        </div>
+        <div class="mb-3" style="flex: 1; margin-right: 10px">
+          <label for="toDbId" class="form-label">To Db Id</label>
+          <select
+            class="form-control"
+            id="toDbId"
+            formControlName="toDbId"
+            (change)="OnDbToChange($event)"
+            required
+          >
+            <option value="" disabled selected>Select Database</option>
+            <option *ngFor="let db of DataBases" [value]="db.id">
+              {{ db.name }}
+            </option>
+          </select>
+        </div>
+      </div>
+    </mat-tab>
+    <mat-tab label="Information" *ngIf="ModuleType === 'Normal'">
+      <div class="scrollable-container">
+        <div class="d-flex test myCon">
+          <div style="width: 45%" class="from">
+            <div class="mb-3">
+              <label for="tableFromName" class="form-label"
+                >Table From Name</label
+              >
+              <select
+                class="form-control"
+                id="tableFromName"
+                formControlName="tableFromName"
+                name="tableFromName"
+                (change)="OnTableFromChange($event)"
+                required
+              >
+                <option value="" disabled selected>Select Table</option>
+                <option *ngFor="let table of Fromtables" [value]="table">
+                  {{ table }}
+                </option>
+              </select>
+            </div>
+
+            <div class="mb-3">
+              <label for="fromPrimaryKeyName" class="form-label"
+                >Table From Primary</label
+              >
+              <select
+                class="form-control"
+                id="fromPrimaryKeyName"
+                formControlName="fromPrimaryKeyName"
+                required
+              >
+                <option value="" disabled selected>Select Column</option>
+                <option *ngFor="let column of ColumnsFrom" [value]="column">
+                  {{ column }}
+                </option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <label for="cloudIdName" class="form-label"
+                >CloudId/LocalId</label
+              >
+              <select
+                class="form-control"
+                id="cloudIdName"
+                formControlName="cloudIdName"
+                required
+              >
+                <option value="" disabled selected>Select Column</option>
+                <option *ngFor="let column of ColumnsFrom" [value]="column">
+                  {{ column }}
+                </option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <label for="fromInsertFlagName" class="form-label"
+                >Table From InsertFlag</label
+              >
+              <select
+                class="form-control"
+                id="fromInsertFlagName"
+                formControlName="fromInsertFlagName"
+                required
+              >
+                <option value="" disabled selected>Select Column</option>
+                <option *ngFor="let column of ColumnsFrom" [value]="column">
+                  {{ column }}
+                </option>
+              </select>
+            </div>
+            <!-- From Update Flag Name Input -->
+            <div class="mb-3">
+              <label for="fromUpdateFlagName" class="form-label"
+                >Table From UpdateFlag</label
+              >
+
+              <select
+                class="form-control"
+                id="fromUpdateFlagName"
+                formControlName="fromUpdateFlagName"
+                required
+              >
+                <option value="" disabled selected>Select Column</option>
+                <option *ngFor="let column of ColumnsFrom" [value]="column">
+                  {{ column }}
+                </option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <label for="fromUpdateFlagName" class="form-label"
+                >Table From DeleteFlag</label
+              >
+
+              <select
+                class="form-control"
+                id="fromDeleteFlagName"
+                formControlName="fromDeleteFlagName"
+                required
+              >
+                <option value="" disabled selected>Select Column</option>
+                <option *ngFor="let column of ColumnsFrom" [value]="column">
+                  {{ column }}
+                </option>
+              </select>
+            </div>
+          </div>
+
+          <div style="width: 45%" class="from">
+            <div class="mb-3">
+              <label for="tableToName" class="form-label">Table To Name</label>
+              <select
+                class="form-control"
+                id="tableToName"
+                formControlName="tableToName"
+                name="tableToName"
+                required
+                (change)="OnTableChange($event)"
+              >
+                <option value="" disabled selected>Select Table</option>
+                <option *ngFor="let table of Totables" [value]="table">
+                  {{ table }}
+                </option>
+              </select>
+            </div>
+
+            <!-- To Primary Key Name Input -->
+            <div class="mb-3">
+              <label for="toPrimaryKeyName" class="form-label"
+                >Table To Primary</label
+              >
+              <select
+                class="form-control"
+                id="toPrimaryKeyName"
+                formControlName="toPrimaryKeyName"
+                required
+              >
+                <option value="" disabled selected>Select Column</option>
+                <option *ngFor="let column of ColumnsTo" value="{{ column }}">
+                  {{ column }}
+                </option>
+              </select>
+            </div>
+
+            <!-- From Primary Key Name Input -->
+
+            <!-- Local Id Name Input -->
+            <div class="mb-3">
+              <label for="localIdName" class="form-label"
+                >LocalId/CloudId</label
+              >
+              <select
+                class="form-control"
+                id="localIdName"
+                formControlName="localIdName"
+                required
+              >
+                <option value="" disabled selected>Select Column</option>
+                <option *ngFor="let column of ColumnsTo" value="{{ column }}">
+                  {{ column }}
+                </option>
+              </select>
+            </div>
+
+            <!-- Cloud Id Name Input -->
+
+            <!-- Sync Type Input -->
+
+            <!-- To Insert Flag Name Input -->
+            <div class="mb-3">
+              <label for="toInsertFlagName" class="form-label"
+                >Table To InsertFlag</label
+              >
+              <select
+                class="form-control"
+                id="toInsertFlagName"
+                formControlName="toInsertFlagName"
+                required
+              >
+                <option value="" disabled selected>Select Column</option>
+                <option *ngFor="let column of ColumnsTo" value="{{ column }}">
+                  {{ column }}
+                </option>
+              </select>
+            </div>
+
+            <!-- To Update Flag Name Input -->
+            <div class="mb-3">
+              <label for="toUpdateFlagName" class="form-label"
+                >table To UpdateFlag
+              </label>
+
+              <select
+                class="form-control"
+                id="toUpdateFlagName"
+                formControlName="toUpdateFlagName"
+                required
+              >
+                <option value="" disabled selected>Select Column</option>
+                <option *ngFor="let column of ColumnsTo" value="{{ column }}">
+                  {{ column }}
+                </option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <label for="toUpdateFlagName" class="form-label"
+                >table To DeleteFlag
+              </label>
+
+              <select
+                class="form-control"
+                id="ToDeleteFlagName"
+                formControlName="ToDeleteFlagName"
+                required
+              >
+                <option value="" disabled selected>Select Column</option>
+                <option *ngFor="let column of ColumnsTo" value="{{ column }}">
+                  {{ column }}
+                </option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+    </mat-tab>
+    <mat-tab label="Mapping" *ngIf="ModuleType === 'Normal'">
+      <div class="container20 Scrool" #map>
+        <h2>Column Mapping Configuration</h2>
+
+        <div class="mapping-rows" formArrayName="Columns">
+          <div
+            class="mapping-row header ms-3 me-3"
+            style="display: flex; justify-content: space-between"
+          >
+            <div>From Column</div>
+            <div>To Column</div>
+            <div>Key</div>
+            <div>Actions</div>
+          </div>
+
+          <div
+            *ngFor="
+              let Referance of moduleForm.get('Columns')['controls'];
+              let i = index
+            "
+            [formGroupName]="i"
+            class="mapping-row"
+          >
+            <select formControlName="ColumnFrom">
+              <option [value]="null" disabled selected>Select Column</option>
+              <option *ngFor="let column of ColumnsFrom" [value]="column">
+                {{ column }}
+              </option>
+            </select>
+
+            <select formControlName="ColumnTo">
+              <option [value]="null" disabled selected>Select Column</option>
+              <option *ngFor="let column of ColumnsTo" [value]="column">
+                {{ column }}
+              </option>
+            </select>
+
+            <input type="text" formControlName="key" class="form-control" />
+
+            <button
+              type="button"
+              class="remove-btn"
+              type="btn btn-danger"
+              (click)="removeColumn(i)"
+            >
+              Remove
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="actions d-flex justify-content-end">
+        <button type="button" class="add-btn" (click)="AddColumn()">
+          <i class="fs-4 fa-solid fa-plus"></i>
+        </button>
+      </div>
+    </mat-tab>
+    <mat-tab label="Operations" *ngIf="ModuleType !== 'Normal'">
+      <div class="scrollable-div" formArrayName="Operations">
+        <mat-tab-group>
+          <mat-tab
+            label="{{
+              Operation.value.Type == 0
+                ? 'Product'
+                : Operation.value.Type == 1
+                ? 'Customer'
+                : 'Store'
+            }}"
+            class="position-relative"
+            *ngFor="
+              let Operation of moduleForm.get('Operations')['controls'];
+              let i = index
+            "
+            [formGroupName]="i"
+          >
+            <mat-accordion>
+              <mat-expansion-panel hideToggle *ngIf="Operation.value.Type == 1">
+                <mat-expansion-panel-header>
+                  <mat-panel-title> Reference Info </mat-panel-title>
+                </mat-expansion-panel-header>
+                <div label="References Info">
+                  <div class="row">
+                    <div class="col-md-6 mb-3">
+                      <label for="tableSelect" class="form-label"
+                        >Enter Customer Reference Key :</label
+                      >
+                      <input
+                        formControlName="OpCustomerReference"
+                        type="text"
+                        class="form-control"
+                      />
+                    </div>
+                    <div class="col-md-6 mb-3">
+                      <label for="tableSelect" class="form-label"
+                        >Enter Product Reference Key:</label
+                      >
+                      <input
+                        type="text"
+                        class="form-control"
+                        formControlName="OPProductReference"
+                      />
+                    </div>
+                  </div>
+                </div>
+
+                <!-- here  -->
+              </mat-expansion-panel>
+              <mat-expansion-panel
+                (opened)="panelOpenState.set(true)"
+                (closed)="panelOpenState.set(false)"
+              >
+                <mat-expansion-panel-header>
+                  <mat-panel-title> Mapping </mat-panel-title>
+                </mat-expansion-panel-header>
+                <div label="Mapping">
+                  <div class="row">
+                    <div class="col-md-6 mb-3">
+                      <label for="tableSelect" class="form-label"
+                        >Select Table From:</label
+                      >
+                      <select
+                        id="tableSelect"
+                        class="form-select"
+                        formControlName="OPTableFromName"
+                        (change)="FromOperationChange($event)"
+                      >
+                        <option [value]="null" disabled selected>
+                          Choose a table...
+                        </option>
+
+                        <option
+                          value="users"
+                          *ngFor="let Table of Fromtables"
+                          [value]="Table"
+                        >
+                          {{ Table }}
+                        </option>
+                      </select>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                      <label for="tableSelect" class="form-label"
+                        >Select Table To:</label
+                      >
+                      <select
+                        id="tableSelect"
+                        class="form-select"
+                        formControlName="OPTableToName"
+                        (change)="ToOperationChange($event)"
+                      >
+                        <option disabled selected [value]="null">
+                          Choose a table...
+                        </option>
+                        <option *ngFor="let Table of Totables" [value]="Table">
+                          {{ Table }}
+                        </option>
+                      </select>
+                    </div>
+                  </div>
+
+                  <div class="d-flex mydata">
+                    <div class="form-container Test">
+                      <div class="form-group">
+                        <label for="itemId">FromID</label>
+                        <select
+                          id="itemId"
+                          name="itemId"
+                          formControlName="OPFromItemIdName"
+                        >
+                          <option [value]="null" disabled selected>
+                            Choose a Column...
+                          </option>
+                          <option
+                            value="{{ column }}"
+                            *ngFor="let column of OperationFromTColumns"
+                          >
+                            {{ column }}
+                          </option>
+                        </select>
+                      </div>
+
+                      <div class="form-group">
+                        <label for="deleteFlag">DeleteFlag</label>
+                        <select
+                          id="deleteFlag"
+                          name="deleteFlag"
+                          formControlName="OPFromDeleteFlag"
+                        >
+                          <option [value]="null" disabled selected>
+                            Choose a Column...
+                          </option>
+                          <option
+                            value="{{ column }}"
+                            *ngFor="let column of OperationFromTColumns"
+                          >
+                            {{ column }}
+                          </option>
+                        </select>
+                      </div>
+
+                      <div class="form-group">
+                        <label for="updateFlag">UpdateFlag</label>
+                        <select
+                          id="updateFlag"
+                          name="updateFlag"
+                          formControlName="OPFromUpdateFlag"
+                        >
+                          <option [value]="null" disabled selected>
+                            Choose a Column...
+                          </option>
+                          <option
+                            value="{{ column }}"
+                            *ngFor="let column of OperationFromTColumns"
+                          >
+                            {{ column }}
+                          </option>
+                        </select>
+                      </div>
+
+                      <div class="form-group">
+                        <label for="insertFlag">InsertFlag </label>
+                        <select
+                          id="insertFlag"
+                          name="insertFlag"
+                          formControlName="OPFromInsertFlag"
+                        >
+                          <option [value]="null" disabled selected>
+                            Choose a Column...
+                          </option>
+                          <option
+                            value="{{ column }}"
+                            *ngFor="let column of OperationFromTColumns"
+                          >
+                            {{ column }}
+                          </option>
+                        </select>
+                      </div>
+
+                      <div class="form-group">
+                        <label for="itemPrice">ItemPrice</label>
+                        <select
+                          id="itemPrice"
+                          formControlName="OPFromItemPrice"
+                          name="itemPrice"
+                        >
+                          <option [value]="null" disabled selected>
+                            Choose a Column...
+                          </option>
+                          <option
+                            value="{{ column }}"
+                            *ngFor="let column of OperationFromTColumns"
+                          >
+                            {{ column }}
+                          </option>
+                        </select>
+                      </div>
+                      <div class="form-group">
+                        <label for="itemPrice">Item Price Date</label>
+                        <select
+                          id="OPFromInsertDate"
+                          formControlName="OPFromInsertDate"
+                          name="OPFromInsertDate"
+                        >
+                          <option [value]="null" disabled selected>
+                            Choose a Column...
+                          </option>
+                          <option
+                            value="{{ column }}"
+                            *ngFor="let column of OperationFromTColumns"
+                          >
+                            {{ column }}
+                          </option>
+                        </select>
+                      </div>
+                      <div class="form-group">
+                        <label for="itemPrice">CloudId</label>
+                        <select
+                          id="itemPrice"
+                          formControlName="CloudIdName"
+                          name="itemPrice"
+                        >
+                          <option [value]="null" disabled selected>
+                            Choose a Column...
+                          </option>
+                          <option
+                            value="{{ column }}"
+                            *ngFor="let column of OperationFromTColumns"
+                          >
+                            {{ column }}
+                          </option>
+                        </select>
+                      </div>
+                      <div class="form-group">
+                        <label for="itemPrice">CustomerId</label>
+                        <select
+                          id="itemPrice"
+                          name="itemPrice"
+                          formControlName="CustomerIdName"
+                        >
+                          <option [value]="null" disabled selected>
+                            Choose a Column...
+                          </option>
+                          <option
+                            value="{{ column }}"
+                            *ngFor="let column of OperationFromTColumns"
+                          >
+                            {{ column }}
+                          </option>
+                        </select>
+                      </div>
+                      <div class="form-group">
+                        <label for="itemPrice">StoreId</label>
+                        <select
+                          id="itemPrice"
+                          name="itemPrice"
+                          formControlName="StoreIdName"
+                        >
+                          <option [value]="null" disabled selected>
+                            Choose a Column...
+                          </option>
+                          <option
+                            value="{{ column }}"
+                            *ngFor="let column of OperationFromTColumns"
+                          >
+                            {{ column }}
+                          </option>
+                        </select>
+                      </div>
+
+                      <!-- //////////// -->
+                      <div class="form-group">
+                        <label for="itemPrice">OpFromPrimary</label>
+                        <select
+                          id="itemPrice"
+                          name="itemPrice"
+                          formControlName="OpFromPrimary"
+                        >
+                          <option [value]="null" disabled selected>
+                            Choose a Column...
+                          </option>
+                          <option
+                            value="{{ column }}"
+                            *ngFor="let column of OperationFromTColumns"
+                          >
+                            {{ column }}
+                          </option>
+                        </select>
+                      </div>
+                      <div class="form-group">
+                        <label for="itemPrice">OpInsertDate</label>
+                        <select
+                          id="itemPrice"
+                          name="itemPrice"
+                          formControlName="OpInsertDate"
+                        >
+                          <option [value]="null" disabled selected>
+                            Choose a Column...
+                          </option>
+                          <option
+                            value="{{ column }}"
+                            *ngFor="let column of OperationFromTColumns"
+                          >
+                            {{ column }}
+                          </option>
+                        </select>
+                      </div>
+                      <div class="form-group">
+                        <label for="itemPrice">OpUpdateDate</label>
+                        <select
+                          id="itemPrice"
+                          name="itemPrice"
+                          formControlName="OpUpdateDate"
+                        >
+                          <option [value]="null" disabled selected>
+                            Choose a Column...
+                          </option>
+                          <option
+                            value="{{ column }}"
+                            *ngFor="let column of OperationFromTColumns"
+                          >
+                            {{ column }}
+                          </option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="form-container Test">
+                      <div class="form-group">
+                        <label for="itemId">LocalId</label>
+                        <select
+                          id="itemId"
+                          formControlName="OPToItemLocalIdName"
+                          name="itemId"
+                        >
+                          <option [value]="null" disabled selected>
+                            Choose a Column...
+                          </option>
+                          <option
+                            value="{{ column }}"
+                            *ngFor="let column of OperationToColumns"
+                          >
+                            {{ column }}
+                          </option>
+                        </select>
+                      </div>
+
+                      <div class="form-group">
+                        <label for="deleteFlag">DeleteFlag</label>
+                        <select
+                          id="deleteFlag"
+                          name="deleteFlag"
+                          formControlName="OPToDeleteFlag"
+                        >
+                          <option [value]="null" disabled selected>
+                            Choose a Column...
+                          </option>
+                          <option
+                            value="{{ column }}"
+                            *ngFor="let column of OperationToColumns"
+                          >
+                            {{ column }}
+                          </option>
+                        </select>
+                      </div>
+
+                      <div class="form-group">
+                        <label for="updateFlag">UpdateFlag</label>
+                        <select
+                          id="updateFlag"
+                          name="updateFlag"
+                          formControlName="OPToUpdateFlag"
+                        >
+                          <option [value]="null" disabled selected>
+                            Choose a Column...
+                          </option>
+                          <option
+                            value="{{ column }}"
+                            *ngFor="let column of OperationToColumns"
+                          >
+                            {{ column }}
+                          </option>
+                        </select>
+                      </div>
+
+                      <div class="form-group">
+                        <label for="insertFlag">InsertFlag</label>
+                        <select
+                          id="insertFlag"
+                          name="insertFlag"
+                          formControlName="OPToInsertFlag"
+                        >
+                          <option [value]="null" disabled selected>
+                            Choose a Column...
+                          </option>
+                          <option
+                            value="{{ column }}"
+                            *ngFor="let column of OperationToColumns"
+                          >
+                            {{ column }}
+                          </option>
+                        </select>
+                      </div>
+
+                      <div class="form-group">
+                        <label for="itemPrice">ItemPrice</label>
+                        <select
+                          id="itemPrice"
+                          name="itemPrice"
+                          formControlName="OPToItemPrice"
+                        >
+                          <option [value]="null" disabled selected>
+                            Choose a Column...
+                          </option>
+                          <option
+                            value="{{ column }}"
+                            *ngFor="let column of OperationToColumns"
+                          >
+                            {{ column }}
+                          </option>
+                        </select>
+                      </div>
+                      <div class="form-group">
+                        <label for="OPToPrimary">ToPrimary</label>
+                        <select
+                          id="OPToPrimary"
+                          name="OPToPrimary"
+                          formControlName="OPToPrimary"
+                        >
+                          <option [value]="null" disabled selected>
+                            Choose a Column...
+                          </option>
+                          <option
+                            value="{{ column }}"
+                            *ngFor="let column of OperationToColumns"
+                          >
+                            {{ column }}
+                          </option>
+                        </select>
+                      </div>
+                      <div class="form-group">
+                        <label for="OPToPrimary">CustomerId</label>
+                        <select
+                          id="OpToCustomerId"
+                          name="OpToCustomerId"
+                          formControlName="OpToCustomerId"
+                        >
+                          <option [value]="null" disabled selected>
+                            Choose a Column...
+                          </option>
+                          <option
+                            value="{{ column }}"
+                            *ngFor="let column of OperationToColumns"
+                          >
+                            {{ column }}
+                          </option>
+                        </select>
+                      </div>
+                      <div class="form-group">
+                        <label for="OPToPrimary">ProductId</label>
+                        <select
+                          id="OpToProductId"
+                          name="OpToProductId"
+                          formControlName="OpToProductId"
+                        >
+                          <option [value]="null" disabled selected>
+                            Choose a Column...
+                          </option>
+                          <option
+                            value="{{ column }}"
+                            *ngFor="let column of OperationToColumns"
+                          >
+                            {{ column }}
+                          </option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </mat-expansion-panel>
+              <mat-expansion-panel
+                (opened)="panelOpenState.set(true)"
+                (closed)="panelOpenState.set(false)"
+              >
+                <mat-expansion-panel-header>
+                  <mat-panel-title> Condition Builder </mat-panel-title>
+                </mat-expansion-panel-header>
+                <div label="Condition Builder">
+                  <div class="query-builder-container">
+                    <h1>Query Builder</h1>
+                    <div class="form-row">
+                      <select #opfiled>
+                        <option [value]="null" disabled selected>
+                          Choose a Column...
+                        </option>
+                        <option *ngFor="let column of OperationFromTColumns">
+                          {{ column }}
+                        </option>
+                      </select>
+                      <select #op>
+                        <option [value]="null" disabled selected>
+                          Choose a Operatror...
+                        </option>
+                        <option
+                          *ngFor="let operator of Operators"
+                          [value]="operator"
+                        >
+                          {{ operator }}
+                        </option>
+                      </select>
+                      <input type="text" placeholder="Enter value" #value />
+                    </div>
+
+                    <div class="m-2 d-flex justify-content-start gap-2">
+                      <button
+                        class="btn btn-primary"
+                        (click)="AddOperatorToOperationm('AND', i)"
+                      >
+                        And
+                      </button>
+                      <button
+                        class="btn btn-success"
+                        (click)="AddOperatorToOperationm('OR', i)"
+                      >
+                        Or
+                      </button>
+                    </div>
+                    <!-- Button -->
+                    <button
+                      class="build-btn"
+                      (click)="
+                        AddQuery(i, opfiled.value, op.value, value.value)
+                      "
+                    >
+                      Build Query
+                    </button>
+
+                    <!-- Query Output -->
+                    <div class="generated-query">
+                      <label>Generated Query</label>
+                      <textarea
+                        formControlName="OPCondition"
+                        name="OPCondition"
+                      >
+      Your query will appear here...</textarea
+                      >
+                    </div>
+                    <div class="d-flex justify-content-end m-2">
+                      <button class="btn btn-danger" (click)="ClearOpeQuery(i)">
+                        Clear
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </mat-expansion-panel>
+            </mat-accordion>
+
+            <button
+              (click)="RemoveOperation(i)"
+              class="btn btn-danger position-absolute top-0 end-0 me-1 mt-1 rounded rounded-0"
+            >
+              Delete
+            </button>
+            <hr class="mb-2 h2" />
+          </mat-tab>
+        </mat-tab-group>
+      </div>
+      <div class="d-flex justify-content-end align-items-center mt-3">
+        <div>
+          <select
+            class="selectchoose"
+            id="styledSelect"
+            name="styledSelect"
+            #selectval
+          >
+            <option [value]="null" selected disabled #Optype>
+              Choose Type
+            </option>
+            <option value="0">Product</option>
+            <option value="1">Customer</option>
+            <option value="2">Store</option>
+          </select>
+        </div>
+        <div class="d-flex justify-content-end">
+          <button
+            class="btn btn-primary"
+            (click)="AddOperation(selectval.value)"
+          >
+            <i class="fa-solid fa-plus"></i>
+          </button>
+        </div>
+      </div>
+    </mat-tab>
+    <mat-tab label="References">
+      <div class="container Scrool" #refscrol>
+        <h2>Column Referance Configuration</h2>
+
+        <div class="mapping-rows" formArrayName="References">
+          <div
+            class="mapping-row header ms-3 me-3"
+            style="display: flex; justify-content: space-between"
+          >
+            <div>Key</div>
+            <div>Reference</div>
+            <div>Comparer Value</div>
+            <div>Value</div>
+            <div class="me-3">Actions</div>
+          </div>
+
+          <div
+            *ngFor="
+              let Referance of moduleForm.get('References')['controls'];
+              let i = index
+            "
+            style="padding: 10px"
+            [formGroupName]="i"
+            class="mapping-row d-flex justify-content-between align-items-center"
+          >
+            <div class="input-container">
+              <input
+                type="text"
+                formControlName="key"
+                id="key"
+                placeholder="Enter Column"
+                class="form-input"
+              />
+            </div>
+            <div class="input-container">
+              <input
+                type="text"
+                formControlName="TableFromName"
+                id="Sourceherer"
+                readonly
+                placeholder="Enter Column"
+                class="form-input"
+              />
+            </div>
+
+            <!-- LocalName Input -->
+            <div class="input-container">
+              <input
+                type="text"
+                id="LocalName"
+                formControlName="LocalName"
+                required
+                readonly
+                placeholder="Enter Local Name"
+                class="form-input"
+              />
+            </div>
+
+            <!-- PrimaryName Input -->
+            <div class="input-container">
+              <input
+                type="text"
+                id="PrimaryName"
+                formControlName="PrimaryName"
+                required
+                readonly
+                placeholder="Enter Primary Name"
+                class="form-input"
+              />
+            </div>
+            <!-- Remove Button -->
+            <div class="button-container">
+              <button
+                type="button"
+                class="remove-btn"
+                (click)="removeReferance(i)"
+              >
+                Remove
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="actions d-flex d-flex justify-content-between">
+        <div
+          class="mapping-row d-flex justify-content-between"
+          style="width: 100% !important"
+        >
+          <select
+            id="Sourceherer"
+            required
+            #source
+            (change)="OnRefranceTableChange($event, LocalIds1, PrimaryIds1)"
+          >
+            <option value="">Select Column</option>
+            <option *ngFor="let table of Totables" [value]="table">
+              {{ table }}
+            </option>
+          </select>
+
+          <select id="LocalName" required #LocalIds1></select>
+
+          <select id="PrimaryName" required #PrimaryIds1></select>
+
+          <!-- Add button -->
+          <button
+            type="button"
+            class="add-btn"
+            (click)="
+              AddReferance(source.value, LocalIds1.value, PrimaryIds1.value)
+            "
+          >
+            <i class="fs-4 fa-solid fa-plus"></i>
+          </button>
+        </div>
+      </div>
+    </mat-tab>
+
+    <mat-tab label="Conditions Builder" *ngIf="ModuleType === 'Normal'">
+      <div class="query-builder">
+        <div class="controls">
+          <div class="input-group">
+            <select #fieldInput class="form-control" placeholder="Field name">
+              <option [value]="null" disabled selected>Select Column</option>
+
+              <option *ngFor="let column of ColumnsFrom" [value]="column">
+                {{ column }}
+              </option>
+            </select>
+            <select
+              #operatorSelect
+              class="form-control"
+              (change)="ShowBetweenValue(operatorSelect.value)"
+            >
+              <option [value]="null" disabled selected>Select Condition</option>
+              <option [value]="Operator" *ngFor="let Operator of Operators">
+                {{ Operator }}
+              </option>
+            </select>
+            <input #valueInput placeholder="Value" class="form-control" />
+            <input
+              placeholder="Value"
+              #btw2
+              name="btn2"
+              class="form-control"
+              [hidden]="!BetweenDisplay"
+            />
+
+            <button
+              (click)="
+                addCondition(
+                  fieldInput.value,
+                  operatorSelect.value,
+                  valueInput.value,
+                  btw2.value
+                )
+              "
+              class="btn-add"
+            >
+              Add Condition
+            </button>
+          </div>
+
+          <div class="operator-buttons">
+            <button (click)="addOperator('AND')" class="btn-operator">
+              AND
+            </button>
+            <button (click)="addOperator('OR')" class="btn-operator">OR</button>
+          </div>
+        </div>
+
+        <div class="query-preview">
+          <textarea
+            name="condition"
+            class="form-control"
+            formControlName="condition"
+            rows="5"
+          ></textarea>
+        </div>
+
+        <div class="d-flex justify-content-end">
+          <button (click)="clearQuery()" class="btn-clear mt-2">
+            Clear Query
+          </button>
+        </div>
+      </div>
+    </mat-tab>
+  </mat-tab-group>
+  <div class="d-flex justify-content-between">
+    <button
+      (click)="AddModule()"
+      mat-raised-button
+      color="primary"
+      *ngIf="!data.Id"
+      [disabled]="
+        moduleForm.get('moduleName').invalid ||
+        moduleForm.get('priority').invalid ||
+        moduleForm.get('toDbId').invalid ||
+        moduleForm.get('fromDbId').invalid
+      "
+    >
+      {{ ModuleType != "Normal" ? "Add Operations" : "Add Module" }}
+    </button>
+    <button
+      (click)="SaveModule()"
+      mat-raised-button
+      color="primary"
+      *ngIf="data.Id"
+      [disabled]="
+        moduleForm.get('moduleName').invalid ||
+        moduleForm.get('priority').invalid ||
+        moduleForm.get('toDbId').invalid ||
+        moduleForm.get('fromDbId').invalid
+      "
+    >
+      {{ ModuleType != "Normal" ? "Save Operations" : "Save Module" }}
+    </button>
+  </div>
+</form>

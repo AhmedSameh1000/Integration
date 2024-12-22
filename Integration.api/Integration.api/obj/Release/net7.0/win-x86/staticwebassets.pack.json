@@ -1,0 +1,29 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\TrueTech\\V1\\Integration.api\\Integration.api\\wwwroot\\Auto.json",
+      "PackagePath": "staticwebassets\\Auto.json"
+    },
+    {
+      "Id": "obj\\Release\\net7.0\\win-x86\\staticwebassets\\msbuild.Integration.api.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Release\\net7.0\\win-x86\\staticwebassets\\msbuild.Integration.api.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Release\\net7.0\\win-x86\\staticwebassets\\msbuild.build.Integration.api.props",
+      "PackagePath": "build\\Integration.api.props"
+    },
+    {
+      "Id": "obj\\Release\\net7.0\\win-x86\\staticwebassets\\msbuild.buildMultiTargeting.Integration.api.props",
+      "PackagePath": "buildMultiTargeting\\Integration.api.props"
+    },
+    {
+      "Id": "obj\\Release\\net7.0\\win-x86\\staticwebassets\\msbuild.buildTransitive.Integration.api.props",
+      "PackagePath": "buildTransitive\\Integration.api.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

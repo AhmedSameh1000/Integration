@@ -1,0 +1,16 @@
+﻿<Project>
+  <ItemGroup>
+    <StaticWebAssetEndpoint Include="_content/Integration.api/Auto.json">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Auto.json'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-9M8AP8TMOUcgty0RokRWIA1cXbFpklwmVJhPHTL0aBY="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"21"},{"Name":"Content-Type","Value":"application/json"},{"Name":"ETag","Value":"\u00229M8AP8TMOUcgty0RokRWIA1cXbFpklwmVJhPHTL0aBY=\u0022"},{"Name":"Last-Modified","Value":"Thu, 19 Dec 2024 15:23:20 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/Integration.api/Auto.or9qo1i568.json">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Auto.json'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"or9qo1i568"},{"Name":"integrity","Value":"sha256-9M8AP8TMOUcgty0RokRWIA1cXbFpklwmVJhPHTL0aBY="},{"Name":"label","Value":"_content/Integration.api/Auto.json"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"21"},{"Name":"Content-Type","Value":"application/json"},{"Name":"ETag","Value":"\u00229M8AP8TMOUcgty0RokRWIA1cXbFpklwmVJhPHTL0aBY=\u0022"},{"Name":"Last-Modified","Value":"Thu, 19 Dec 2024 15:23:20 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "AA8W7J8AYYeSXxGNk8eW+4njbMvB51Og43WXFvbrVWo=",
+  "Source": "Integration.api",
+  "BasePath": "_content/Integration.api",
+  "Mode": "Default",
+  "ManifestType": "Publish",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

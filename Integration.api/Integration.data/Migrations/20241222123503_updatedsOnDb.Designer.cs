@@ -4,6 +4,7 @@ using Integration.data.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Integration.data.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    partial class AppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20241222123503_updatedsOnDb")]
+    partial class updatedsOnDb
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -282,9 +285,6 @@ namespace Integration.data.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("OpFromUpdateDate")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("OpSellerReference")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("OpToCustomerId")

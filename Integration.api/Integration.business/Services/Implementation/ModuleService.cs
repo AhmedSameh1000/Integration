@@ -132,7 +132,9 @@ namespace Integration.business.Services.Implementation
                         FromItemParent=c.ItemParent,
                         OpFromDeleteDate=c.OpDeleteDate,
                         OpFromInsertDate= c.OpInsertDate,
-                        OpFromUpdateDate=c.OpUpdateDate
+                        OpFromUpdateDate=c.OpUpdateDate,
+                        OPTOSellerPrimary=c.OPTOSellerPrimary,
+                        OpSellerReference=c.OpSellerReference
                     }).ToList();
 
                     await _appDbContext.Operations.AddRangeAsync(operations);
@@ -316,7 +318,10 @@ namespace Integration.business.Services.Implementation
                     ItemParent = c.FromItemParent,
                     OpDeleteDate = c.OpFromDeleteDate,
                     OpInsertDate = c.OpFromInsertDate,
-                    OpUpdateDate = c.OpFromUpdateDate
+                    OpUpdateDate = c.OpFromUpdateDate,
+                    OPTOSellerPrimary = c.OPTOSellerPrimary,
+                    OpSellerReference=c.OpSellerReference
+
                 }).ToList()
             };
             return new ApiResponse<ModuleFullDataForReturnDTO>(true,"Module Found",ModuleForReturn);
@@ -464,7 +469,9 @@ namespace Integration.business.Services.Implementation
                         FromItemParent = c.ItemParent,
                         OpFromDeleteDate = c.OpDeleteDate,
                         OpFromInsertDate = c.OpInsertDate,
-                        OpFromUpdateDate = c.OpUpdateDate
+                        OpFromUpdateDate = c.OpUpdateDate,
+                        OPTOSellerPrimary=c.OPTOSellerPrimary,
+                        OpSellerReference=c.OpSellerReference
                     }).ToList();
 
                     await _appDbContext.Operations.AddRangeAsync(Operations);

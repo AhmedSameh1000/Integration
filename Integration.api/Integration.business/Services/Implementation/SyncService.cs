@@ -314,7 +314,7 @@ namespace Integration.business.Services.Implementation
                 return new ApiResponse<int>(false, ex.Message);
             }
 
-            return new ApiResponse<int>(true, $"{rowsAffected},Sync Success");
+            return new ApiResponse<int>(true, $"Sync Success",rowsAffected);
         }
 
 
@@ -470,26 +470,22 @@ namespace Integration.business.Services.Implementation
 
                 if(module.Operations.Count==0)
                     return new ApiResponse<int>(false, "No Operation To Sync");
-
                 var rowsAffected = await SyncProductOperation(module);
-                if(rowsAffected==0)
-                    return new ApiResponse<int>(false, "No Data To Sync", rowsAffected);
-                var RowsEfectedFOrCustomer =await SyncCustomerOperation(module);
-
+                if (!rowsAffected.Success)
+                    return new ApiResponse<int>(false, rowsAffected.Message);
 
 
                 var IdsAndLocalIdsOnProduct = await GetIdsFromProductCloud(module);
                 var Result = await MapToIdWithCloudId(IdsAndLocalIdsOnProduct, module);
+                var RowsEfectedFOrCustomer = await SyncCustomerOperation(module);
+                var StoreResult = await SyncStoreOperation(module);
 
-                return new ApiResponse<int>(true, "Sync Success", rowsAffected+RowsEfectedFOrCustomer);
-            }
-            catch (DbUpdateException dbEx)
-            {
-                return new ApiResponse<int>(false, $"Database Error: {dbEx.Message}");
-            }
-            catch (HttpRequestException httpEx)
-            {
-                return new ApiResponse<int>(false, $"Network Error: {httpEx.Message}");
+                var Res = rowsAffected.Data + RowsEfectedFOrCustomer.Data + StoreResult.Data;
+
+                if (Res == 0)
+                    return new ApiResponse<int>(false, "No data available for synchronization.", Res);
+                else
+                    return new ApiResponse<int>(true, "Sync Success", Res);
             }
             catch (Exception ex)
             {
@@ -500,19 +496,17 @@ namespace Integration.business.Services.Implementation
 
         #region ProductOperationHelper
 
-        private async Task<int> SyncProductOperation(Module Module)
+        private async Task<ApiResponse<int>> SyncProductOperation(Module Module)
         {
             var rowsAffected = 0;
             var ProductOperation = Module.Operations.FirstOrDefault(c => c.operationType == OperationType.Product);
-            var CustomerOperation = Module.Operations.FirstOrDefault(c => c.operationType == OperationType.Customer);
-
             if (ProductOperation != null)
             {
                 // Get the StringBuilder containing SQL update queries
                 var updateQueries = await GetOperationProductQuery(ProductOperation, Module);
 
                 if (updateQueries is null)
-                    return 0;
+                    return new ApiResponse<int>(false,"No data available for synchronization.");
 
                 var UpdatedQueryAsString = updateQueries.ToString();
                 using (var connection = _dataBaseService.GetConnection(Module.ToDb))
@@ -532,17 +526,17 @@ namespace Integration.business.Services.Implementation
 
                             await transaction.CommitAsync();
                         }
-                        catch
+                        catch(Exception ex) 
                         {
                             await transaction.RollbackAsync();
-                            throw;
+                            return new ApiResponse<int>(false,ex.Message);
                         }
                     }
                 }
 
             }
 
-            return rowsAffected;
+            return new ApiResponse<int>(true,"Sync Success", rowsAffected);
 
         }
         private async Task<StringBuilder> GetOperationProductQuery(Operation operation, Module module)
@@ -692,7 +686,7 @@ namespace Integration.business.Services.Implementation
         #endregion
 
         #region CustomerOperationHelper
-        private async Task<int> SyncCustomerOperation(Module Module)
+        private async Task<ApiResponse<int>> SyncCustomerOperation(Module Module)
         {
             var rowsAffected = 0;
             var CustomerOperation = Module.Operations.FirstOrDefault(c => c.operationType == OperationType.Customer);
@@ -702,8 +696,8 @@ namespace Integration.business.Services.Implementation
                 // Get the StringBuilder containing SQL update queries
                 var updateQueries = await GetOperationCustomerQuery(CustomerOperation, Module);
 
-                if (updateQueries is null)
-                    return 0;
+                if (updateQueries is null ||updateQueries.Length==0)
+                    return new ApiResponse<int>(false, "No data available for synchronization.");
 
                 var UpdatedQueryAsString = updateQueries.ToString();
                 using (var connection = _dataBaseService.GetConnection(Module.ToDb))
@@ -723,17 +717,19 @@ namespace Integration.business.Services.Implementation
 
                             await transaction.CommitAsync();
                         }
-                        catch
+                        catch (Exception ex)
                         {
+
                             await transaction.RollbackAsync();
-                            throw;
+                            return new ApiResponse<int>(false,ex.Message);
+
                         }
                     }
                 }
 
             }
 
-            return rowsAffected;
+            return new ApiResponse<int>(true,"Sync Success",rowsAffected);
 
         }
         private async Task<Dictionary<int, int>> GetToIdsFromCustomersSeller(Operation operation, Module module)
@@ -741,7 +737,7 @@ namespace Integration.business.Services.Implementation
             try
             {
                 var IdsToReturn = new Dictionary<int, int>();
-                var query = $"SELECT {operation.OpToCustomerId},{operation.OpToProductId} FROM {operation.TableTo} {operation.Condition}";
+                var query = $"SELECT {operation.OpToCustomerId},{operation.OpToProductId} FROM {operation.TableTo}";
                 var Db = module.ToDb;
                 if (Db is null)
                     throw new Exception("No Db Selected");
@@ -861,8 +857,189 @@ namespace Integration.business.Services.Implementation
         }
 
         #endregion
+
+
+        #region StoreOperationHelper
+
+
+
+
+        private async Task<ApiResponse<int>> SyncStoreOperation(Module Module)
+        {
+            var rowsAffected = 0;
+            var StoreOperation = Module.Operations.FirstOrDefault(c => c.operationType == OperationType.Store);
+
+            if (StoreOperation != null)
+            {
+                // Get the StringBuilder containing SQL update queries
+                var updateQueries = await GetOperationStoreQuery(StoreOperation, Module);
+
+                if (updateQueries is null||updateQueries.Length==0)
+                    return new ApiResponse<int>(false, "No data available for synchronization.");
+
+
+                var UpdatedQueryAsString = updateQueries.ToString();
+                using (var connection = _dataBaseService.GetConnection(Module.ToDb))
+                {
+                    await connection.OpenAsync();
+
+                    using (var transaction = await connection.BeginTransactionAsync())
+                    {
+                        try
+                        {
+                            using (var command = connection.CreateCommand())
+                            {
+                                command.Transaction = transaction;
+                                command.CommandText = UpdatedQueryAsString;
+                                rowsAffected = await command.ExecuteNonQueryAsync();
+                            }
+
+                            await transaction.CommitAsync();
+                        }
+                        catch (Exception ex)
+                        {
+                            await transaction.RollbackAsync();
+                            return new ApiResponse<int>(false, ex.Message);
+
+                        }
+                    }
+                }
+
+            }
+
+            return new ApiResponse<int>(true,"Sync Success",rowsAffected);
+
+        }
+        private async Task<Dictionary<int, int>> GetToIdsFromSellerPrices(Operation operation, Module module)
+        {
+            try
+            {
+                var IdsToReturn = new Dictionary<int, int>();
+                var query = $"SELECT {operation.OPTOSellerPrimary},{operation.OpToProductId} FROM {operation.TableTo} ";
+                var Db = module.ToDb;
+                if (Db is null)
+                    throw new Exception("No Db Selected");
+
+
+                using (var connection = _dataBaseService.GetConnection(Db))
+                {
+                    await connection.OpenAsync();
+                    using (var command = connection.CreateCommand())
+                    {
+                        command.CommandText = query;
+
+                        using (var reader = await command.ExecuteReaderAsync())
+                        {
+                            while (await reader.ReadAsync())
+                            {
+                                var OPTOSellerPrimary = reader.GetInt32(reader.GetOrdinal(operation.OPTOSellerPrimary));
+                                var OpToProductId = reader.GetInt32(reader.GetOrdinal(operation.OpToProductId));
+
+                                if (OPTOSellerPrimary != null)
+                                    IdsToReturn.TryAdd(OPTOSellerPrimary, OpToProductId);
+
+                            }
+                        }
+                    }
+                }
+
+                return IdsToReturn;
+            }
+            catch (Exception ex)
+            {
+                throw new Exception($"An error occurred: {ex.Message}");
+            }
+        }
+        private async Task<StringBuilder> GetOperationStoreQuery(Operation operation, Module module)
+        {
+            var InsertedQuery = new StringBuilder();
+            var UpdatedQuery = new StringBuilder();
+            var ResultQuery = new StringBuilder();
+
+            var Reference = await _appDbContext.References.Where(c => c.ModuleId == module.Id).ToListAsync();
+            var ReferenceIds = await GetReferenceIds(Reference, module, false);
+            var IdsTO = await GetToIdsFromSellerPrices(operation, module);
+            var DuplicatedData = new HashSet<(string CloudSellerId, string CloudProductId)>();
+
+
+            try
+            {
+                var query = $"SELECT {operation.OpFromUpdateDate},{operation.storeId},{operation.ItemId},{operation.customerId},{operation.OpFromPrimary},{operation.OpFromInsertDate},{operation.OpFromUpdateDate}, {operation.PriceFrom},{operation.fromPriceInsertDate}  FROM {operation.TableFrom} {operation.Condition}";
+
+                var selectedFrom = module.FromDb;
+                if (selectedFrom is null)
+                    throw new Exception("No FromDataBase Selected");
+
+                using (var connection = _dataBaseService.GetConnection(selectedFrom))
+                {
+                    await connection.OpenAsync();
+                    using (var command = connection.CreateCommand())
+                    {
+                        command.CommandText = query;
+
+                        using (var reader = await command.ExecuteReaderAsync())
+                        {
+                            while (await reader.ReadAsync())
+                            {
+                                var LocalProductId = reader.GetInt32(reader.GetOrdinal(operation.ItemId));
+                                var OpFromStoreId = reader.GetInt32(reader.GetOrdinal(operation.storeId));
+                               
+                                var itemPrice = reader.GetDecimal(reader.GetOrdinal(operation.PriceFrom));
+                                var insertedDate = reader.GetDateTime(reader.GetOrdinal(operation.fromPriceInsertDate));
+                                var UpdateDate = reader.GetDateTime(reader.GetOrdinal(operation.OpFromUpdateDate));
+                                var FromPrimary = reader.GetInt32(reader.GetOrdinal(operation.OpFromPrimary));
+
+                                if (insertedDate > DateTime.Now)
+                                    continue;
+
+                                if (!ReferenceIds[operation.OpSellerReference]
+                                        .TryGetValue(OpFromStoreId.ToString(), out var CloudSellerId) ||
+                                    !ReferenceIds[operation.OPProductReference]
+                                        .TryGetValue(LocalProductId.ToString(), out var CloudProductId))
+                                {
+                                    throw new InvalidDataException($"The provided reference value for ({operation.TableFrom}) with values ({LocalProductId},{CloudSellerId}) does not exist in the corresponding table.");
+                                }
+
+                                var isDuplicate = DuplicatedData.Contains((CloudSellerId, CloudProductId));
+
+                                if (IdsTO.TryGetValue(Convert.ToInt32(CloudSellerId), out var idValue) || isDuplicate)
+                                {
+                                    UpdatedQuery.Append(
+                                        $"UPDATE {operation.TableTo} " +
+                                        $"SET {operation.PriceTo} = {itemPrice} ," +
+                                        $"{operation.LocalId} = {FromPrimary} " +
+                                        $"WHERE {operation.OPTOSellerPrimary} = '{CloudSellerId}' AND {operation.OpToProductId} = '{CloudProductId}';");
+                                }
+                                else
+                                {
+                                    InsertedQuery.Append(
+                                        $"INSERT INTO {operation.TableTo} " +
+                                        $"({operation.LocalId},{operation.OPTOSellerPrimary}, {operation.OpToProductId}, {operation.PriceTo}) " +
+                                        $"VALUES ('{FromPrimary}','{CloudSellerId}', '{CloudProductId}', {itemPrice});");
+
+                                    // Track inserted pair to avoid re-insertion
+                                    DuplicatedData.Add((CloudSellerId, CloudProductId));
+                                }
+                            }
+                        }
+                    }
+                }
+
+                ResultQuery.Append(InsertedQuery);
+                ResultQuery.Append(UpdatedQuery);
+                var res = ResultQuery.ToString();
+                return ResultQuery;
+            }
+            catch (Exception ex)
+            {
+                throw new Exception($"An error occurred: {ex.Message}");
+            }
+        }
+        #endregion
     }
 }
+
+
 public class Items
 {
     public int Id { get; set; }

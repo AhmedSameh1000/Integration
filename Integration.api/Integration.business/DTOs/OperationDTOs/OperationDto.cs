@@ -19,6 +19,8 @@
     public string? StoreIdName { get; set; }
     public string? OPToPrimary { get; set; }
     public string? OpCustomerReference { get; set; }
+    public string? OpSellerReference { get; set; }
+
     public string? OPProductReference { get; set; }
     public string? OpToCustomerId { get; set; }
     public string? OpToProductId { get; set; }
@@ -27,7 +29,9 @@
     public string? OpInsertDate { get; set; }
     public string? OpUpdateDate { get; set; }
     public string? OpDeleteDate { get; set; }
+    public string? OPTOSellerPrimary { get; set; }
     public int Type { get; set; }
 
 }
+
 

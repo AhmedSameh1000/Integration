@@ -926,6 +926,10 @@
             "type": "string",
             "nullable": true
           },
+          "opSellerReference": {
+            "type": "string",
+            "nullable": true
+          },
           "opProductReference": {
             "type": "string",
             "nullable": true
@@ -955,6 +959,10 @@
             "nullable": true
           },
           "opDeleteDate": {
+            "type": "string",
+            "nullable": true
+          },
+          "optoSellerPrimary": {
             "type": "string",
             "nullable": true
           },

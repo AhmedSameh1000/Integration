@@ -227,6 +227,8 @@ export class MangeModuleComponent implements OES_element_index_uint {
       OpFromPrimary: new FormControl(),
       OpInsertDate: new FormControl(),
       OpUpdateDate: new FormControl(),
+      OPTOSellerPrimary: new FormControl(),
+      OpSellerReference: new FormControl(),
 
       Type: new FormControl(value, Validators.required),
     });
@@ -636,6 +638,7 @@ export class MangeModuleComponent implements OES_element_index_uint {
 
     const Operation = new FormGroup({
       OPTableFromName: new FormControl(ProductOperation.tableFrom),
+      OPTOSellerPrimary: new FormControl(ProductOperation.optoSellerPrimary),
       OPTableToName: new FormControl(ProductOperation.tableTo),
       OPToInsertFlag: new FormControl(ProductOperation.toInsertFlag),
       OPToUpdateFlag: new FormControl(ProductOperation.toUpdateFlag),
@@ -659,6 +662,7 @@ export class MangeModuleComponent implements OES_element_index_uint {
       OpFromPrimary: new FormControl(ProductOperation.opFromPrimary),
       OpInsertDate: new FormControl(ProductOperation.opInsertDate),
       OpUpdateDate: new FormControl(ProductOperation.opUpdateDate),
+      OpSellerReference: new FormControl(ProductOperation.opSellerReference),
       OpCustomerReference: new FormControl(
         ProductOperation.opCustomerReference
       ),

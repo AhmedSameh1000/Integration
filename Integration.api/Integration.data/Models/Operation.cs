@@ -20,6 +20,8 @@
         public string? fromPriceInsertDate { get; set; }
         public string? OpCustomerReference { get; set; }
         public string? OPProductReference { get; set; }
+        public string? OPTOSellerPrimary { get; set; }
+        public string? OpSellerReference { get; set; }
 
 
         public string? customerId { get; set; }

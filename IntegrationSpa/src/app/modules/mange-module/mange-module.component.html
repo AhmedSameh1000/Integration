@@ -401,7 +401,7 @@
             [formGroupName]="i"
           >
             <mat-accordion>
-              <mat-expansion-panel hideToggle *ngIf="Operation.value.Type == 1">
+              <mat-expansion-panel hideToggle *ngIf="Operation.value.Type != 0">
                 <mat-expansion-panel-header>
                   <mat-panel-title> Reference Info </mat-panel-title>
                 </mat-expansion-panel-header>
@@ -413,6 +413,16 @@
                       >
                       <input
                         formControlName="OpCustomerReference"
+                        type="text"
+                        class="form-control"
+                      />
+                    </div>
+                    <div class="col-md-6 mb-3">
+                      <label for="tableSelect" class="form-label"
+                        >Enter Saller Reference Key :</label
+                      >
+                      <input
+                        formControlName="OpSellerReference"
                         type="text"
                         class="form-control"
                       />
@@ -846,6 +856,24 @@
                           id="OpToProductId"
                           name="OpToProductId"
                           formControlName="OpToProductId"
+                        >
+                          <option [value]="null" disabled selected>
+                            Choose a Column...
+                          </option>
+                          <option
+                            value="{{ column }}"
+                            *ngFor="let column of OperationToColumns"
+                          >
+                            {{ column }}
+                          </option>
+                        </select>
+                      </div>
+                      <div class="form-group">
+                        <label for="OPToPrimary">OPTOSellerPrimary</label>
+                        <select
+                          id="OpToProductId"
+                          name="OpToProductId"
+                          formControlName="OPTOSellerPrimary"
                         >
                           <option [value]="null" disabled selected>
                             Choose a Column...

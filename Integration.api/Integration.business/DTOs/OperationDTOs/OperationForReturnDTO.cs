@@ -24,6 +24,8 @@ namespace Integration.business.DTOs.OperationDTOs
         public string? OPToPrimary { get; set; }
         public string? fromUpdateFlag { get; set; }
         public string? fromDeleteFlag { get; set; }
+        public string? OpSellerReference { get; set; }
+
         public string? ToInsertFlag { get; set; }
         public string? ToUpdateFlag { get; set; }
         public string? ToDeleteFlag { get; set; }
@@ -33,7 +35,10 @@ namespace Integration.business.DTOs.OperationDTOs
         public OperationType operationType { get; set; }
         public string? OpToCustomerId { get; set; }
         public string? OpToProductId { get; set; }
+        public string? OPTOSellerPrimary { get; set; }
         public int ModuleId { get; set; }
+
+
 
         public string? OpFromPrimary { get; set; }
         public string? ItemParent { get; set; }

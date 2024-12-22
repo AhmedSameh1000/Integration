@@ -4,6 +4,7 @@ import { ToastrService } from 'ngx-toastr';
 import { ModuleService } from 'src/app/Services/module.service';
 import { MangeModuleComponent } from '../mange-module/mange-module.component';
 import Swal from 'sweetalert2';
+import { ERRORDisplayComponent } from 'src/app/shared/errordisplay/errordisplay.component';
 
 @Component({
   selector: 'app-listmodules',
@@ -84,8 +85,12 @@ export class ListmodulesComponent implements OnInit {
         error: (err) => {
           console.log(err);
           module.isLoading = false; // إيقاف التحميل في حالة حدوث خطأ للعنصر المحدد فقط
-
-          this.toastr.error(err.error.message);
+          this.MatDilog.open(ERRORDisplayComponent, {
+            disableClose: true,
+            data: {
+              err: err.error.message,
+            },
+          });
         },
       });
     }

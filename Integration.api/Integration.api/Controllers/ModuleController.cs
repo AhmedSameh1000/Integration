@@ -65,6 +65,10 @@ namespace Integration.api.Controllers
                 if (!Result.Success)
                     return BadRequest(Result);
 
+                if(Result.Data==0)
+                    return BadRequest(new ApiResponse<int>(false, "No data available for synchronization."));
+
+
                 return Ok(Result);
             }
             catch (Exception ex)

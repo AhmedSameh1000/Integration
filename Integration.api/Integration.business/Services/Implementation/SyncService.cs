@@ -34,18 +34,22 @@ namespace Integration.business.Services.Implementation
            .Include(c => c.FromDb)
            .Include(c => c.columnFroms)
            .FirstOrDefaultAsync(c => c.Id == moduleId);
+
             if (module is null)
                 return new ApiResponse<int>(false, "Module Not Found");
 
-            if(module.columnFroms.Count==0)
+            if(string.IsNullOrEmpty(module.fromPrimaryKeyName) ||string.IsNullOrEmpty(module.ToPrimaryKeyName))
+                return new ApiResponse<int>(false, "Primary Keys Not Selected");
+
+
+
+            if (module.columnFroms.Count==0)
                 return new ApiResponse<int>(false, "Not Found Any Columns To Sync");
 
             var references = await _appDbContext.References
                   .Where(c => c.ModuleId == moduleId)
                   .ToListAsync();
             var ReferencesIds = await GetReferenceIds(references, module,false);
-
-
             var columnFrom = module.columnFroms.Select(c=>new ColumnFromDTOOOOO
             {
                 Id=c.Id,
@@ -169,8 +173,8 @@ namespace Integration.business.Services.Implementation
                                     }
                                        
 
-                                    UpdateQueryGenerated.Add(d.ColumnToName,value);
-                                    InsertQueryGenerated.Add(d.ColumnToName,value);
+                                    UpdateQueryGenerated.Add(d.ColumnToName,value.Trim());
+                                    InsertQueryGenerated.Add(d.ColumnToName,value.Trim());
                                 }
                             }
                             if (idTo != -1)
@@ -214,7 +218,11 @@ namespace Integration.business.Services.Implementation
             int RowsEffected = 0;
             try
             {
-                RowsEffected = await UpdateRowsAsync(AllQueriesTo, module);
+                var res= await UpdateRowsAsync(AllQueriesTo, module);
+                if (!res.Success)
+                    return new ApiResponse<int>(false, res.Message);
+
+                RowsEffected = res.Data;
             }
             catch (Exception ex)
             {
@@ -251,7 +259,11 @@ namespace Integration.business.Services.Implementation
                         // Commit the transaction if everything is successful
                         await transaction.CommitAsync();
 
+                        if(RowsEffected==0)
+                            return new ApiResponse<int>(true, "No data available for synchronization.");
+
                         return new ApiResponse<int>(true, "Sync Successfully", RowsEffected);
+
                     }
                     catch (Exception ex)
                     {
@@ -264,11 +276,11 @@ namespace Integration.business.Services.Implementation
         }
 
 
-        private async Task<int> UpdateRowsAsync(StringBuilder updateQueries, Integration.data.Models.Module module)
+        private async Task<ApiResponse<int>> UpdateRowsAsync(StringBuilder updateQueries, Integration.data.Models.Module module)
         {
             var DataBaseSelected = module.ToDb;
             if (DataBaseSelected is null)
-                return 0;
+                return new ApiResponse<int>(false,"No ToDB Selected");
 
             var Connectionstr = DataBaseSelected.ConnectionString;
             int rowsAffected = 0;
@@ -297,20 +309,12 @@ namespace Integration.business.Services.Implementation
                     }
                 }
             }
-            catch (SqlException sqlEx)
-            {
-                // التعامل مع الأخطاء الخاصة بقاعدة البيانات
-                Console.WriteLine($"SQL Exception: {sqlEx.Message}");
-                throw;  // إعادة رمي الاستثناء بعد تسجيله
-            }
             catch (Exception ex)
             {
-                // التعامل مع أي أخطاء أخرى
-                Console.WriteLine($"Exception: {ex.Message}");
-                throw;  // إعادة رمي الاستثناء بعد تسجيله
+                return new ApiResponse<int>(false, ex.Message);
             }
 
-            return rowsAffected;
+            return new ApiResponse<int>(true, $"{rowsAffected},Sync Success");
         }
 
 

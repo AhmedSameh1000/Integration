@@ -1,0 +1,46 @@
+body {
+  background-color: #f8f9fa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.error-card {
+  max-width: 500px;
+  border: 1px solid #dc3545;
+}
+
+.error-card .card-header {
+  background-color: #dc3545;
+  color: white;
+  font-weight: bold;
+}
+
+.error-card .card-body {
+  background-color: #fff3f3;
+}
+
+.error-code {
+  font-size: 1.5rem;
+  color: #dc3545;
+  font-weight: bold;
+}
+
+.error-details {
+  font-family: monospace;
+  white-space: pre-wrap;
+  color: #6c757d;
+}
+.error-details {
+  font-family: monospace;
+  white-space: pre-wrap;
+  color: #6c757d;
+  max-height: 300px; /* ارتفاع ثابت للصندوق */
+  overflow-y: auto; /* إظهار شريط التمرير العمودي عند الحاجة */
+  padding: 5px; /* إضافة مساحة داخلية لتحسين العرض */
+  border: 1px solid #dc3545; /* إضافة إطار خفيف لتحديد النص */
+  border-radius: 5px; /* جعل الحواف ناعمة */
+  background-color: #fff; /* خلفية لتباين أفضل */
+}

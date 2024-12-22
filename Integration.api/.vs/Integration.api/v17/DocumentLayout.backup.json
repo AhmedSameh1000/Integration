@@ -7,20 +7,8 @@
       "RelativeMoniker": "D:0:0:{7C378BB7-1F11-4AA0-BFA8-1203E6A64FE1}|Integration.business\\Integration.business.csproj|solutionrelative:integration.business\\services\\implementation\\syncservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7C378BB7-1F11-4AA0-BFA8-1203E6A64FE1}|Integration.business\\Integration.business.csproj|d:\\truetech\\v1\\integration.api\\integration.business\\services\\implementation\\moduleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7C378BB7-1F11-4AA0-BFA8-1203E6A64FE1}|Integration.business\\Integration.business.csproj|solutionrelative:integration.business\\services\\implementation\\moduleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\TrueTech\\V1\\Integration.api\\Integration.data\\Migrations\\20241222092125_newFlags.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Integration.data\\Migrations\\20241222092125_newFlags.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\TrueTech\\V1\\Integration.api\\Integration.data\\Migrations\\20241222093016_Edits.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Integration.data\\Migrations\\20241222093016_Edits.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F4853D13-6982-41D1-B52E-411CE21CF872}|Integration.data\\Integration.data.csproj|d:\\truetech\\v1\\integration.api\\integration.data\\models\\operation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F4853D13-6982-41D1-B52E-411CE21CF872}|Integration.data\\Integration.data.csproj|solutionrelative:integration.data\\models\\operation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{40504B65-F8AB-4656-92A4-19DE27FD3567}|Integration.api\\Integration.api.csproj|d:\\truetech\\v1\\integration.api\\integration.api\\controllers\\modulecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{40504B65-F8AB-4656-92A4-19DE27FD3567}|Integration.api\\Integration.api.csproj|solutionrelative:integration.api\\controllers\\modulecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,47 +18,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 0,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "20241222092125_newFlags.cs",
-              "DocumentMoniker": "D:\\TrueTech\\V1\\Integration.api\\Integration.data\\Migrations\\20241222092125_newFlags.cs",
-              "RelativeDocumentMoniker": "Integration.data\\Migrations\\20241222092125_newFlags.cs",
-              "ToolTip": "D:\\TrueTech\\V1\\Integration.api\\Integration.data\\Migrations\\20241222092125_newFlags.cs",
-              "RelativeToolTip": "Integration.data\\Migrations\\20241222092125_newFlags.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAzwA4AAAAiAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-22T09:21:25.572Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Operation.cs",
-              "DocumentMoniker": "D:\\TrueTech\\V1\\Integration.api\\Integration.data\\Models\\Operation.cs",
-              "RelativeDocumentMoniker": "Integration.data\\Models\\Operation.cs",
-              "ToolTip": "D:\\TrueTech\\V1\\Integration.api\\Integration.data\\Models\\Operation.cs",
-              "RelativeToolTip": "Integration.data\\Models\\Operation.cs",
-              "ViewState": "AgIAAB0AAAAAAAAAAAA9wCkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-22T09:05:03.052Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ModuleService.cs",
-              "DocumentMoniker": "D:\\TrueTech\\V1\\Integration.api\\Integration.business\\Services\\Implementation\\ModuleService.cs",
-              "RelativeDocumentMoniker": "Integration.business\\Services\\Implementation\\ModuleService.cs",
-              "ToolTip": "D:\\TrueTech\\V1\\Integration.api\\Integration.business\\Services\\Implementation\\ModuleService.cs",
-              "RelativeToolTip": "Integration.business\\Services\\Implementation\\ModuleService.cs",
-              "ViewState": "AgIAAC8BAAAAAAAAAAArwD8BAAAbAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-22T09:04:30.315Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -79,22 +28,22 @@
               "RelativeDocumentMoniker": "Integration.business\\Services\\Implementation\\SyncService.cs",
               "ToolTip": "D:\\TrueTech\\V1\\Integration.api\\Integration.business\\Services\\Implementation\\SyncService.cs*",
               "RelativeToolTip": "Integration.business\\Services\\Implementation\\SyncService.cs*",
-              "ViewState": "AgIAADIDAAAAAAAAAAAAAD4DAABdAAAAAAAAAA==",
+              "ViewState": "AgIAACEAAAAAAAAAAAAkwC0AAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-22T08:19:58.72Z",
+              "WhenOpened": "2024-12-22T10:32:43.736Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "20241222093016_Edits.cs",
-              "DocumentMoniker": "D:\\TrueTech\\V1\\Integration.api\\Integration.data\\Migrations\\20241222093016_Edits.cs",
-              "RelativeDocumentMoniker": "Integration.data\\Migrations\\20241222093016_Edits.cs",
-              "ToolTip": "D:\\TrueTech\\V1\\Integration.api\\Integration.data\\Migrations\\20241222093016_Edits.cs",
-              "RelativeToolTip": "Integration.data\\Migrations\\20241222093016_Edits.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAIAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "ModuleController.cs",
+              "DocumentMoniker": "D:\\TrueTech\\V1\\Integration.api\\Integration.api\\Controllers\\ModuleController.cs",
+              "RelativeDocumentMoniker": "Integration.api\\Controllers\\ModuleController.cs",
+              "ToolTip": "D:\\TrueTech\\V1\\Integration.api\\Integration.api\\Controllers\\ModuleController.cs",
+              "RelativeToolTip": "Integration.api\\Controllers\\ModuleController.cs",
+              "ViewState": "AgIAADYAAAAAAAAAAAAnwEQAAABpAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-22T09:30:16.856Z",
+              "WhenOpened": "2024-12-22T10:32:26.453Z",
               "EditorCaption": ""
             }
           ]

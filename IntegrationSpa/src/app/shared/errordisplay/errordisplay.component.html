@@ -1,0 +1,21 @@
+<div class="card error-card shadow">
+  <div class="card-header">Database Error</div>
+  <div class="card-body">
+    <div class="error-code d-flex align-items-center gap-2 mb-2">
+      <strong>error while processing your request</strong>
+      <button
+        class="btn btn-outline-secondary btn-sm"
+        (click)="copyToClipboard(icon)"
+      >
+        <i #icon class="fa-regular fa-clipboard"></i>
+      </button>
+    </div>
+    <p class="error-details" style="min-height: 200px">
+      {{ data.err }}
+    </p>
+    <button class="btn btn-outline-danger btn-sm mt-3" matDialogClose="">
+      Close
+    </button>
+    <!-- زر النسخ -->
+  </div>
+</div>

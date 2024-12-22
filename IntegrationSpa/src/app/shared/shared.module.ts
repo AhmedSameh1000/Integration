@@ -30,6 +30,7 @@ import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { CommonModule, NgIf } from '@angular/common';
 import { DragDropModule } from '@angular/cdk/drag-drop';
 import { MatStepperModule } from '@angular/material/stepper';
+import { ERRORDisplayComponent } from './errordisplay/errordisplay.component';
 
 let materialmodule = [
   MatInputModule,
@@ -69,7 +70,7 @@ let materialmodule = [
 ];
 @NgModule({
   imports: [materialmodule],
-  exports: [materialmodule],
-  declarations: [],
+  exports: [materialmodule, ERRORDisplayComponent],
+  declarations: [ERRORDisplayComponent],
 })
 export class SharedModule {}

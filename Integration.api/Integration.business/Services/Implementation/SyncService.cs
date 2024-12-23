@@ -478,9 +478,19 @@ namespace Integration.business.Services.Implementation
                 var IdsAndLocalIdsOnProduct = await GetIdsFromProductCloud(module);
                 var Result = await MapToIdWithCloudId(IdsAndLocalIdsOnProduct, module);
                 var RowsEfectedFOrCustomer = await SyncCustomerOperation(module);
-                var StoreResult = await SyncStoreOperation(module);
+                ////
+                ///
+                var IdsOnCustomerPrices = await GetIdsGeneral(module,OperationType.Customer);
+                var Result2 = await MapIdsGeneral(IdsOnCustomerPrices, module,OperationType.Customer);
 
-                var Res = rowsAffected.Data + RowsEfectedFOrCustomer.Data + StoreResult.Data;
+                ///
+
+                var StoreResult = await SyncStoreOperation(module);
+                var StoreSellerIds = await GetIdsGeneral(module,OperationType.Store);
+                var Result3 = await MapIdsGeneral(StoreSellerIds, module,OperationType.Store);
+
+                var Res = rowsAffected.
+                    Data + RowsEfectedFOrCustomer.Data + StoreResult.Data;
 
                 if (Res == 0)
                     return new ApiResponse<int>(false, "No data available for synchronization.", Res);
@@ -650,7 +660,7 @@ namespace Integration.business.Services.Implementation
             foreach (var item in IdsWithLocalIds)
             {
                 var DateTimeNow = DateTime.Now;
-                Query.Append($"update {operation.TableFrom} set {operation.CloudId}={item.Value},{operation.fromInsertFlag}=0,{operation.fromUpdateFlag}=0 where {operation.ItemId}={item.Key} AND  '{DateTimeNow}' > {operation.fromPriceInsertDate} ; ");
+                Query.Append($"update {operation.TableFrom} set {operation.CloudId}={item.Value},{operation.fromInsertFlag}=0,{operation.fromUpdateFlag}=0 where {operation.ItemId}={item.Key} AND  '{DateTimeNow}' > {operation.fromPriceInsertDate} And {operation.customerId}=0 And {operation.storeId}=0 ; ");
             }
             using (var connection = _dataBaseService.GetConnection(module.FromDb))
             {
@@ -855,14 +865,10 @@ namespace Integration.business.Services.Implementation
                 throw new Exception($"An error occurred: {ex.Message}");
             }
         }
-
         #endregion
 
 
         #region StoreOperationHelper
-
-
-
 
         private async Task<ApiResponse<int>> SyncStoreOperation(Module Module)
         {
@@ -1035,6 +1041,84 @@ namespace Integration.business.Services.Implementation
                 throw new Exception($"An error occurred: {ex.Message}");
             }
         }
+        #endregion
+
+        #region GetIdsAndMapIdsHelpers
+        private async Task<Dictionary<int, int>> GetIdsGeneral(Module module, OperationType operationType)
+        {
+            var operation = module.Operations.FirstOrDefault(c => c.operationType == operationType);
+            if (operation is null)
+                return new Dictionary<int, int>();
+
+
+            var Query = $"Select {operation.LocalId}, {operation.OPToItemPrimary} from {operation.TableTo}";
+            var Result = new Dictionary<int, int>();
+            var DataBase = module.ToDb;
+            using (var connection = _dataBaseService.GetConnection(DataBase))
+            {
+                await connection.OpenAsync();
+                using (var command = connection.CreateCommand())
+                {
+                    command.CommandText = Query;
+
+                    using (var reader = await command.ExecuteReaderAsync())
+                    {
+                        while (await reader.ReadAsync())
+                        {
+                            var PrimaryId = reader.GetInt32(reader.GetOrdinal(operation.OPToItemPrimary));
+                            var LocalId = reader.GetInt32(reader.GetOrdinal(operation.LocalId));
+                            Result.TryAdd(LocalId, PrimaryId);
+                        }
+                    }
+                }
+            }
+            return Result;
+        }
+        private async Task<int> MapIdsGeneral(Dictionary<int, int> IdsWithLocalIds, Module module, OperationType operationType)
+        {
+            if (IdsWithLocalIds is null)
+                return 0;
+
+            var operation = module.Operations.FirstOrDefault(c => c.operationType == operationType);
+            if (operation is null)
+                return 0;
+
+            var Compare = operationType == OperationType.Store ? operation.storeId : operation.customerId;
+            var rowsAffected = 0;
+            var Query = new StringBuilder();
+
+            foreach (var item in IdsWithLocalIds)
+            {
+                var DateTimeNow = DateTime.Now;
+                Query.Append($"update {operation.TableFrom} set {operation.CloudId}={item.Value},{operation.fromInsertFlag}=0,{operation.fromUpdateFlag}=0 where {operation.OpFromPrimary}={item.Key} AND  '{DateTimeNow}' > {operation.fromPriceInsertDate} And {Compare}!=0 ; ");
+            }
+            using (var connection = _dataBaseService.GetConnection(module.FromDb))
+            {
+                await connection.OpenAsync();
+
+                using (var transaction = await connection.BeginTransactionAsync())
+                {
+                    try
+                    {
+                        using (var command = connection.CreateCommand())
+                        {
+                            command.Transaction = transaction;
+                            command.CommandText = Query.ToString();
+                            rowsAffected = await command.ExecuteNonQueryAsync();
+                        }
+
+                        await transaction.CommitAsync();
+                    }
+                    catch
+                    {
+                        await transaction.RollbackAsync();
+                        throw;
+                    }
+                }
+            }
+            return rowsAffected;
+        }
+
         #endregion
     }
 }

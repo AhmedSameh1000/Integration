@@ -407,7 +407,10 @@
                 </mat-expansion-panel-header>
                 <div label="References Info">
                   <div class="row">
-                    <div class="col-md-6 mb-3">
+                    <div
+                      class="col-md-6 mb-3"
+                      *ngIf="Operation.value.Type == 1"
+                    >
                       <label for="tableSelect" class="form-label"
                         >Enter Customer Reference Key :</label
                       >
@@ -417,7 +420,10 @@
                         class="form-control"
                       />
                     </div>
-                    <div class="col-md-6 mb-3">
+                    <div
+                      class="col-md-6 mb-3"
+                      *ngIf="Operation.value.Type == 2"
+                    >
                       <label for="tableSelect" class="form-label"
                         >Enter Saller Reference Key :</label
                       >

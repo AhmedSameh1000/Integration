@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "bqmftHL60cS6C/SneD9aNeGFYWVahz6Exp/VxY59dfo=",
+  "Hash": "pPZUtcS499XEgZS8HekvgWftsPjrAF04+cQiLOq4nEw=",
   "Source": "Integration.api",
   "BasePath": "_content/Integration.api",
   "Mode": "Default",
@@ -62,7 +62,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 22 Dec 2024 10:16:22 GMT"
+          "Value": "Mon, 23 Dec 2024 13:26:48 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -99,7 +99,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 22 Dec 2024 10:16:22 GMT"
+          "Value": "Mon, 23 Dec 2024 13:26:48 GMT"
         },
         {
           "Name": "Cache-Control",

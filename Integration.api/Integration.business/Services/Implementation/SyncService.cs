@@ -742,46 +742,6 @@ namespace Integration.business.Services.Implementation
             return new ApiResponse<int>(true,"Sync Success",rowsAffected);
 
         }
-        private async Task<Dictionary<int, int>> GetToIdsFromCustomersSeller(Operation operation, Module module)
-        {
-            try
-            {
-                var IdsToReturn = new Dictionary<int, int>();
-                var query = $"SELECT {operation.OpToCustomerId},{operation.OpToProductId} FROM {operation.TableTo}";
-                var Db = module.ToDb;
-                if (Db is null)
-                    throw new Exception("No Db Selected");
-
-
-                using (var connection = _dataBaseService.GetConnection(Db))
-                {
-                    await connection.OpenAsync();
-                    using (var command = connection.CreateCommand())
-                    {
-                        command.CommandText = query;
-
-                        using (var reader = await command.ExecuteReaderAsync())
-                        {
-                            while (await reader.ReadAsync())
-                            {
-                                var productId = reader.GetInt32(reader.GetOrdinal(operation.OpToProductId));
-                                var CustomerID = reader.GetInt32(reader.GetOrdinal(operation.OpToCustomerId));
-
-                                if (CustomerID != null)
-                                    IdsToReturn.TryAdd(CustomerID, productId);
-
-                            }
-                        }
-                    }
-                }
-
-                return IdsToReturn;
-            }
-            catch (Exception ex)
-            {
-                throw new Exception($"An error occurred: {ex.Message}");
-            }
-        }
         private async Task<StringBuilder> GetOperationCustomerQuery(Operation operation, Module module)
         {
             var InsertedQuery = new StringBuilder();
@@ -790,7 +750,7 @@ namespace Integration.business.Services.Implementation
 
             var Reference = await _appDbContext.References.Where(c => c.ModuleId == module.Id).ToListAsync();
             var ReferenceIds = await GetReferenceIds(Reference, module, false);
-            var IdsTO = await GetToIdsFromCustomersSeller(operation, module);
+            var IdsTO = await GetCloudIds(operation, module,operation.OpToCustomerId,operation.OpToProductId,operation.TableTo);
             var DuplicatedData = new HashSet<(string CloudCustomerId, string CloudProductId)>();
 
             try
@@ -867,7 +827,6 @@ namespace Integration.business.Services.Implementation
         }
         #endregion
 
-
         #region StoreOperationHelper
 
         private async Task<ApiResponse<int>> SyncStoreOperation(Module Module)
@@ -916,46 +875,6 @@ namespace Integration.business.Services.Implementation
             return new ApiResponse<int>(true,"Sync Success",rowsAffected);
 
         }
-        private async Task<Dictionary<int, int>> GetToIdsFromSellerPrices(Operation operation, Module module)
-        {
-            try
-            {
-                var IdsToReturn = new Dictionary<int, int>();
-                var query = $"SELECT {operation.OPTOSellerPrimary},{operation.OpToProductId} FROM {operation.TableTo} ";
-                var Db = module.ToDb;
-                if (Db is null)
-                    throw new Exception("No Db Selected");
-
-
-                using (var connection = _dataBaseService.GetConnection(Db))
-                {
-                    await connection.OpenAsync();
-                    using (var command = connection.CreateCommand())
-                    {
-                        command.CommandText = query;
-
-                        using (var reader = await command.ExecuteReaderAsync())
-                        {
-                            while (await reader.ReadAsync())
-                            {
-                                var OPTOSellerPrimary = reader.GetInt32(reader.GetOrdinal(operation.OPTOSellerPrimary));
-                                var OpToProductId = reader.GetInt32(reader.GetOrdinal(operation.OpToProductId));
-
-                                if (OPTOSellerPrimary != null)
-                                    IdsToReturn.TryAdd(OPTOSellerPrimary, OpToProductId);
-
-                            }
-                        }
-                    }
-                }
-
-                return IdsToReturn;
-            }
-            catch (Exception ex)
-            {
-                throw new Exception($"An error occurred: {ex.Message}");
-            }
-        }
         private async Task<StringBuilder> GetOperationStoreQuery(Operation operation, Module module)
         {
             var InsertedQuery = new StringBuilder();
@@ -964,7 +883,10 @@ namespace Integration.business.Services.Implementation
 
             var Reference = await _appDbContext.References.Where(c => c.ModuleId == module.Id).ToListAsync();
             var ReferenceIds = await GetReferenceIds(Reference, module, false);
-            var IdsTO = await GetToIdsFromSellerPrices(operation, module);
+            //var IdsTO = await GetToIdsFromSellerPrices(operation, module);
+            var IdsTO = await GetCloudIds(operation, module,operation.OPTOSellerPrimary,operation.OpToProductId,operation.TableTo);
+
+
             var DuplicatedData = new HashSet<(string CloudSellerId, string CloudProductId)>();
 
 
@@ -1044,36 +966,6 @@ namespace Integration.business.Services.Implementation
         #endregion
 
         #region GetIdsAndMapIdsHelpers
-        private async Task<Dictionary<int, int>> GetIdsGeneral(Module module, OperationType operationType)
-        {
-            var operation = module.Operations.FirstOrDefault(c => c.operationType == operationType);
-            if (operation is null)
-                return new Dictionary<int, int>();
-
-
-            var Query = $"Select {operation.LocalId}, {operation.OPToItemPrimary} from {operation.TableTo}";
-            var Result = new Dictionary<int, int>();
-            var DataBase = module.ToDb;
-            using (var connection = _dataBaseService.GetConnection(DataBase))
-            {
-                await connection.OpenAsync();
-                using (var command = connection.CreateCommand())
-                {
-                    command.CommandText = Query;
-
-                    using (var reader = await command.ExecuteReaderAsync())
-                    {
-                        while (await reader.ReadAsync())
-                        {
-                            var PrimaryId = reader.GetInt32(reader.GetOrdinal(operation.OPToItemPrimary));
-                            var LocalId = reader.GetInt32(reader.GetOrdinal(operation.LocalId));
-                            Result.TryAdd(LocalId, PrimaryId);
-                        }
-                    }
-                }
-            }
-            return Result;
-        }
         private async Task<int> MapIdsGeneral(Dictionary<int, int> IdsWithLocalIds, Module module, OperationType operationType)
         {
             if (IdsWithLocalIds is null)
@@ -1118,6 +1010,81 @@ namespace Integration.business.Services.Implementation
             }
             return rowsAffected;
         }
+
+        private async Task<Dictionary<int, int>> GetIdsGeneral(Module module, OperationType operationType)
+        {
+            var operation = module.Operations.FirstOrDefault(c => c.operationType == operationType);
+            if (operation is null)
+                return new Dictionary<int, int>();
+
+
+            var Query = $"Select {operation.LocalId}, {operation.OPToItemPrimary} from {operation.TableTo}";
+            var Result = new Dictionary<int, int>();
+            var DataBase = module.ToDb;
+            using (var connection = _dataBaseService.GetConnection(DataBase))
+            {
+                await connection.OpenAsync();
+                using (var command = connection.CreateCommand())
+                {
+                    command.CommandText = Query;
+
+                    using (var reader = await command.ExecuteReaderAsync())
+                    {
+                        while (await reader.ReadAsync())
+                        {
+                            var PrimaryId = reader.GetInt32(reader.GetOrdinal(operation.OPToItemPrimary));
+                            var LocalId = reader.GetInt32(reader.GetOrdinal(operation.LocalId));
+                            Result.TryAdd(LocalId, PrimaryId);
+                        }
+                    }
+                }
+            }
+            return Result;
+        }
+
+        private async Task<Dictionary<int, int>> GetCloudIds(Operation operation, Module module,string Id1,string Id2,string tableTO)
+        {
+            try
+            {
+                var IdsToReturn = new Dictionary<int, int>();
+                var query = $"SELECT {Id1},{Id2} FROM {tableTO} ";
+                var Db = module.ToDb;
+                if (Db is null)
+                    throw new Exception("No Db Selected");
+
+
+                using (var connection = _dataBaseService.GetConnection(Db))
+                {
+                    await connection.OpenAsync();
+                    using (var command = connection.CreateCommand())
+                    {
+                        command.CommandText = query;
+
+                        using (var reader = await command.ExecuteReaderAsync())
+                        {
+                            while (await reader.ReadAsync())
+                            {
+                                var _id1 = reader.GetInt32(reader.GetOrdinal(Id1));
+                                var _id2 = reader.GetInt32(reader.GetOrdinal(Id2));
+
+
+                                if (_id1 != null)
+                                    IdsToReturn.TryAdd(_id1, _id2);
+
+                            }
+                        }
+                    }
+                }
+
+                return IdsToReturn;
+            }
+            catch (Exception ex)
+            {
+                throw new Exception($"An error occurred: {ex.Message}");
+            }
+        }
+
+
 
         #endregion
     }

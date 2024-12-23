@@ -5,18 +5,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{7C378BB7-1F11-4AA0-BFA8-1203E6A64FE1}|Integration.business\\Integration.business.csproj|d:\\truetech\\v1\\integration.api\\integration.business\\services\\implementation\\syncservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7C378BB7-1F11-4AA0-BFA8-1203E6A64FE1}|Integration.business\\Integration.business.csproj|solutionrelative:integration.business\\services\\implementation\\syncservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{40504B65-F8AB-4656-92A4-19DE27FD3567}|Integration.api\\Integration.api.csproj|d:\\truetech\\v1\\integration.api\\integration.api\\controllers\\databasecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{40504B65-F8AB-4656-92A4-19DE27FD3567}|Integration.api\\Integration.api.csproj|solutionrelative:integration.api\\controllers\\databasecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{40504B65-F8AB-4656-92A4-19DE27FD3567}|Integration.api\\Integration.api.csproj|d:\\truetech\\v1\\integration.api\\integration.api\\controllers\\referencecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{40504B65-F8AB-4656-92A4-19DE27FD3567}|Integration.api\\Integration.api.csproj|solutionrelative:integration.api\\controllers\\referencecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7C378BB7-1F11-4AA0-BFA8-1203E6A64FE1}|Integration.business\\Integration.business.csproj|d:\\truetech\\v1\\integration.api\\integration.business\\services\\implementation\\mysqlservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7C378BB7-1F11-4AA0-BFA8-1203E6A64FE1}|Integration.business\\Integration.business.csproj|solutionrelative:integration.business\\services\\implementation\\mysqlservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,34 +14,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ReferenceController.cs",
-              "DocumentMoniker": "D:\\TrueTech\\V1\\Integration.api\\Integration.api\\Controllers\\ReferenceController.cs",
-              "RelativeDocumentMoniker": "Integration.api\\Controllers\\ReferenceController.cs",
-              "ToolTip": "D:\\TrueTech\\V1\\Integration.api\\Integration.api\\Controllers\\ReferenceController.cs",
-              "RelativeToolTip": "Integration.api\\Controllers\\ReferenceController.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAqwBQAAAAiAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-23T11:54:27.115Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "DataBaseController.cs",
-              "DocumentMoniker": "D:\\TrueTech\\V1\\Integration.api\\Integration.api\\Controllers\\DataBaseController.cs",
-              "RelativeDocumentMoniker": "Integration.api\\Controllers\\DataBaseController.cs",
-              "ToolTip": "D:\\TrueTech\\V1\\Integration.api\\Integration.api\\Controllers\\DataBaseController.cs",
-              "RelativeToolTip": "Integration.api\\Controllers\\DataBaseController.cs",
-              "ViewState": "AgIAABwAAAAAAAAAAAAYwC4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-23T11:45:19.067Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -62,22 +24,9 @@
               "RelativeDocumentMoniker": "Integration.business\\Services\\Implementation\\SyncService.cs",
               "ToolTip": "D:\\TrueTech\\V1\\Integration.api\\Integration.business\\Services\\Implementation\\SyncService.cs",
               "RelativeToolTip": "Integration.business\\Services\\Implementation\\SyncService.cs",
-              "ViewState": "AgIAAOgCAAAAAAAAAAAUwBADAAAmAAAAAAAAAA==",
+              "ViewState": "AgIAAOABAAAAAAAAAAApwOQBAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-23T09:22:00.363Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "MySqlService.cs",
-              "DocumentMoniker": "D:\\TrueTech\\V1\\Integration.api\\Integration.business\\Services\\Implementation\\MySqlService.cs",
-              "RelativeDocumentMoniker": "Integration.business\\Services\\Implementation\\MySqlService.cs",
-              "ToolTip": "D:\\TrueTech\\V1\\Integration.api\\Integration.business\\Services\\Implementation\\MySqlService.cs",
-              "RelativeToolTip": "Integration.business\\Services\\Implementation\\MySqlService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-23T09:21:57.246Z",
+              "WhenOpened": "2024-12-23T13:39:18.116Z",
               "EditorCaption": ""
             }
           ]

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Integration.data")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+930a413d74a6acc7c4274ae73bf32accc3d8adf1")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ab66fca2e3ffa182eb3a8f65bf61987a9ffbe501")]
 [assembly: System.Reflection.AssemblyProductAttribute("Integration.data")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Integration.data")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

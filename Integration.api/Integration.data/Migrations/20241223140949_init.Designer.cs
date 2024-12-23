@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Integration.data.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20241222123503_updatedsOnDb")]
-    partial class updatedsOnDb
+    [Migration("20241223140949_init")]
+    partial class init
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -285,6 +285,9 @@ namespace Integration.data.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("OpFromUpdateDate")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("OpSellerReference")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("OpToCustomerId")

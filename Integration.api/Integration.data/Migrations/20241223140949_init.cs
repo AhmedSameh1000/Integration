@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace Integration.data.Migrations
 {
     /// <inheritdoc />
-    public partial class Init : Migration
+    public partial class init : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -277,13 +277,20 @@ namespace Integration.data.Migrations
                     fromPriceInsertDate = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     OpCustomerReference = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     OPProductReference = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    OPTOSellerPrimary = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    OpSellerReference = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     customerId = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     storeId = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     OPToItemPrimary = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     operationType = table.Column<int>(type: "int", nullable: false),
                     OpToCustomerId = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     OpToProductId = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    ModuleId = table.Column<int>(type: "int", nullable: false)
+                    ModuleId = table.Column<int>(type: "int", nullable: false),
+                    OpFromPrimary = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    FromItemParent = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    OpFromInsertDate = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    OpFromUpdateDate = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    OpFromDeleteDate = table.Column<string>(type: "nvarchar(max)", nullable: true)
                 },
                 constraints: table =>
                 {
